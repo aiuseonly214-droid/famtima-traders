@@ -11,9 +11,9 @@ import { fetchCompany, fetchQuotation, saveQuotation } from "@/lib/crm";
 export const Route = createFileRoute("/_authenticated/quotations/$id")({
   head: () => ({
     meta: [
-      { title: "Quotation · Owais Interior Designer CRM" },
-      { name: "description", content: "View, print or download an interior design quotation." },
-      { property: "og:title", content: "Quotation · Owais Interior Designer CRM" },
+      { title: "Quotation · Famtima Traders CRM" },
+      { name: "description", content: "View, print or download a quotation." },
+      { property: "og:title", content: "Quotation · Famtima Traders CRM" },
       { property: "og:description", content: "A4 quotation with print and PDF export." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

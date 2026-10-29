@@ -9,9 +9,9 @@ import { fetchCompany, fetchReceipt } from "@/lib/crm";
 export const Route = createFileRoute("/_authenticated/receipts/$id")({
   head: () => ({
     meta: [
-      { title: "Receipt · Owais Interior Designer CRM" },
+      { title: "Receipt · Famtima Traders CRM" },
       { name: "description", content: "View, print or download a customer payment receipt." },
-      { property: "og:title", content: "Receipt · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Receipt · Famtima Traders CRM" },
       { property: "og:description", content: "A4 payment receipt with print and PDF export." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -103,7 +103,7 @@ export type Database = {
             isOneToOne: false;
             referencedRelation: "customers";
             referencedColumns: ["id"];
-          }
+          },
         ];
       };
       customers: {
@@ -609,7 +609,7 @@ export type Database = {
             isOneToOne: false;
             referencedRelation: "staff_members";
             referencedColumns: ["id"];
-          }
+          },
         ];
       };
       staff_members: {

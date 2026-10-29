@@ -10,12 +10,12 @@ import { labelOf, PAYMENT_MODES } from "@/lib/options";
 export const Route = createFileRoute("/_authenticated/receipts/")({
   head: () => ({
     meta: [
-      { title: "Receipts · Owais Interior Designer CRM" },
+      { title: "Receipts · Famtima Traders CRM" },
       {
         name: "description",
         content: "Payment receipts issued to customers with balance tracking.",
       },
-      { property: "og:title", content: "Receipts · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Receipts · Famtima Traders CRM" },
       { property: "og:description", content: "Record payments and print A4 receipts." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

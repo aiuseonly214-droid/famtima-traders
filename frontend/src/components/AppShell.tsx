@@ -79,15 +79,15 @@ export function AppShell() {
           <div className="flex items-center gap-3 min-w-0">
             <img
               src={logoUrl}
-              alt="Owais Interior Logo"
-              className="size-9 rounded-full bg-white object-contain p-0.5 border border-blue-500/40 shadow-xs shrink-0"
+              alt="Famtima Traders Logo"
+              className="size-9 rounded-full bg-white object-contain p-0.5 border border-emerald-500/40 shadow-xs shrink-0"
             />
             <div className="min-w-0">
               <p className="font-display text-base leading-tight text-sidebar-primary truncate">
-                {company?.name || "Owais"}
+                {company?.name || "Famtima Traders"}
               </p>
               <p className="text-[10px] uppercase tracking-[0.18em] text-sidebar-foreground/70 truncate">
-                Interior Designer
+                Home Decoration & Renovation
               </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ export function AppShell() {
           <button onClick={() => setOpen(true)} aria-label="Open menu">
             <Menu className="size-5" />
           </button>
-          <span className="font-display text-base">Owais Interior Designer</span>
+          <span className="font-display text-base">Famtima Traders</span>
         </header>
 
         <main className="min-w-0 flex-1 print-area">

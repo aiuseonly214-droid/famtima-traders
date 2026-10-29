@@ -8,9 +8,9 @@ import { fetchQuotation } from "@/lib/crm";
 export const Route = createFileRoute("/_authenticated/quotations/$id_/edit")({
   head: () => ({
     meta: [
-      { title: "Edit quotation · Owais Interior Designer CRM" },
+      { title: "Edit quotation · Famtima Traders CRM" },
       { name: "description", content: "Update line items, discount and terms on a quotation." },
-      { property: "og:title", content: "Edit quotation · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Edit quotation · Famtima Traders CRM" },
       { property: "og:description", content: "Update an existing interior design quotation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

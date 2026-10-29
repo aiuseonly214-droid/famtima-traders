@@ -9,9 +9,9 @@ import { fetchQuotations, deleteQuotation } from "@/lib/crm";
 export const Route = createFileRoute("/_authenticated/quotations/")({
   head: () => ({
     meta: [
-      { title: "Quotations · Owais Interior Designer CRM" },
-      { name: "description", content: "All interior design quotations with status and totals." },
-      { property: "og:title", content: "Quotations · Owais Interior Designer CRM" },
+      { title: "Quotations · Famtima Traders CRM" },
+      { name: "description", content: "All quotations with status and totals." },
+      { property: "og:title", content: "Quotations · Famtima Traders CRM" },
       { property: "og:description", content: "Create and track interior design quotations." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

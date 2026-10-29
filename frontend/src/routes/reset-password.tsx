@@ -11,12 +11,12 @@ export const Route = createFileRoute("/reset-password")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Reset password · Owais Interior Designer CRM" },
+      { title: "Reset password · Famtima Traders CRM" },
       {
         name: "description",
-        content: "Set a new password for your Owais Interior Designer CRM account.",
+        content: "Set a new password for your Famtima Traders CRM account.",
       },
-      { property: "og:title", content: "Reset password · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Reset password · Famtima Traders CRM" },
       { property: "og:description", content: "Set a new password for your CRM account." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

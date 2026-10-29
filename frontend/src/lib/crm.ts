@@ -49,54 +49,17 @@ export type LandingConfig = {
   projects: ShowcaseProject[];
 };
 
-export const DEFAULT_SHOWCASE_PROJECTS: ShowcaseProject[] = [
-  {
-    id: "def-1",
-    title: "Luxury Living Room POP Ceiling",
-    category: "POP False Ceiling",
-    location: "Gangapur Road, Nashik",
-    imageUrl: "/images/pop-ceiling-nashik.webp",
-    description:
-      "Multi-layered Plaster of Paris false ceiling with warm LED cove light channels and chandelier medallion.",
-  },
-  {
-    id: "def-2",
-    title: "Fluted PVC Wall Paneling & TV Unit",
-    category: "PVC Wall Panels",
-    location: "Indira Nagar, Nashik",
-    imageUrl: "/images/pvc-wall-panels-nashik.webp",
-    description:
-      "100% waterproof fluted wooden PVC louvers and glossy marble-finish wall sheets with backlit LED strips.",
-  },
-  {
-    id: "def-3",
-    title: "Master Bedroom Gypsum False Ceiling",
-    category: "Gypsum False Ceiling",
-    location: "College Road, Nashik",
-    imageUrl: "/images/bedroom-gypsum-ceiling-nashik.webp",
-    description:
-      "Minimalist Saint-Gobain Gyproc false ceiling with acoustic sound damping and perimeter cove downlights.",
-  },
-  {
-    id: "def-4",
-    title: "Modern Kitchen & Dining Ceiling",
-    category: "Commercial & Modular",
-    location: "Govind Nagar, Nashik",
-    imageUrl: "/images/modern-kitchen-ceiling-nashik.webp",
-    description:
-      "Contemporary kitchen ceiling with magnetic track spotlighting and moisture-resistant board construction.",
-  },
-];
+export const DEFAULT_SHOWCASE_PROJECTS: ShowcaseProject[] = [];
 
 export const DEFAULT_SERVICE_RATES: ServiceRates = {
-  pop: "Starting from ₹85/sq.ft",
-  pvc: "Starting from ₹75/sq.ft",
-  gypsum: "Starting from ₹95/sq.ft",
-  commercial: "Custom commercial quotes",
+  pop: "Contact for Pricing",
+  pvc: "Contact for Pricing",
+  gypsum: "Contact for Pricing",
+  commercial: "Contact for Pricing",
 };
 
 export const DEFAULT_LANDING_CONFIG: LandingConfig = {
-  websiteUrl: "https://owais-interior.vercel.app",
+  websiteUrl: "",
   rates: DEFAULT_SERVICE_RATES,
   social: {
     instagram: "",
@@ -115,7 +78,7 @@ export function parseLandingConfig(rawWebsite?: string | null): LandingConfig {
     try {
       const parsed = JSON.parse(trimmed);
       return {
-        websiteUrl: parsed.websiteUrl || parsed.url || "https://owais-interior.vercel.app",
+        websiteUrl: parsed.websiteUrl || parsed.url || "",
         rates: {
           pop: parsed.rates?.pop || DEFAULT_SERVICE_RATES.pop,
           pvc: parsed.rates?.pvc || DEFAULT_SERVICE_RATES.pvc,
@@ -152,14 +115,13 @@ export function getDisplayWebsite(rawWebsite?: string | null): string {
   if (trimmed.startsWith("{")) {
     try {
       const parsed = JSON.parse(trimmed);
-      return parsed.websiteUrl || parsed.url || "https://owais-interior.vercel.app";
+      return parsed.websiteUrl || parsed.url || "";
     } catch {
       return trimmed;
     }
   }
   return trimmed;
 }
-
 
 export type Customer = {
   id: string;
@@ -264,7 +226,9 @@ async function currentUserId(): Promise<string | null> {
 export async function fetchCompany(): Promise<CompanyProfile> {
   const { data, error } = await db
     .from("company_profile")
-    .select("id, name, tagline, address, mobile1, mobile2, email, website, logo_url, stamp_url, signature_url, currency, default_terms")
+    .select(
+      "id, name, tagline, address, mobile1, mobile2, email, website, logo_url, stamp_url, signature_url, currency, default_terms",
+    )
     .limit(1)
     .maybeSingle();
   if (error) throw error;
@@ -298,7 +262,10 @@ export async function fetchMyRole(userId: string): Promise<Role | null> {
 export async function fetchAllUsersAccess(): Promise<UserAccess[]> {
   // Admins can read all profiles and user_roles
   const [{ data: profiles, error: pErr }, { data: roles, error: rErr }] = await Promise.all([
-    db.from("profiles").select("id, full_name, created_at").order("created_at", { ascending: false }),
+    db
+      .from("profiles")
+      .select("id, full_name, created_at")
+      .order("created_at", { ascending: false }),
     db.from("user_roles").select("user_id, role"),
   ]);
 
@@ -320,10 +287,9 @@ export async function fetchAllUsersAccess(): Promise<UserAccess[]> {
 
 export async function grantUserRole(userId: string, role: Role = "employee") {
   // Upsert user role
-  const { error } = await db.from("user_roles").upsert(
-    { user_id: userId, role },
-    { onConflict: "user_id,role" }
-  );
+  const { error } = await db
+    .from("user_roles")
+    .upsert({ user_id: userId, role }, { onConflict: "user_id,role" });
   if (error) throw error;
 }
 
@@ -422,7 +388,7 @@ export async function saveQuotation(doc: Partial<Quotation> & { id?: string }, i
   let id = doc.id;
   const { id: _omit, customers: _c, code: _code, created_at: _ca, ...body } = doc as any;
   if (id) {
-    let { error } = await db.from("quotations").update(body).eq("id", id);
+    const { error } = await db.from("quotations").update(body).eq("id", id);
     if (error && error.message && error.message.includes("column")) {
       // Fallback if show_section_subtotals or show_totals is not yet migrated in postgres
       const { show_section_subtotals: _s, show_totals: _t, ...stripped } = body;
@@ -433,7 +399,8 @@ export async function saveQuotation(doc: Partial<Quotation> & { id?: string }, i
     }
     await db.from("quotation_items").delete().eq("quotation_id", id);
   } else {
-    let { data, error } = await db
+    let createdId: string | null = null;
+    const { data, error } = await db
       .from("quotations")
       .insert({ ...body, created_by: await currentUserId() })
       .select("id")
@@ -446,11 +413,13 @@ export async function saveQuotation(doc: Partial<Quotation> & { id?: string }, i
         .select("id")
         .single();
       if (res.error) throw res.error;
-      data = res.data;
+      createdId = res.data?.id as string;
     } else if (error) {
       throw error;
+    } else {
+      createdId = data?.id as string;
     }
-    id = data.id as string;
+    id = createdId!;
   }
   if (items.length) {
     const rows = items.map((it, i) => ({
@@ -465,7 +434,7 @@ export async function saveQuotation(doc: Partial<Quotation> & { id?: string }, i
       include_in_total: it.include_in_total !== false,
       group_name: it.group_name ?? null,
     }));
-    let { error } = await db.from("quotation_items").insert(rows as any);
+    const { error } = await db.from("quotation_items").insert(rows as any);
     if (error && error.message && error.message.includes("column")) {
       // Fallback if include_in_total or group_name column is missing
       const strippedRows = rows.map(({ include_in_total: _i, group_name: _g, ...rest }) => rest);
@@ -510,7 +479,7 @@ export async function saveInvoice(doc: Partial<Invoice> & { id?: string }, items
   let id = doc.id;
   const { id: _omit, customers: _c, code: _code, created_at: _ca, ...body } = doc as any;
   if (id) {
-    let { error } = await db.from("invoices").update(body).eq("id", id);
+    const { error } = await db.from("invoices").update(body).eq("id", id);
     if (error && error.message && error.message.includes("column")) {
       const { show_section_subtotals: _s, show_totals: _t, ...stripped } = body;
       const res = await db.from("invoices").update(stripped).eq("id", id);
@@ -520,7 +489,8 @@ export async function saveInvoice(doc: Partial<Invoice> & { id?: string }, items
     }
     await db.from("invoice_items").delete().eq("invoice_id", id);
   } else {
-    let { data, error } = await db
+    let createdId: string | null = null;
+    const { data, error } = await db
       .from("invoices")
       .insert({ ...body, created_by: await currentUserId() })
       .select("id")
@@ -533,11 +503,13 @@ export async function saveInvoice(doc: Partial<Invoice> & { id?: string }, items
         .select("id")
         .single();
       if (res.error) throw res.error;
-      data = res.data;
+      createdId = res.data?.id as string;
     } else if (error) {
       throw error;
+    } else {
+      createdId = data?.id as string;
     }
-    id = data.id as string;
+    id = createdId!;
   }
   if (items.length) {
     const rows = items.map((it, i) => ({
@@ -552,7 +524,7 @@ export async function saveInvoice(doc: Partial<Invoice> & { id?: string }, items
       include_in_total: it.include_in_total !== false,
       group_name: it.group_name ?? null,
     }));
-    let { error } = await db.from("invoice_items").insert(rows as any);
+    const { error } = await db.from("invoice_items").insert(rows as any);
     if (error && error.message && error.message.includes("column")) {
       const strippedRows = rows.map(({ include_in_total: _i, group_name: _g, ...rest }) => rest);
       const res = await db.from("invoice_items").insert(strippedRows as any);
@@ -688,15 +660,24 @@ export async function fetchRecentDocs() {
   ]);
   return {
     quotations: (q.data ?? []) as Array<{
-      id: string; code: string; date: string; grand_total: number;
+      id: string;
+      code: string;
+      date: string;
+      grand_total: number;
       customers: { name: string } | null;
     }>,
     invoices: (i.data ?? []) as Array<{
-      id: string; code: string; date: string; grand_total: number;
+      id: string;
+      code: string;
+      date: string;
+      grand_total: number;
       customers: { name: string } | null;
     }>,
     receipts: (r.data ?? []) as Array<{
-      id: string; code: string; date: string; amount_received: number;
+      id: string;
+      code: string;
+      date: string;
+      amount_received: number;
       customers: { name: string } | null;
     }>,
   };
@@ -1012,7 +993,10 @@ export async function deleteStaff(id: string) {
 }
 
 export async function fetchSalaries(monthPrefix?: string): Promise<SalaryPayment[]> {
-  let q = db.from("salary_payments").select("*, staff_members(*)").order("paid_on", { ascending: false });
+  let q = db
+    .from("salary_payments")
+    .select("*, staff_members(*)")
+    .order("paid_on", { ascending: false });
   if (monthPrefix) {
     q = q.like("period", `${monthPrefix}%`);
   }
@@ -1082,7 +1066,10 @@ export async function deleteExpense(id: string) {
 export async function fetchCashflow(monthYYYYMM: string) {
   // 1. Inflow
   const { data: receipts } = await db.from("receipts").select("amount_received");
-  const inflow = (receipts ?? []).reduce((s: number, r: any) => s + Number(r.amount_received || 0), 0);
+  const inflow = (receipts ?? []).reduce(
+    (s: number, r: any) => s + Number(r.amount_received || 0),
+    0,
+  );
 
   // 2. Outflow total
   const { data: allExp } = await db.from("expenses").select("amount");
@@ -1101,15 +1088,27 @@ export async function fetchCashflow(monthYYYYMM: string) {
     .from("salary_payments")
     .select("amount")
     .like("period", `${monthYYYYMM}%`);
-  
-  const thisMonthExpenses = (curExp ?? []).reduce((s: number, x: any) => s + Number(x.amount || 0), 0);
-  const thisMonthSalaries = (curSal ?? []).reduce((s: number, x: any) => s + Number(x.amount || 0), 0);
 
-  const { data: staff } = await db.from("staff_members").select("monthly_salary").eq("active", true);
-  const monthlyPayrollCommitment = (staff ?? []).reduce((s: number, x: any) => s + Number(x.monthly_salary || 0), 0);
+  const thisMonthExpenses = (curExp ?? []).reduce(
+    (s: number, x: any) => s + Number(x.amount || 0),
+    0,
+  );
+  const thisMonthSalaries = (curSal ?? []).reduce(
+    (s: number, x: any) => s + Number(x.amount || 0),
+    0,
+  );
+
+  const { data: staff } = await db
+    .from("staff_members")
+    .select("monthly_salary")
+    .eq("active", true);
+  const monthlyPayrollCommitment = (staff ?? []).reduce(
+    (s: number, x: any) => s + Number(x.monthly_salary || 0),
+    0,
+  );
 
   const categories: Record<string, number> = {};
-  for (const row of (curExp ?? [])) {
+  for (const row of curExp ?? []) {
     categories[row.category] = (categories[row.category] || 0) + Number(row.amount || 0);
   }
 

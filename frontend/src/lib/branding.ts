@@ -1,20 +1,20 @@
-/** Owais brand logo served from public/. (WebP format for ultra-fast load, PNG fallback available) */
-export const DEFAULT_LOGO_URL = "/owais-logo.webp";
+/** Famtima Traders brand logo served from public/. */
+export const DEFAULT_LOGO_URL = "/famtima-logo.webp";
 
-/** Background-removed signature (transparent PNG) served from public/. */
-export const DEFAULT_SIGNATURE_URL = "/owais-signature.png";
+/** Signature image served from public/ (or customized via company profile settings). */
+export const DEFAULT_SIGNATURE_URL = "/famtima-signature.png";
 
 /**
- * Print palette for the A4 documents.
- * Blue + white identity with a teal accent as the third brand colour.
+ * Print palette for A4 documents (Quotations, Invoices, Receipts).
+ * Famtima Traders Dark Forest Green + Gold identity.
  */
 export const DOC = {
-  primary: "#123A70",
+  primary: "#1A4731",
   primaryText: "#FFFFFF",
-  accent: "#0E8F8C",
-  tint: "#EEF4FB",
-  tintAlt: "#F7FAFD",
-  border: "#CBD9EA",
-  text: "#12233A",
-  muted: "#5A6B80",
+  accent: "#C4902A",
+  tint: "#F0F7F2",
+  tintAlt: "#FDFBF7",
+  border: "#C8D7CE",
+  text: "#14241B",
+  muted: "#55685C",
 } as const;

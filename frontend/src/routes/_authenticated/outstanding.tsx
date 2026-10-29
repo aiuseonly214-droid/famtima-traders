@@ -22,13 +22,13 @@ import { statusStyle } from "@/lib/status";
 export const Route = createFileRoute("/_authenticated/outstanding")({
   head: () => ({
     meta: [
-      { title: "Outstanding · Owais Interior Designer CRM" },
+      { title: "Outstanding · Famtima Traders CRM" },
       {
         name: "description",
         content:
           "Customer-wise outstanding balances built from live invoices and recorded payments.",
       },
-      { property: "og:title", content: "Outstanding · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Outstanding · Famtima Traders CRM" },
       {
         property: "og:description",
         content: "Track pending, partially paid and overdue invoices per customer.",

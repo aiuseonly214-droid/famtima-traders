@@ -32,9 +32,9 @@ import { deleteCustomer, fetchCustomers, saveCustomer, type Customer } from "@/l
 export const Route = createFileRoute("/_authenticated/customers")({
   head: () => ({
     meta: [
-      { title: "Customers · Owais Interior Designer CRM" },
-      { name: "description", content: "Add, search and manage interior design customers." },
-      { property: "og:title", content: "Customers · Owais Interior Designer CRM" },
+      { title: "Customers · Famtima Traders CRM" },
+      { name: "description", content: "Add, search and manage customer directory." },
+      { property: "og:title", content: "Customers · Famtima Traders CRM" },
       { property: "og:description", content: "Customer directory for quotations and invoices." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -115,11 +115,21 @@ function CustomersPage() {
                 {isLoading &&
                   Array.from({ length: 5 }).map((_, i) => (
                     <TableRow key={`skeleton-${i}`}>
-                      <TableCell><Skeleton className="h-4 w-14" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-24" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell className="text-right"><Skeleton className="ml-auto h-8 w-16" /></TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-14" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-32" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-24" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell className="text-right">
+                        <Skeleton className="ml-auto h-8 w-16" />
+                      </TableCell>
                     </TableRow>
                   ))}
                 {!isLoading && customers.length === 0 && (

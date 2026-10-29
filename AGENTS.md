@@ -1,6 +1,6 @@
-# Owais Interior Designer CRM — Agent Notes
+# Famtima Traders CRM — Agent Notes
 
-This project is a fully independent TanStack Start (React 19) application.
+This project is a fully independent TanStack Start (React 19) application for **Famtima Traders, Bemetara, Chhattisgarh**.
 It is **not** connected to Lovable or any external editor platform.
 
 ## Dev Workflow

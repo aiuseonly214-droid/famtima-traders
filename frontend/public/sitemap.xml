@@ -2,29 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://owais-interior.vercel.app/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <loc>https://famtima-traders.vercel.app/</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://owais-interior.vercel.app/images/pop-ceiling-nashik.jpg</image:loc>
-      <image:title>POP False Ceiling Design in Nashik - Owais Interior Designer</image:title>
-      <image:caption>Modern POP false ceiling with LED cove lighting designed and installed in Nashik</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://owais-interior.vercel.app/images/pvc-wall-panels-nashik.jpg</image:loc>
-      <image:title>PVC Wall Panels and TV Unit in Nashik - Owais Interior Designer</image:title>
-      <image:caption>Waterproof wooden fluted PVC louvers and marble sheet wall paneling in Nashik</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://owais-interior.vercel.app/images/bedroom-gypsum-ceiling-nashik.jpg</image:loc>
-      <image:title>Master Bedroom Gypsum False Ceiling Nashik</image:title>
-      <image:caption>Minimalist bedroom gypsum ceiling with cove lighting</image:caption>
+      <image:loc>https://famtima-traders.vercel.app/famtima-logo.png</image:loc>
+      <image:title>Famtima Traders - Home Decoration and POP False Ceiling Bemetara</image:title>
+      <image:caption>Home decoration, false ceiling, and PVC wall panels by Famtima Traders Bemetara</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://owais-interior.vercel.app/auth</loc>
-    <lastmod>2026-10-18</lastmod>
+    <loc>https://famtima-traders.vercel.app/auth</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

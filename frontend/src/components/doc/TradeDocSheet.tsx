@@ -2,7 +2,6 @@ import { Fragment, forwardRef } from "react";
 import type { CompanyProfile, Customer, DocItem } from "@/lib/crm";
 import { formatAmount, formatDate } from "@/lib/format";
 import { DocFooter, DocHeader, DocTitleBar, InfoBlock } from "./DocChrome";
-import { DocumentVerificationQR } from "./DocumentVerificationQR";
 import { DOC } from "@/lib/branding";
 
 export type TradeDoc = {
@@ -246,21 +245,7 @@ export const TradeDocSheet = forwardRef<HTMLDivElement, Props>(function TradeDoc
         </div>
       )}
 
-      <DocFooter
-        company={company}
-        verificationQr={
-          doc.id ? (
-            <DocumentVerificationQR
-              type={kind === "QUOTATION" ? "quotation" : "invoice"}
-              id={doc.id}
-              code={doc.code}
-              amount={doc.grand_total}
-              date={doc.date}
-              customerName={customer?.name}
-            />
-          ) : undefined
-        }
-      />
+      <DocFooter company={company} />
     </div>
   );
 });

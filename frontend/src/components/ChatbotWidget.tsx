@@ -43,9 +43,9 @@ const FAQ_KNOWLEDGE_BASE = [
       "sq ft",
       "square feet",
     ],
-    category: "Pricing & Rates",
+    category: "Pricing & Quotation",
     answer:
-      "💰 **Rates & Pricing (Nashik Direct Craftsman Rates):**\n\n• **POP False Ceiling:** ₹85 – ₹130 / sq.ft (Designs, Cove LEDs ke anusaar)\n• **PVC Wall Panels:** Starting from ₹75 / sq.ft (100% Waterproof)\n• **Gypsum Ceiling (Saint-Gobain):** Starting from ₹95 / sq.ft\n• **Commercial / Grid Tiles:** Custom quotes according to area\n\n✨ Free site inspection ke baad hum exact itemized estimate provide karte hain!",
+      "💰 **Rates & Pricing (Famtima Traders):**\n\n• **POP Work / False Ceiling:** Contact for best customized pricing\n• **PVC Wall Panelling:** 100% waterproof louvers & panels at direct rates\n• **Home Decoration & Renovation:** Complete turnkey quotes\n\n✨ Hum site inspection aur measurements ke baad transparent itemized estimate provide karte hain!",
     quickReplies: [
       "Free Site Visit Kaise Book Kare?",
       "POP vs PVC difference kya hai?",
@@ -56,20 +56,16 @@ const FAQ_KNOWLEDGE_BASE = [
     keywords: ["pop", "plaster of paris", "cove", "ceiling", "false ceiling"],
     category: "POP False Ceiling",
     answer:
-      "✨ **POP False Ceiling Services:**\n\nHum high-quality Plaster of Paris false ceiling banate hain with:\n- Designer Cove LED Lighting channels\n- Modern geometric, curved & layered patterns\n- Fan & Chandelier heavy-load reinforcement\n- Ultra-smooth paint finish\n\nNashik ke Wadala, Gangapur Rd, College Rd, Indira Nagar sabhi jagah hamara kaam chalu hai!",
-    quickReplies: [
-      "POP Ceiling ka rate kya hai?",
-      "Kitna time lagta hai?",
-      "Photos / Gallery dekhni hai",
-    ],
+      "✨ **POP Work & False Ceiling Services:**\n\nHum high-quality Plaster of Paris false ceiling banate hain with:\n- Designer Cove LED Lighting channels\n- Modern geometric, curved & layered patterns\n- Heavy-load reinforcement for fans & chandeliers\n- Smooth long-lasting finish\n\nBemetara aur poore Chhattisgarh me hamari expert team available hai!",
+    quickReplies: ["POP Ceiling pricing?", "Kitna time lagta hai?", "Site visit book karein"],
   },
   {
     keywords: ["pvc", "waterproof", "damp", "seelan", "nami", "wall panel", "louver", "louvers"],
     category: "PVC Wall Panels",
     answer:
-      "🛡️ **PVC Wall Panels & Ceiling (100% Waterproof):**\n\nNashik me deewaro ki nami (moisture/seelan) ke liye PVC best solution hai:\n- 100% Waterproof & Termite-Proof (Deemak nahi lagti)\n- 24–48 hours me fast installation\n- No paint smell or dust\n- Woodgrain, Marble finish & Fluted Louvers available!\n\nLiving Room TV units, Bedroom feature walls, aur Kitchen me bohot popular hai.",
+      "🛡️ **PVC Wall Panelling & Ceiling (100% Waterproof):**\n\nDeewaro ki nami (seelan) aur premium look ke liye PVC panels best hain:\n- 100% Waterproof & Termite-Proof (Deemak-mukt)\n- Fast, clean installation in 24–48 hours\n- Wooden grain, marble finish aur fluted louvers\n\nLiving Room TV units, Bedroom feature walls aur shops ke liye perfect!",
     quickReplies: [
-      "PVC ka rate kya hai?",
+      "PVC quotation kaise milegi?",
       "POP vs PVC me kaunsa best hai?",
       "Site visit book karein",
     ],
@@ -78,8 +74,8 @@ const FAQ_KNOWLEDGE_BASE = [
     keywords: ["time", "duration", "din", "kitne din", "how long", "speed"],
     category: "Timeline",
     answer:
-      "⏱️ **Project Completion Timeline:**\n\n• **1BHK Flat:** 3 se 5 working days\n• **2BHK Flat:** 5 se 8 working days\n• **3BHK / Bungalow:** 8 se 14 working days\n• **PVC Wall Paneling (Single Wall):** Sirf 1 din (24-48 ghante)\n\nHamari experienced craftsmen team bina delay ke timeline par kaam pura karti hai.",
-    quickReplies: ["Rates kya hain?", "Free Site Visit Kaise Book Kare?"],
+      "⏱️ **Project Completion Timeline:**\n\n• **1BHK / Hall:** 3 se 5 working days\n• **2BHK / 3BHK Home:** 6 se 12 working days\n• **PVC Wall Panelling:** 1-2 din me complete\n\nHamari experienced team committed timeline par work deliver karti hai.",
+    quickReplies: ["Get a Quote", "Free Site Visit Kaise Book Kare?"],
   },
   {
     keywords: [
@@ -93,13 +89,13 @@ const FAQ_KNOWLEDGE_BASE = [
       "quote",
       "book",
     ],
-    category: "Free Site Visit",
+    category: "Site Visit & Quotation",
     answer:
-      "📐 **Free Site Visit & Measurement in Nashik:**\n\nHanji! Owais Interior Designer Nashik me kisi bhi area me **100% FREE Site Visit & Measurement** provide karta hai.\n\nHum actual material samples lekar aapke ghar/site par aate hain aur exact measurement karke instant estimate dete hain.",
-    quickReplies: ["WhatsApp par book karein", "Call karke book karein", "Rates check karein"],
+      "📐 **Site Visit & Measurement in Bemetara & Chhattisgarh:**\n\nFamtima Traders Bemetara aur surrounding areas me prompt Site Visit & Measurement provide karta hai.\n\nHum actual material designs ke sath aapki site par aakar exact measurement aur estimate dete hain.",
+    quickReplies: ["WhatsApp par quote lein", "Call karke book karein"],
     actionLink: {
-      label: "📲 WhatsApp par Book Karein",
-      href: "https://wa.me/917756043214?text=Hi%20Owais%20Interior,%20mujhe%20free%20site%20visit%20aur%20estimate%20chahiye",
+      label: "📲 WhatsApp par Contact Karein",
+      href: "https://wa.me/917860854662?text=Hi%20Famtima%20Traders,%20mujhe%20site%20visit%20aur%20quotation%20chahiye",
       isExternal: true,
     },
   },
@@ -110,45 +106,46 @@ const FAQ_KNOWLEDGE_BASE = [
       "kaha",
       "where",
       "service area",
-      "nashik",
-      "wadala",
-      "indira nagar",
-      "gangapur",
-      "panchavati",
+      "bemetara",
+      "krishna vihar",
+      "chhattisgarh",
+      "raipur",
+      "durg",
+      "bhilai",
     ],
     category: "Service Areas",
     answer:
-      "📍 **Service Locations (Across Entire Nashik):**\n\nHum poore Nashik me services dete hain:\n• Wadala Naka & Rahmat Nagar\n• Gangapur Road & College Road\n• Indira Nagar & Govind Nagar\n• Panchavati & Nashik Road\n• Pathardi Phata, Ambad MIDC & Satpur MIDC\n• Deolali Camp & Dwarka\n\nNashik me kahin bhi ho, free visit available hai!",
-    quickReplies: ["Site visit book karein", "POP ceiling rate?", "Direct Contact Number"],
+      "📍 **Service Locations (Bemetara & Across Chhattisgarh):**\n\nHum Bemetara town aur poore Chhattisgarh me services provide karte hain:\n• Krishna Vihar & Bemetara City\n• Durg, Bhilai & Raipur\n• Bilaspur & Rajnandgaon\n• Kawardha (Kabirdham), Mungeli, Saja, Simga & nearby towns",
+    quickReplies: ["Site visit book karein", "Contact details", "WhatsApp Quote"],
   },
   {
     keywords: ["contact", "phone", "mobile", "number", "call", "whatsapp", "address", "office"],
     category: "Contact Info",
     answer:
-      "📞 **Owais Interior Designer Contact Details:**\n\n• **Founder/Contractor:** Owais Interior\n• **Primary Phone:** [+91 7756043214](tel:+917756043214)\n• **Alternate Phone:** [+91 7721926290](tel:+917721926290)\n• **Address:** Rahmat Nagar, Wadala, Nashik, Maharashtra 422006\n• **Hours:** 9:00 AM – 8:30 PM (Everyday Open)\n\nAap directly call ya WhatsApp message kar sakte hain!",
-    quickReplies: ["WhatsApp Message Karein", "POP Ceiling Rates", "Free Site Visit"],
+      "📞 **Famtima Traders Contact Details:**\n\n• **Proprietor:** Anwar Khan\n• **Primary Phone / WhatsApp:** [+91 7860854662](tel:+917860854662)\n• **Alternate Phone:** [+91 9265012186](tel:+919265012186)\n• **Email:** anwaarrza850@gmail.com\n• **Address:** Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh, PIN 491335, India\n• **Hours:** 9:00 AM – 8:00 PM (Monday to Sunday)",
+    quickReplies: ["WhatsApp Message Karein", "Get a Quote", "Book Site Visit"],
     actionLink: {
-      label: "📞 Call +91 7756043214",
-      href: "tel:+917756043214",
+      label: "📞 Call +91 7860854662",
+      href: "tel:+917860854662",
     },
   },
   {
-    keywords: ["qr", "verify", "verification", "bill", "invoice", "receipt", "fake", "original"],
-    category: "Authenticity & QR Code",
+    keywords: ["bill", "invoice", "receipt", "fake", "original", "pukka", "rate"],
+    category: "Official Billing & Invoices",
     answer:
-      "🛡️ **Digital Verification & Security:**\n\nOwais Interior Designer ki taraf se issue hone wale har quotation, invoice aur payment receipt par official **QR Code** hota hai.\n\nAap kisi bhi phone camera se scan karke digital portal par document ki authenticity verify kar sakte hain. Zero fraud guarantee!",
-    quickReplies: ["Rates dekhein", "Contact details", "Free site visit"],
+      "🛡️ **Official Billing & Transparency:**\n\nFamtima Traders ke official quotations, bills aur receipts transparent itemized format mein provide kiye jaate hain jisme material specifications aur crystal-clear pricing hoti hai.",
+    quickReplies: ["Contact details", "Free site visit"],
   },
 ];
 
 const INITIAL_QUICK_REPLIES = [
-  "Rates & Pricing kya hai?",
+  "Get a Quote / Pricing",
   "Free Site Visit kaise book kare?",
   "POP vs PVC difference kya hai?",
   "Contact / Phone number?",
 ];
 
-export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProps) {
+export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -156,7 +153,7 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
     {
       id: "welcome-1",
       sender: "bot",
-      text: "👋 Namaste! Welcome to **Owais Interior Designer Nashik**.\n\nMain aapka virtual assistant hoon. POP False Ceiling, PVC Wall Panels, Pricing, ya Nashik me Free Site Visit ke baare me koi bhi doubt ho, aap yahan puch sakte hain!",
+      text: "👋 Namaste! Welcome to **Famtima Traders, Bemetara**.\n\nMain aapka virtual assistant hoon. Home Decoration, POP False Ceiling, PVC Wall Panelling, ya Chhattisgarh me Site Visit ke baare me koi bhi sawal ho, aap yahan puch sakte hain!",
       time: getCurrentTime(),
       quickReplies: INITIAL_QUICK_REPLIES,
     },
@@ -203,7 +200,7 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
     if (/^(hi|hello|hey|namaste|salaam|assalam|pranam|ram ram)/i.test(query)) {
       return {
         answer:
-          "Hello! Kaise hain aap? Owais Interior Designer me aapka swagat hai. POP False Ceiling, PVC wall panels, ya free site inspection ke baare me aap kya janna chahte hain?",
+          "Hello! Kaise hain aap? Famtima Traders me aapka swagat hai. POP False Ceiling, PVC wall panelling, ya site inspection ke baare me aap kya janna chahte hain?",
         quickReplies: INITIAL_QUICK_REPLIES,
       };
     }
@@ -213,7 +210,7 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
       return {
         answer:
           "Aapka swagat hai! Agar koi aur sawal ho ya site visit book karni ho, toh batayein. Have a great day! 😊",
-        quickReplies: ["Free Site Visit Book Karein", "Call Owais Interior"],
+        quickReplies: ["Free Site Visit Book Karein", "Call Famtima Traders"],
       };
     }
 
@@ -253,7 +250,7 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
       ],
       actionLink: {
         label: `📲 WhatsApp (+91 ${companyPhone})`,
-        href: `https://wa.me/91${companyPhone}?text=Hi%20Owais%20Interior,%20mujhe%20ek%20inquiry%20karni%20hai:%20${encodeURIComponent(userQuery)}`,
+        href: `https://wa.me/91${companyPhone}?text=Hi%20Famtima%20Traders,%20mujhe%20ek%20inquiry%20karni%20hai:%20${encodeURIComponent(userQuery)}`,
         isExternal: true,
       },
     };
@@ -316,10 +313,10 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close AI Chatbot" : "Open AI Chatbot"}
-          className={`group relative flex size-12 sm:size-14 items-center justify-center rounded-full shadow-2xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-400 ${
+          className={`group relative flex size-12 sm:size-14 items-center justify-center rounded-full shadow-2xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-emerald-400 ${
             isOpen
               ? "bg-slate-900 text-white hover:bg-slate-800 rotate-90"
-              : "bg-gradient-to-tr from-blue-700 via-blue-600 to-indigo-600 text-white hover:scale-105 hover:shadow-blue-500/50"
+              : "bg-gradient-to-tr from-emerald-800 via-emerald-700 to-amber-600 text-white hover:scale-105 hover:shadow-emerald-600/50"
           }`}
         >
           {isOpen ? (
@@ -342,21 +339,22 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
       {isOpen && (
         <div className="fixed bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:bottom-24 right-2 sm:right-6 left-2 sm:left-auto z-50 flex w-[calc(100vw-1rem)] sm:w-[400px] max-w-[420px] h-[min(540px,calc(100dvh-6.5rem-env(safe-area-inset-top,0px)-env(safe-area-inset-bottom,0px)))] max-h-[calc(100dvh-6.5rem)] flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-2xl transition-all animate-in fade-in slide-in-from-bottom-5 duration-200">
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-blue-800 bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 px-4 py-3 text-white">
+          <div className="flex items-center justify-between border-b border-emerald-800 bg-gradient-to-r from-emerald-950 via-emerald-800 to-teal-900 px-4 py-3 text-white">
             <div className="flex items-center gap-3">
-              <div className="relative flex size-10 items-center justify-center rounded-full bg-blue-700/80 ring-2 ring-blue-400/50">
+              <div className="relative flex size-10 items-center justify-center rounded-full bg-emerald-700/80 ring-2 ring-amber-400/50">
                 <Bot className="size-5 text-amber-300" />
-                <span className="absolute bottom-0 right-0 size-2.5 rounded-full bg-emerald-400 ring-2 ring-blue-900" />
+                <span className="absolute bottom-0 right-0 size-2.5 rounded-full bg-emerald-400 ring-2 ring-emerald-950" />
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <h3 className="font-bold text-sm tracking-tight">Owais Interior AI</h3>
+                  <h3 className="font-bold text-sm tracking-tight">Famtima Traders AI</h3>
                   <span className="rounded-full bg-amber-400/20 px-1.5 py-0.2 text-[10px] font-bold text-amber-300">
-                    Nashik
+                    Bemetara
                   </span>
                 </div>
-                <p className="text-[11px] text-blue-200 flex items-center gap-1">
-                  <span className="size-1.5 rounded-full bg-emerald-400" /> Online • 24/7 Assistance
+                <p className="text-[11px] text-emerald-200 flex items-center gap-1">
+                  <span className="size-1.5 rounded-full bg-emerald-400" /> Online • Home Decor
+                  Assistant
                 </p>
               </div>
             </div>
@@ -365,13 +363,13 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
               <button
                 onClick={handleReset}
                 title="Restart Chat"
-                className="rounded-lg p-1.5 text-blue-200 hover:bg-blue-700/50 hover:text-white transition-colors"
+                className="rounded-lg p-1.5 text-emerald-200 hover:bg-emerald-700/50 hover:text-white transition-colors"
               >
                 <RotateCcw className="size-4" />
               </button>
               <button
                 onClick={() => setIsOpen(false)}
-                className="rounded-lg p-1.5 text-blue-200 hover:bg-blue-700/50 hover:text-white transition-colors"
+                className="rounded-lg p-1.5 text-emerald-200 hover:bg-emerald-700/50 hover:text-white transition-colors"
               >
                 <X className="size-4" />
               </button>
@@ -379,13 +377,13 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
           </div>
 
           {/* Quick Info Bar */}
-          <div className="bg-blue-50/80 px-3 py-1.5 border-b border-blue-100 flex items-center justify-between text-[11px] text-blue-900">
+          <div className="bg-emerald-50/80 px-3 py-1.5 border-b border-emerald-100 flex items-center justify-between text-[11px] text-emerald-950">
             <span className="flex items-center gap-1 font-medium">
-              <Sparkles className="size-3 text-amber-600" /> Free Site Inspection in Nashik
+              <Sparkles className="size-3 text-amber-600" /> Home Decor &amp; Panelling Experts
             </span>
             <a
               href={`tel:+91${companyPhone}`}
-              className="flex items-center gap-1 font-bold text-blue-700 hover:underline"
+              className="flex items-center gap-1 font-bold text-emerald-800 hover:underline"
             >
               <Phone className="size-3" /> Call: {companyPhone}
             </a>
@@ -406,8 +404,8 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
                   <div
                     className={`flex size-6 shrink-0 items-center justify-center rounded-full text-[10px] font-bold ${
                       msg.sender === "user"
-                        ? "bg-blue-600 text-white"
-                        : "bg-blue-900 text-amber-300"
+                        ? "bg-emerald-700 text-white"
+                        : "bg-emerald-950 text-amber-300"
                     }`}
                   >
                     {msg.sender === "user" ? (
@@ -420,7 +418,7 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
                   <div
                     className={`rounded-2xl px-3.5 py-2.5 text-xs shadow-xs leading-relaxed ${
                       msg.sender === "user"
-                        ? "bg-blue-600 text-white rounded-br-xs whitespace-pre-wrap"
+                        ? "bg-emerald-700 text-white rounded-br-xs whitespace-pre-wrap"
                         : "bg-white text-slate-800 border border-slate-200/90 rounded-bl-xs"
                     }`}
                   >
@@ -451,10 +449,10 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
                       <button
                         key={idx}
                         onClick={() => handleSend(reply)}
-                        className="rounded-full border border-blue-200 bg-blue-50/70 hover:bg-blue-100 px-2.5 py-1 text-[11px] font-medium text-blue-700 transition-colors shadow-2xs flex items-center gap-1"
+                        className="rounded-full border border-emerald-200 bg-emerald-50/70 hover:bg-emerald-100 px-2.5 py-1 text-[11px] font-medium text-emerald-800 transition-colors shadow-2xs flex items-center gap-1"
                       >
                         {reply}
-                        <ChevronRight className="size-3 text-blue-400" />
+                        <ChevronRight className="size-3 text-emerald-600" />
                       </button>
                     ))}
                   </div>
@@ -464,8 +462,8 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
 
             {isTyping && (
               <div className="flex items-center gap-2 text-slate-400 text-xs pl-2">
-                <Bot className="size-4 text-blue-600 animate-spin" />
-                <span className="animate-pulse">Owais AI soch raha hai...</span>
+                <Bot className="size-4 text-emerald-600 animate-spin" />
+                <span className="animate-pulse">Famtima AI soch raha hai...</span>
               </div>
             )}
 
@@ -484,13 +482,13 @@ export function ChatbotWidget({ companyPhone = "7756043214" }: ChatbotWidgetProp
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="POP rate, PVC panels, ya koi doubt puche..."
-              className="flex-1 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-800 placeholder-slate-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+              placeholder="POP work, PVC panelling, ya koi sawal puchein..."
+              className="flex-1 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-800 placeholder-slate-400 focus:border-emerald-600 focus:bg-white focus:outline-none focus:ring-1 focus:ring-emerald-600"
             />
             <button
               type="submit"
               disabled={!input.trim()}
-              className="flex size-9 items-center justify-center rounded-xl bg-blue-600 text-white disabled:opacity-40 hover:bg-blue-700 transition-colors shadow-xs"
+              className="flex size-9 items-center justify-center rounded-xl bg-emerald-700 text-white disabled:opacity-40 hover:bg-emerald-800 transition-colors shadow-xs"
             >
               <Send className="size-4" />
             </button>

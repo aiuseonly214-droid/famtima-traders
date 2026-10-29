@@ -68,15 +68,16 @@ export const INQUIRY_STATUS = [
 ] as const;
 
 export const SERVICES = [
+  "Home Decoration",
+  "POP Work / False Ceiling",
+  "PVC Wall Panelling",
+  "Renovation & Remodelling",
+  "Painting & Wall Finishing",
+  "Flooring Work",
+  "Electrical & Lighting",
+  "Gypsum Board Ceiling",
+  "Wallpaper & Wall Cladding",
+  "Modular Kitchen & Wardrobe",
   "Interior Design",
-  "False Ceiling",
-  "POP Work",
-  "Modular Kitchen",
-  "Wardrobe",
-  "Furniture",
-  "Painting",
-  "Flooring",
-  "Electrical",
-  "Renovation",
   "Other",
 ] as const;

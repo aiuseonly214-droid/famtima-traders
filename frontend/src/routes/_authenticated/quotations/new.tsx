@@ -5,9 +5,9 @@ import { DocForm } from "@/components/doc/DocForm";
 export const Route = createFileRoute("/_authenticated/quotations/new")({
   head: () => ({
     meta: [
-      { title: "New quotation · Owais Interior Designer CRM" },
-      { name: "description", content: "Build a new interior design quotation with live totals." },
-      { property: "og:title", content: "New quotation · Owais Interior Designer CRM" },
+      { title: "New quotation · Famtima Traders CRM" },
+      { name: "description", content: "Build a new quotation with live totals." },
+      { property: "og:title", content: "New quotation · Famtima Traders CRM" },
       { property: "og:description", content: "Line items, discount and amount in words." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

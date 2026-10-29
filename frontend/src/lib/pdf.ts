@@ -68,10 +68,7 @@ async function waitForPaint(el: HTMLElement) {
       setTimeout(res, 1500); // 1.5s timeout per image fallback
     });
   });
-  await Promise.race([
-    Promise.all(imgPromises),
-    new Promise((res) => setTimeout(res, 2500)),
-  ]);
+  await Promise.race([Promise.all(imgPromises), new Promise((res) => setTimeout(res, 2500))]);
   await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r(null))));
 }
 

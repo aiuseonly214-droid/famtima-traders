@@ -1,25 +1,25 @@
 # Product Requirements Document (PRD)
 
-## Project: Owais Interior Designer CRM, ERP & Public Marketing Platform
+## Project: Famtima Traders CRM, ERP & Public Marketing Platform
 **Document Version:** 2.2.0  
 **Status:** Approved & Implemented  
-**Owner:** Owais Interior Designer, Nashik  
+**Owner:** Anwar Khan (Famtima Traders, Bemetara, Chhattisgarh)  
 **Target Platform:** Cross-Platform Responsive Web Application (Desktop, Tablet, Mobile)  
-**Live Production URL:** [owais-interior.vercel.app](https://owais-interior.vercel.app)
+**Live Production URL:** [famtima-traders.vercel.app](https://famtima-traders.vercel.app)
 
 ---
 
 ## 1. Executive Summary & Objectives
 
 ### 1.1 Purpose
-Owais Interior Designer is an interior contracting and design firm operating in Nashik, Maharashtra. This platform automates and unifies the end-to-end commercial and public presence:
-1. **Public Marketing & Lead Generation**: High-converting, bilingual (English & Hindi) responsive web portal with interactive customer rating modals (Google & Justdial), rate guides, uncropped real project portfolios, and instant estimate calculators.
-2. **Back-Office CRM & ERP**: Multi-gateway authentication, lead management, section-grouped quotations with optional proposal items, invoice billing, multi-mode receipt tracking, FIFO-based debt settlement, employee payroll, expense tracking, real-time cashflow analytics, and public QR-based document authenticity verification.
+Famtima Traders is a premier interior decoration, false ceiling, and renovation firm operating in Bemetara and across Chhattisgarh. This platform automates and unifies the end-to-end commercial and public presence:
+1. **Public Marketing & Lead Generation**: High-converting, bilingual (English & Hindi) responsive web portal with streamlined UI/UX, service catalogs, showcase portfolios, and instant WhatsApp estimate calculators.
+2. **Back-Office CRM & ERP**: Multi-gateway authentication, lead management, section-grouped quotations with optional proposal items, invoice billing, multi-mode receipt tracking, FIFO-based debt settlement, employee payroll, expense tracking, real-time cashflow analytics.
 
 ### 1.2 Core Business Objectives
-* **Regional Audience Reach & Clarity:** Provide an intuitive English / हिंदी toggle allowing local clients across Nashik to understand services, materials, and pricing without friction.
+* **Regional Audience Reach & Clarity:** Provide an intuitive English / हिंदी toggle allowing local clients across Bemetara and Chhattisgarh to understand services, materials, and pricing without friction.
 * **Eliminate Estimating & Calculation Errors:** Dynamic calculators for line items, room/section-based subtotals, and optional proposals.
-* **Establish Digital Trust & Social Proof:** Interactive modal showcasing genuine Google and Justdial ratings with customer reviews, alongside tamper-proof QR codes on all issued PDFs.
+* **Establish Digital Trust & Social Proof:** Professional itemized PDFs with official company seal, authorized signature, and direct WhatsApp connectivity.
 * **Streamline Revenue & Cashflow Tracking:** Real-time visibility into customer receivables, operational expenses, staff payroll commitments, and net cashflow.
 
 ---
@@ -28,7 +28,7 @@ Owais Interior Designer is an interior contracting and design firm operating in 
 
 ```mermaid
 mindmap
-  root((Owais CRM & Platform))
+  root((Famtima Traders Platform))
     Public Discovery & Lead Generation
       Responsive Multi-Device Layout
         Mobile Bottom Fixed Quick Bar
@@ -37,20 +37,18 @@ mindmap
       Bilingual Localization
         English Mode
         Hindi Mode (हिंदी)
-      Interactive Social Proof Modal
-        4.9 Customer Rating Trigger
-        Google Reviews 4.9 Direct Link
-        Justdial Verified 4.7 Direct Link
-        Top 3 Genuine Customer Reviews
+      Trust & Verification
+        Customer Reviews Modal
+        Digital Document Verification Gateway
       Services & Pricing
-        POP False Ceiling
-        100% Waterproof PVC Wall Panels
-        Gypsum Board False Ceiling
-        Commercial Grid Ceilings
+        Home Decoration & Styling
+        POP False Ceiling Work
+        100% Waterproof PVC Wall Panelling
+        Complete Renovation & Remodelling
     User Roles & Security
       Admin Full clearance, company identity & settings
       Employee Operational clearance
-      Anonymous Public QR verification & landing
+      Public discovery landing page & inquiry form
       Row-Level Security RLS
     Lead & Customer Operations
       Inquiry Pipeline Walk-in / Call / Social / Web
@@ -68,6 +66,7 @@ mindmap
         Multi-Mode Cash / UPI / Bank
         Amount in Words Auto-Generator
       High-Resolution A4 PDF & Print Engine
+        Famtima Traders Dark Forest Green & Gold Palette
         Stamp Watermark
         Signature
         Verification QR
@@ -89,7 +88,7 @@ mindmap
 | Feature / Module | Administrator | Employee / Staff | Public Visitor / Verifier |
 |---|:---:|:---:|:---:|
 | **Public Landing Page & Language Toggle** | Full Access | Full Access | Full Access |
-| **Interactive Rating & Reviews Modal** | Full Access | Full Access | Full Access |
+| **Reviews & Customer Feedback Modal** | Full Access | Full Access | Full Access |
 | **Authentication & Password Recovery** | Full Access | Full Access | No Auth Required |
 | **Executive Dashboard & KPIs** | Full Access | Full Access | Restricted |
 | **Inquiries & Lead Pipeline** | Full Access | Full Access | Restricted |
@@ -101,7 +100,6 @@ mindmap
 | **Staff Directory & Monthly Payroll** | Full Access | Full Access | Restricted |
 | **Company Expenses & Cashflow** | Full Access | Full Access | Restricted |
 | **Company Profile, Logo, Stamp & Signature** | Full Access | View Only / Blocked | Restricted |
-| **Public QR Verification Page (`/verify/*`)** | Accessible | Accessible | Full Read-Only Access |
 
 ---
 
@@ -116,14 +114,10 @@ mindmap
 * **Bilingual Toggle (English & हिंदी)**:
   * Two buttons in the top announcement bar and mobile drawer.
   * Translates hero titles, value propositions, trust metrics, service descriptions, form placeholders, and FAQs.
-* **Interactive Customer Rating Modal**:
-  * Clicking the "4.9 ★ Customer Rating" badge opens a dark-blue glassmorphic modal.
-  * Side-by-side platform summary cards:
-    * Google Reviews (4.9 ★ / Owais Interior Designer, Nashik) linking to Google Maps.
-    * Justdial Profile (4.7 ★ / 43 Ratings) linking to Justdial.
-  * Displays top 3 genuine customer testimonials directly in the modal (Bilal Khan, Shradhal Kumavat, Ahmed).
-* **Uncropped Completed Project Showcase**:
-  * Photo cards display real finished projects with non-obscuring badge overlays, clear descriptions, and location tags.
+* **Customer Reviews Section**:
+  * Clean, honest presentation without fabricated reviews, ready for genuine customer testimonials.
+* **Project Showcase**:
+  * Photo cards displaying completed jobs across Bemetara and Chhattisgarh with direct WhatsApp inquiry triggers.
 
 ### FR-02: Authentication, Authorization & Security
 * **Multi-Gateway Login:** Separate dedicated interfaces for Admin (`/admin-login`) and Employees (`/employee-login`).
@@ -133,7 +127,7 @@ mindmap
 
 ### FR-03: Lead & Inquiry Pipeline
 * **Source Attribution:** Log leads tagged with channels: *Walk-in*, *Phone Call*, *WhatsApp*, *Instagram*, *Website*, or *Referral*.
-* **Service Classification:** Categorize inquiries by work scope: *POP False Ceiling*, *PVC Wall Panels*, *Gypsum False Ceiling*, *Commercial & Grid*, or *Turnkey Renovation*.
+* **Service Classification:** Categorize inquiries by work scope: *Home Decoration*, *POP False Ceiling*, *PVC Wall Panelling*, or *Renovation*.
 * **Status Lifecycle:** `New` &rarr; `Contacted` &rarr; `Quoted` &rarr; `Won` / `Lost`.
 * **Lead Conversion:** Instant one-click action to create a permanent customer record in the Customer Directory from an inquiry.
 
@@ -146,7 +140,7 @@ mindmap
 ### FR-05: Advanced Quotation & Proposal Engine
 * **Identifier Format:** `QT-YYYY-XXXX` (e.g., `QT-2026-0001`).
 * **Section Grouping & Subtotals:**
-  * Group items into named zones/rooms (e.g. *"Living Room"*, *"Kitchen"*, *"False Ceiling"*).
+  * Group items into named zones/rooms (e.g. *"Living Room"*, *"Master Bedroom"*, *"False Ceiling"*).
   * Automatically compute and display subtotal sums per section.
   * Toggable display option (`show_section_subtotals`) to hide or display section subtotals on the final printed sheet.
 * **Optional Proposal Items (`include_in_total`):**
@@ -154,11 +148,11 @@ mindmap
   * Marked with an `OPTION` badge on print sheets; excluded from the mathematical grand total.
 * **Totals Visibility Toggle (`show_totals`):**
   * Allows generating itemized scope-of-work documentation without revealing financial grand totals.
-* **Discounting & Non-GST Calculation:**
+* **Discounting & Standard Trade Calculation:**
   * Percentage discount support with real-time numeric grand total recalculation.
 * **A4 Print & PDF Rendering:**
   * High-resolution DOM-to-PDF rendering (`html2canvas-pro` + `jspdf`) formatted to 210mm x 297mm standard.
-  * Company logo header, teal decorative rules, watermarked company seal/stamp, authorized signature block, and QR code.
+  * Famtima Traders Dark Forest Green (`#1A4731`) and Warm Gold (`#C4902A`) palette, company logo header, watermarked company seal/stamp, and authorized signature block.
 
 ### FR-06: Invoicing & Billing
 * **Identifier Format:** `INV-YYYY-XXXX` (e.g., `INV-2026-0001`).
@@ -188,8 +182,8 @@ mindmap
   * Net Cash in Hand (`Inflow - Outflow`).
   * Current Month Burn Rate.
 
-### FR-11: Public Document Verification & QR Codes
-* **High-Density QR Embedding:** Dynamic QR code generated on all PDF and printed sheets linking to `/verify/:type/:id`.
+### FR-11: Professional Document Presentation & PDF Export
+* **High-Fidelity Document Sheets:** Pixel-perfect printable sheets for quotations, tax invoices, and payment receipts.
 * **Public Verifier Portal:** Displays verified digital metadata, timestamps, authentic customer names, and tamper-proof verification badges without requiring login credentials.
 
 ---
@@ -210,9 +204,9 @@ mindmap
 ```
 
 ### 5.2 Brand Identity & Theme
-* **Primary / Header**: Deep Royal Blue (`#1D4ED8` / `#1E40AF`)
-* **Accents**: Emerald (`#059669`) & Amber (`#D97706`)
-* **Surfaces**: Crisp White (`#FFFFFF`) with Soft Slate (`#F8FAFC`)
+* **Primary / Header**: Dark Forest Green (`#1A4731`)
+* **Accents**: Warm Gold (`#C4902A`)
+* **Surfaces**: Crisp White (`#FFFFFF`) with Pale Mint (`#F0F7F2`)
 
 ---
 
@@ -223,17 +217,15 @@ mindmap
 * Invoices, Receipts, Outstanding FIFO Debt Recovery.
 * Staff Directory & Monthly Salary Logging.
 * Operational Expenses & Real-time Lifetime Cashflow Analytics.
-* QR Code generation & Public Document Verification Portal.
 * Full UI/UX status color overhaul and query performance optimization.
 
 ### Phase 2 (Completed & Deployed ✅)
 * Public Landing Page with responsive Desktop, Tablet, and Mobile layouts.
 * Elimination of mobile page wobble and addition of fixed bottom quick-action bar.
 * Bilingual localization (English & हिंदी) with instant toggle buttons.
-* Interactive Customer Rating Modal featuring Google Reviews, Justdial, and top 3 genuine customer testimonials.
-* Uncropped photo display for real completed projects in Nashik.
+* Streamlined UI/UX content across all landing sections for optimal user engagement.
+* Clean review section ready for verified customer ratings.
 
 ### Phase 3 (Planned Next Steps 🚀)
 * Automated WhatsApp notification engine for quotes and payment receipts.
-* Multi-currency support for cross-border projects.
 * Customer project progress milestone tracking with live site photos.

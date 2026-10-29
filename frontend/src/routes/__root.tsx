@@ -72,43 +72,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Best PVC Ceiling & Interior Designer in Nashik | Owais Interior" },
+      { title: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara, CG" },
       {
         name: "description",
         content:
-          "Looking for expert PVC ceiling, false ceiling and interior design work in Nashik? Contact Owais Interior Designer for best POP false ceiling, waterproof PVC wall panels, gypsum ceiling & modular home decor. Call +91 7756043214 for free site estimate.",
+          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh. Contact +91 7860854662 for quotation.",
       },
       {
         name: "keywords",
         content:
-          "best pvc ceiling in nashik, pvc ceiling nashik, interior designer in nashik, best interior designer nashik, pop false ceiling nashik, false ceiling contractor nashik, pvc wall panel nashik, gypsum false ceiling nashik, pvc ceiling design, pop design for hall nashik, home interior decorator nashik, false ceiling rates in nashik, owais interior nashik, owais interior, owaisinterior, nashikpop, wadala nashik interior",
+          "famtima traders, famtima traders bemetara, home decoration bemetara, pop work bemetara, pvc wall panelling bemetara, false ceiling chhattisgarh, renovation contractor bemetara, interior services chhattisgarh, krishna vihar bemetara, pop ceiling durg raipur",
       },
-      { name: "author", content: "Owais Interior Designer" },
-      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
-      { property: "og:site_name", content: "Owais Interior Designer" },
+      { name: "author", content: "Famtima Traders" },
+      {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
+      { property: "og:site_name", content: "Famtima Traders" },
       {
         property: "og:title",
-        content: "Best PVC Ceiling & Interior Designer in Nashik | Owais Interior",
+        content: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara",
       },
       {
         property: "og:description",
         content:
-          "Expert PVC false ceiling, POP designer ceilings, and interior design work in Nashik. Affordable and stylish home decor by Owais Interior Designer.",
+          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Contact +91 7860854662.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
-      { property: "og:image", content: "/images/pop-ceiling-nashik.jpg" },
+      { property: "og:image", content: "/famtima-logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Best PVC Ceiling & Interior Designer in Nashik | Owais Interior",
+        content: "Famtima Traders | Home Decoration & Renovation in Bemetara",
       },
       {
         name: "twitter:description",
         content:
-          "Looking for expert PVC ceiling, false ceiling & interior design work in Nashik? Call +91 7756043214 for free site estimate.",
+          "Bemetara's trusted home decoration, POP work, PVC wall panelling & renovation. Call +91 7860854662.",
       },
-      { name: "twitter:image", content: "/images/pop-ceiling-nashik.jpg" },
+      { name: "twitter:image", content: "/famtima-logo.png" },
     ],
     links: [
       {
@@ -147,7 +150,7 @@ function RootComponent() {
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
       <Toaster richColors position="top-right" />
-      <ChatbotWidget companyPhone="7756043214" />
+      <ChatbotWidget companyPhone="7860854662" />
     </QueryClientProvider>
   );
 }

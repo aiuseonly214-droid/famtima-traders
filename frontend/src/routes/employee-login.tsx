@@ -15,7 +15,7 @@ import { fetchCompany } from "@/lib/crm";
 export const Route = createFileRoute("/employee-login")({
   ssr: false,
   head: () => ({
-    meta: [{ title: "Employee Portal · Owais Interior Designer CRM" }],
+    meta: [{ title: "Employee Portal · Famtima Traders CRM" }],
   }),
   component: EmployeeLoginPage,
 });
@@ -121,12 +121,12 @@ function EmployeeLoginPage() {
         <div className="mb-6 flex flex-col items-center text-center">
           <img
             src={logoUrl}
-            alt="Owais Interior Designer logo"
-            className="mb-3 size-24 rounded-full bg-white object-contain p-1 border-2 border-blue-500/20 shadow-md"
+            alt="Famtima Traders logo"
+            className="mb-3 size-24 rounded-full bg-white object-contain p-1 border-2 border-emerald-500/20 shadow-md"
           />
           <h1 className="font-display text-2xl text-sidebar-primary">Employee Portal</h1>
           <p className="text-xs uppercase tracking-[0.22em] text-sidebar-foreground/70">
-            Owais Interior Designer
+            Famtima Traders
           </p>
         </div>
 

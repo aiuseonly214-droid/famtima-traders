@@ -34,4 +34,4 @@ Disallow: /expenses
 Disallow: /payroll
 Disallow: /settings
 
-Sitemap: https://owais-interior.vercel.app/sitemap.xml
+Sitemap: https://famtima-traders.vercel.app/sitemap.xml

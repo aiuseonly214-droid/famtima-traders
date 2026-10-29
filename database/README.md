@@ -1,6 +1,6 @@
 # Database & Migration Setup
 
-This folder holds all database schemas, table definitions, and migrations for the Owais Interior Designer CRM.
+This folder holds all database schemas, table definitions, and migrations for the Famtima Traders CRM.
 
 ## Directory Structure
 - `migrations/` : Supabase / PostgreSQL SQL migration files containing table creations, indexes, RLS policies, and triggers.
@@ -9,14 +9,6 @@ This folder holds all database schemas, table definitions, and migrations for th
 - `config.toml` : Local Supabase CLI configuration.
 
 ## Connecting to Database
-
-### For Spring Boot Backend (`backend/src/main/resources/application.properties`):
-Update the connection string with your PostgreSQL / Supabase credentials:
-```properties
-spring.datasource.url=jdbc:postgresql://<your-db-host>:5432/postgres
-spring.datasource.username=postgres
-spring.datasource.password=<your-password>
-```
 
 ### For Frontend (`frontend/.env`):
 ```env

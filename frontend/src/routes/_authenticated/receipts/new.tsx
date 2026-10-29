@@ -35,9 +35,9 @@ export const Route = createFileRoute("/_authenticated/receipts/new")({
   }),
   head: () => ({
     meta: [
-      { title: "New receipt · Owais Interior Designer CRM" },
+      { title: "New receipt · Famtima Traders CRM" },
       { name: "description", content: "Record a customer payment and issue an A4 receipt." },
-      { property: "og:title", content: "New receipt · Owais Interior Designer CRM" },
+      { property: "og:title", content: "New receipt · Famtima Traders CRM" },
       { property: "og:description", content: "Cash, UPI, bank, cheque and card payments." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

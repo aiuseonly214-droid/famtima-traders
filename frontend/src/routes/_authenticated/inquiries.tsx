@@ -48,12 +48,12 @@ import {
 export const Route = createFileRoute("/_authenticated/inquiries")({
   head: () => ({
     meta: [
-      { title: "Inquiries · Owais Interior Designer CRM" },
+      { title: "Inquiries · Famtima Traders CRM" },
       {
         name: "description",
-        content: "Record every design enquiry and track how many convert into real business.",
+        content: "Record every enquiry and track how many convert into real business.",
       },
-      { property: "og:title", content: "Inquiries · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Inquiries · Famtima Traders CRM" },
       { property: "og:description", content: "Lead capture with conversion rate tracking." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -63,8 +63,6 @@ export const Route = createFileRoute("/_authenticated/inquiries")({
 });
 
 type Draft = Partial<Inquiry>;
-
-
 
 function InquiriesPage() {
   const qc = useQueryClient();
@@ -194,14 +192,30 @@ function InquiriesPage() {
                 {isLoading &&
                   Array.from({ length: 4 }).map((_, idx) => (
                     <TableRow key={idx}>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-28" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-24" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell><Skeleton className="h-5 w-16 rounded-full" /></TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-28" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-24" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-5 w-16 rounded-full" />
+                      </TableCell>
                       <TableCell />
                     </TableRow>
                   ))}
@@ -222,12 +236,17 @@ function InquiriesPage() {
                     <TableCell className="text-right">{formatINR(i.budget)}</TableCell>
                     <TableCell>{i.follow_up_date ? formatDate(i.follow_up_date) : "—"}</TableCell>
                     <TableCell>
-                      {(() => { const s = statusStyle(i.status); return (
-                        <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${s.badge}`}>
-                          <span className={`size-1.5 rounded-full ${s.dot}`} />
-                          {s.label || labelOf(INQUIRY_STATUS, i.status)}
-                        </span>
-                      ); })()}
+                      {(() => {
+                        const s = statusStyle(i.status);
+                        return (
+                          <span
+                            className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${s.badge}`}
+                          >
+                            <span className={`size-1.5 rounded-full ${s.dot}`} />
+                            {s.label || labelOf(INQUIRY_STATUS, i.status)}
+                          </span>
+                        );
+                      })()}
                     </TableCell>
                     <TableCell className="text-right">
                       <div className="flex justify-end gap-1">

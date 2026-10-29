@@ -10,9 +10,9 @@ import { fetchCompany, fetchInvoice } from "@/lib/crm";
 export const Route = createFileRoute("/_authenticated/invoices/$id")({
   head: () => ({
     meta: [
-      { title: "Invoice · Owais Interior Designer CRM" },
+      { title: "Invoice · Famtima Traders CRM" },
       { name: "description", content: "View, print or download a customer invoice." },
-      { property: "og:title", content: "Invoice · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Invoice · Famtima Traders CRM" },
       { property: "og:description", content: "A4 invoice with print and PDF export." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

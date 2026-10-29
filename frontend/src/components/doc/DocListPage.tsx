@@ -92,11 +92,21 @@ export function DocListPage({
                 {isLoading &&
                   Array.from({ length: 5 }).map((_, i) => (
                     <TableRow key={i}>
-                      <TableCell><Skeleton className="h-4 w-24" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                      <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                      <TableCell><Skeleton className="h-5 w-16 rounded-full" /></TableCell>
-                      <TableCell className="text-right"><Skeleton className="ml-auto h-4 w-20" /></TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-24" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-20" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-4 w-32" />
+                      </TableCell>
+                      <TableCell>
+                        <Skeleton className="h-5 w-16 rounded-full" />
+                      </TableCell>
+                      <TableCell className="text-right">
+                        <Skeleton className="ml-auto h-4 w-20" />
+                      </TableCell>
                       <TableCell />
                     </TableRow>
                   ))}
@@ -110,10 +120,7 @@ export function DocListPage({
                 {rows.map((r) => {
                   const s = statusStyle(r.status);
                   return (
-                    <TableRow
-                      key={r.id}
-                      className="transition-colors hover:bg-muted/40"
-                    >
+                    <TableRow key={r.id} className="transition-colors hover:bg-muted/40">
                       <TableCell className="font-mono text-xs font-medium">{r.code}</TableCell>
                       <TableCell className="text-sm">{formatDate(r.date)}</TableCell>
                       <TableCell className="font-medium">{r.customerName || "—"}</TableCell>

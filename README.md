@@ -1,6 +1,6 @@
-# Owais Interior Designer CRM & Public Platform
+# Famtima Traders CRM & Public Platform
 
-A comprehensive, enterprise-grade web-based CRM, ERP, and Public Marketing Platform built for **Owais Interior Designer**. It unifies the entire business lifecycle — from lead capture, public discovery, and bilingual engagement to advanced quotation building with section grouping, dynamic invoicing, receipt generation, outstanding debt recovery, staff payroll, company expense tracking, real-time cashflow analytics, interactive customer review modals, and public QR-code-based document authenticity verification.
+A comprehensive, enterprise-grade web-based CRM, ERP, and Public Marketing Platform built for **Famtima Traders**. It unifies the entire business lifecycle — from lead capture, public discovery, and bilingual engagement to advanced quotation building with section grouping, dynamic invoicing, receipt generation, outstanding debt recovery, staff payroll, company expense tracking, real-time cashflow analytics, customer review management.
 
 ---
 
@@ -8,13 +8,17 @@ A comprehensive, enterprise-grade web-based CRM, ERP, and Public Marketing Platf
 
 | Property | Details |
 |---|---|
-| **Company Name** | Owais Interior Designer |
-| **Tagline** | *"Turning your space into elegant design"* / *"Nashik POP & PVC Specialists"* |
-| **Operating Location** | Rahmat Nagar, Wadala, Nashik, Maharashtra 422006, India |
-| **Direct Contact** | +91 7756043214 / +91 7721926290 · `onlyw6469@gmail.com` |
-| **Public Live URL** | [owais-interior.vercel.app](https://owais-interior.vercel.app) |
-| **Currency** | Indian Rupee (INR - ₹) · Non-GST / Composition Billing Standard |
-| **Brand Colors** | Royal Blue (`#1D4ED8` / `#1E40AF`), Accent Teal (`#0E8F8C`), Crisp White (`#FFFFFF`), Soft Cream (`#F7FAFD`) |
+| **Company Name** | Famtima Traders |
+| **Owner** | Anwar Khan |
+| **Tagline** | *"Bemetara’s Trusted Home Decoration & Renovation Experts"* |
+| **Operating Location** | Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh 491335, India |
+| **Primary Phone / WhatsApp** | +91 7860854662 |
+| **Alternate Phone** | +91 9265012186 |
+| **Official Email** | `anwaarrza850@gmail.com` |
+| **Service Areas** | Bemetara, Durg, Bhilai, Raipur, Bilaspur, Rajnandgaon, Kawardha, and across Chhattisgarh |
+| **Core Services** | Home Decoration & Styling · POP False Ceiling · 100% Waterproof PVC Wall Panelling · Renovation & Remodelling |
+| **Currency** | Indian Rupee (INR - ₹) · Non-GST / Standard Trade Billing |
+| **Brand Colors** | Dark Forest Green (`#1A4731`), Warm Gold (`#C4902A`), Pale Mint (`#F0F7F2`), Crisp White (`#FFFFFF`) |
 
 ---
 
@@ -22,7 +26,7 @@ A comprehensive, enterprise-grade web-based CRM, ERP, and Public Marketing Platf
 
 ```mermaid
 mindmap
-  root((Owais Interior Platform))
+  root((Famtima Traders Platform))
     Public Landing & Discovery
       Responsive Multi-Device Layout
         Mobile Bottom Quick Action Bar
@@ -31,20 +35,18 @@ mindmap
       Bilingual Localization
         English Mode
         Hindi Mode (हिंदी)
-      Interactive Ratings & Social Proof
-        4.9 Customer Rating Modal
-        Google Maps Reviews Integration
-        Justdial Verified Profile (43 Ratings)
-        Top 3 Genuine Customer Testimonials
+      Trust & Social Proof
+        Customer Ratings & Reviews Modal
+        Verified Testimonials Gateway
+        Google Maps Business Profile Integration
       Public Showcase & Portfolio
-        POP False Ceiling
-        100% Waterproof PVC Wall Panels
-        Gypsum Board False Ceilings
-        Commercial & Grid Acoustic Tiles
-        Real Nashik Project Gallery with Videos
-      Lead Capture & Calculator
-        Instant Estimate Request Form
-        Direct WhatsApp Click-to-Chat
+        Home Decoration & Styling
+        POP False Ceilings
+        100% Waterproof PVC Wall Panelling
+        Complete Home & Commercial Renovation
+      Lead Capture & Quick Estimator
+        Instant WhatsApp Estimate Form
+        Direct WhatsApp Click-to-Chat (+91 7860854662)
         Direct Phone Call Dialers
     Authentication & Security
       Role-Based Access Control
@@ -75,6 +77,7 @@ mindmap
         Multi-Mode: Cash / UPI / Bank / Cheque / Card
         Automatic Amount in Words
       A4 Print & PDF Engine
+        Famtima Traders Dark Green & Gold Palette
         Watermark Stamp & Signature
         Embedded Verification QR
     Financial Tracking
@@ -95,8 +98,8 @@ mindmap
 ```mermaid
 flowchart TD
     %% Public Discovery
-    PUB[Public Visitor on owais-interior.vercel.app] -->|Bilingual Toggle EN/HI| LANG[Localized Website Content]
-    PUB -->|Inspect Reviews & Ratings| REV[Google & Justdial Modal Popup]
+    PUB[Public Visitor on Famtima Traders Web] -->|Bilingual Toggle EN/HI| LANG[Localized Website Content]
+    PUB -->|Inspect Reviews & Ratings| REV[Reviews & Rating Modal]
     PUB -->|Request Estimate / WhatsApp| INQ[Customer Inquiry / Lead]
     
     %% Lead Conversion
@@ -121,14 +124,10 @@ flowchart TD
     PAY[Staff Payroll & Salaries] -->|Outflow| CASH
     
     %% Digital Verification
-    QT -.->|Embedded QR| QR_VERIFY[Public Verification Portal /verify/:type/:id]
-    INV -.->|Embedded QR| QR_VERIFY
-    RCPT -.->|Embedded QR| QR_VERIFY
     
-    classDef highlight fill:#1E40AF,stroke:#0E8F8C,stroke-width:2px,color:#fff;
-    classDef flow fill:#e8f4f8,stroke:#0E8F8C,stroke-width:1px,color:#1E40AF;
+    classDef highlight fill:#1A4731,stroke:#C4902A,stroke-width:2px,color:#fff;
+    classDef flow fill:#F0F7F2,stroke:#1A4731,stroke-width:1px,color:#1A4731;
     class PUB,LANG,REV,INQ,CUST,QT,INV,RCPT,OUT,CASH,EXP,PAY highlight;
-    class QR_VERIFY flow;
 ```
 
 ---
@@ -141,19 +140,15 @@ flowchart TD
   * Dedicated Mobile Bottom Quick-Action Bar (`WhatsApp`, `Call Now`, `Instant Quote`) fixed on screen.
   * Adaptive mobile navigation drawer with hamburger toggle.
 * **Bilingual Localization (English & हिंदी Toggle)**:
-  * Two-button language selector in the announcement bar and mobile drawer.
+  * Fast language selector in the announcement bar and mobile drawer.
   * Real-time language translation across headers, hero copy, trust metrics, service descriptions, quote forms, and FAQs.
-* **Interactive Customer Rating & Reviews Modal**:
-  * Clickable **"4.9 ★ Customer Rating"** badge opens a glassmorphic dark-navy modal.
-  * Side-by-side platform summary cards:
-    * **Google Reviews**: 4.9 ★ (Owais Interior Designer, Nashik) with direct link to Google Maps.
-    * **Justdial Verified Profile**: 4.7 ★ (43 Ratings) with direct link to Justdial.
-  * Top 3 genuine customer testimonials displayed directly inside the modal with star ratings.
-* **Service Showcase & Rate Display**:
-  * POP False Ceilings, 100% Waterproof PVC Wall Panels, Gypsum Board False Ceilings, and Commercial Grid Ceilings.
-  * Dynamic pricing pulled from company profile or admin customization.
-* **Real Project Showcase**:
-  * Uncropped photo portfolio cards showing actual completed jobs across Nashik (Gangapur Road, Indira Nagar, College Road, Govind Nagar) with direct WhatsApp inquiry triggers.
+* **Streamlined UI/UX Content**:
+  * Clean, scannable value propositions without text overload.
+  * Top service catalog: Home Decoration, Designer POP False Ceiling, 100% Waterproof PVC Wall Panels, and Renovation.
+  * Service coverage pills covering Bemetara, Durg, Bhilai, Raipur, Bilaspur, Rajnandgaon, Kawardha, and Chhattisgarh.
+* **Reviews & Social Proof Section**:
+  * Honest, unpopulated review state ready for genuine customer testimonials.
+  * Placeholder for Google Business Profile & Maps integration.
 
 ### 2. Authentication & Role-Based Access Control (RBAC)
 * **Dedicated Gateways**: Dedicated role selection between Administrator (`/admin-login`) and Staff/Employee (`/employee-login`) portals.
@@ -174,7 +169,7 @@ flowchart TD
 
 ### 5. Advanced Quotation & Proposal Builder
 * **Custom Sequence**: Auto-generated sequential identifiers (`QT-2026-0001`).
-* **Section Grouping & Subtotals**: Categorize line items into named zones/rooms (e.g., *Living Room*, *Master Bedroom*, *Modular Kitchen*, *False Ceiling*).
+* **Section Grouping & Subtotals**: Categorize line items into named zones/rooms (e.g., *Living Room*, *Master Bedroom*, *Hall POP Ceiling*, *PVC Wall Panelling*).
 * **Section Subtotal Visibility**: Toggle `show_section_subtotals` on/off based on customer presentation needs.
 * **Optional Line Items**: Mark individual rows as optional proposals (`include_in_total = false`). Renders with an `OPTION` badge, excluding cost from final calculation.
 * **Optional Totals Display**: Toggle `show_totals` to produce clean itemized scope-of-work sheets without showing monetary sums.
@@ -199,7 +194,7 @@ flowchart TD
 * **Visual Overdue Alerting**: Flags unpaid invoices exceeding due dates in bold crimson badges.
 
 ### 9. Staff Directory & Monthly Payroll
-* **Staff Master**: Manage design assistants, site supervisors, carpenters, and contractors with monthly salary contracts, designations, phone numbers, and active/inactive status.
+* **Staff Master**: Manage design assistants, site supervisors, artisans, and contractors with monthly salary contracts, designations, phone numbers, and active/inactive status.
 * **Salary Payout Logging**: Record payout disbursements with date, period (`YYYY-MM`), mode, reference notes, and receipts.
 * **Live Commitment Overview**: Real-time KPI cards calculating total active personnel and total monthly salary commitments.
 
@@ -211,10 +206,9 @@ flowchart TD
   * **Lifetime Net Cash**: Available company cash reserves (`Inflow - Outflow`).
   * **This Month Outflow**: Current month's burn rate across operational expenses and salaries.
 
-### 11. Public Document Authenticity & QR Verification
-* **Tamper-Proof Verification**: Every generated quotation, invoice, and receipt embeds a high-density QR code linked to the public verification endpoint.
-* **Universal Scanner Compatibility**: Mobile cameras, tablet scanners, and desktop browsers can scan the QR code to view live verification status.
-* **Zero Authentication Barrier**: Uses dedicated, read-only public RLS policies allowing third parties, clients, and banks to verify authenticity without logging in.
+### 11. Document Authenticity & Official Signatory
+* **Official Document Layout**: Every generated quotation, invoice, and receipt features authorized signature, company seal watermark, and itemized trade specifications.
+* **Zero Authentication Barrier**: Uses dedicated, read-only public RPC/RLS policies allowing third parties, clients, and banks to verify authenticity without logging in.
 
 ---
 
@@ -260,19 +254,18 @@ The application incorporates a unified, high-contrast visual status system acros
 
 ```
 Frontend:
-  ├── Core: React 18, TypeScript, Vite
+  ├── Core: React 19, TypeScript, Vite
   ├── Routing: TanStack Router (File-based routing)
   ├── Server State & Cache: TanStack Query v5
-  ├── Styling & Design Tokens: Tailwind CSS, Lucide React Icons
+  ├── Styling & Design Tokens: Tailwind CSS v4, Lucide React Icons
   ├── Form & UI Primitives: Radix UI, Hookform, Zod, Sonner (Toast notifications)
   ├── PDF & Print Engine: html2canvas-pro, jsPDF, jspdf-autotable
-  └── QR Generation: qrcode.react
-
+  
 Backend & Data Layer:
   ├── Database: PostgreSQL (Managed on Supabase)
   ├── Authentication: Supabase Auth (JWT + Session refresh)
   ├── Authorization & Security: PostgreSQL Row Level Security (RLS)
-  └── Static Verification: Dedicated Anon RLS Grants
+  └── Static Verification: Dedicated verify_document() RPC
 ```
 
 ---
@@ -281,12 +274,11 @@ Backend & Data Layer:
 
 ```text
 ├── database/                       # Database schema and SQL migrations
-│   └── migrations/
-│       └── 20261013080000_public_document_verification.sql
+│   └── migrations/                 # PostgreSQL migrations
 ├── frontend/                       # Client web application
 │   ├── public/                     # Static assets, logos, and PWA assets
-│   │   ├── images/                 # Optimized project gallery photos
-│   │   ├── owais-logo.png          # High-resolution company logo
+│   │   ├── famtima-logo.png        # Official high-resolution company logo
+│   │   ├── famtima-logo.webp       # Optimized WebP logo
 │   │   ├── robots.txt              # Search engine crawling rules
 │   │   └── sitemap.xml             # XML sitemap for SEO indexation
 │   ├── src/
@@ -295,7 +287,7 @@ Backend & Data Layer:
 │   │   │   ├── layout/             # Sidebar, Navbar, Mobile navigation
 │   │   │   └── ui/                 # Buttons, modals, badges, inputs
 │   │   ├── lib/
-│   │   │   ├── branding.ts         # Company asset URLs and typography tokens
+│   │   │   ├── branding.ts         # Company asset URLs and Famtima color tokens
 │   │   │   ├── crm.ts              # Database queries, mutations, landing config
 │   │   │   ├── numberToWords.ts    # Indian Rupee words generator
 │   │   │   ├── status.ts           # Unified status badges & color tokens
@@ -305,8 +297,7 @@ Backend & Data Layer:
 │   │   │   ├── auth.tsx            # Role selection login hub
 │   │   │   ├── admin-login.tsx     # Administrator gateway
 │   │   │   ├── employee-login.tsx  # Employee gateway
-│   │   │   ├── verify.$type.$id.tsx# Public QR Document Verification Portal
-│   │   │   └── _authenticated/     # Protected application routes
+│   │   │   │   │   │   └── _authenticated/     # Protected application routes
 │   │   │       ├── dashboard.tsx   # Executive metrics & quick actions
 │   │   │       ├── inquiries.tsx   # Leads pipeline & customer conversion
 │   │   │       ├── customers.tsx   # Customer directory
@@ -330,19 +321,17 @@ Backend & Data Layer:
 ## Local Setup & Development
 
 ### 1. Prerequisites
-* [Node.js](https://nodejs.org/) (version 18 or 20 LTS recommended)
-* Active Supabase project with PostgreSQL instance
+* [Node.js](https://nodejs.org/) (version 18, 20, or 22 LTS)
+* Independent Supabase project with PostgreSQL instance
 
 ### 2. Environment Configuration
 Create a `.env` file inside `frontend/`:
 
 ```env
-VITE_SUPABASE_PROJECT_ID=yjvvhifqfecwviobdigy
 VITE_SUPABASE_URL=https://<your-project-id>.supabase.co
 VITE_SUPABASE_PUBLISHABLE_KEY=<your-publishable-anon-key>
 
-# Optional: Public domain for remote QR code camera verification
-VITE_PUBLIC_URL=https://owais-interior.vercel.app
+VITE_PUBLIC_URL=https://famtima-traders.vercel.app
 ```
 
 ### 3. Installation & Run
@@ -367,19 +356,10 @@ npm run preview
 
 ## Database Migration & RLS Security
 
-To enable public QR code verification and section subtotal enhancements, execute the migration located at `database/migrations/20261013080000_public_document_verification.sql` inside the Supabase SQL Editor:
-
-```sql
--- Allow anonymous read on issued documents for QR code authenticity scanning
-GRANT SELECT ON public.company_profile TO anon;
-GRANT SELECT ON public.quotations TO anon;
-GRANT SELECT ON public.invoices TO anon;
-GRANT SELECT ON public.receipts TO anon;
-GRANT SELECT ON public.customers TO anon;
-```
+To enable section subtotal enhancements on your independent Supabase database, execute the migrations located in `database/migrations/` in order.
 
 ---
 
 ## License
 
-Private and Confidential. Developed exclusively for **Owais Interior Designer, Nashik**. All rights reserved.
+Private and Confidential. Developed exclusively for **Famtima Traders, Bemetara, Chhattisgarh**. All rights reserved.

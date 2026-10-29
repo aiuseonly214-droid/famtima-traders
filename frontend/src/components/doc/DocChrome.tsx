@@ -57,11 +57,9 @@ export function DocTitleBar({ title }: { title: string }) {
 export function DocFooter({
   company,
   leftLabel = "Customer Signature",
-  verificationQr,
 }: {
   company: CompanyProfile;
   leftLabel?: string;
-  verificationQr?: React.ReactNode;
 }) {
   return (
     <div className="mt-auto">
@@ -75,12 +73,6 @@ export function DocFooter({
             {leftLabel}
           </p>
         </div>
-
-        {verificationQr && (
-          <div className="max-w-[220px]">
-            {verificationQr}
-          </div>
-        )}
 
         <div className="relative w-[210px] text-center">
           <div className="relative flex h-[56px] items-end justify-center">

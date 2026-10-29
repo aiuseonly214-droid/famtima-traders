@@ -8,9 +8,9 @@ import { fetchInvoice } from "@/lib/crm";
 export const Route = createFileRoute("/_authenticated/invoices/$id_/edit")({
   head: () => ({
     meta: [
-      { title: "Edit invoice · Owais Interior Designer CRM" },
+      { title: "Edit invoice · Famtima Traders CRM" },
       { name: "description", content: "Update line items, discount and terms on an invoice." },
-      { property: "og:title", content: "Edit invoice · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Edit invoice · Famtima Traders CRM" },
       { property: "og:description", content: "Update an existing customer invoice." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

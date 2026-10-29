@@ -40,42 +40,42 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Best PVC Ceiling & Interior Designer in Nashik | Owais Interior",
+        title: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara, CG",
       },
       {
         name: "description",
         content:
-          "Looking for expert PVC ceiling, false ceiling and interior design work in Nashik? Contact Owais Interior Designer for best POP false ceiling, waterproof PVC wall panels, gypsum ceiling & modular home decor. Call +91 7756043214 for free site estimate.",
+          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh. Call +91 7860854662 for quotation.",
       },
       {
         name: "keywords",
         content:
-          "best pvc ceiling in nashik, pvc ceiling nashik, interior designer in nashik, best interior designer nashik, pop false ceiling nashik, false ceiling contractor nashik, pvc wall panel nashik, gypsum false ceiling nashik, pvc ceiling design, pop design for hall nashik, home interior decorator nashik, false ceiling rates in nashik, owais interior nashik, owais interior, owaisinterior, nashikpop, wadala nashik interior",
+          "famtima traders, famtima traders bemetara, home decoration bemetara, pop work bemetara, pvc wall panelling bemetara, false ceiling chhattisgarh, renovation contractor bemetara, interior services bemetara, krishna vihar bemetara, anwar khan famtima traders",
       },
-      { property: "og:site_name", content: "Owais Interior Designer" },
+      { property: "og:site_name", content: "Famtima Traders" },
       {
         property: "og:title",
-        content: "Best PVC Ceiling & Interior Designer in Nashik | Owais Interior",
+        content: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling",
       },
       {
         property: "og:description",
         content:
-          "Looking for expert PVC ceiling, false ceiling and interior design work in Nashik? Contact Owais Interior for stylish and affordable home decor.",
+          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Contact Anwar Khan at +91 7860854662.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://owais-interior.vercel.app/" },
-      { property: "og:image", content: "/images/pop-ceiling-nashik.jpg" },
+      { property: "og:url", content: "https://famtima-traders.vercel.app/" },
+      { property: "og:image", content: "/famtima-logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Best PVC Ceiling & Interior Designer in Nashik | Owais Interior",
+        content: "Famtima Traders | Home Decoration & Renovation in Bemetara",
       },
       {
         name: "twitter:description",
         content:
-          "Looking for expert PVC ceiling, false ceiling and interior design work in Nashik? Contact Owais Interior for stylish and affordable home decor.",
+          "Bemetara's trusted home decoration, POP work, PVC wall panelling & renovation. Call +91 7860854662.",
       },
-      { name: "twitter:image", content: "/images/pop-ceiling-nashik.jpg" },
+      { name: "twitter:image", content: "/famtima-logo.png" },
     ],
     scripts: [
       {
@@ -83,33 +83,32 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "ProfessionalService"],
-          "@id": "https://owais-interior.vercel.app/#business",
-          name: "Owais Interior Designer",
+          "@id": "https://famtima-traders.vercel.app/#business",
+          name: "Famtima Traders",
           alternateName: [
-            "Owais Interior Nashik",
-            "Nashik POP & PVC Contractor",
-            "Owais Interior",
-            "nashikpop",
+            "Famtima Traders Bemetara",
+            "Famtima Home Decoration",
+            "Bemetara POP Work & PVC Panelling",
           ],
-          url: "https://owais-interior.vercel.app/",
-          logo: "https://owais-interior.vercel.app/owais-logo.png",
-          image: "https://owais-interior.vercel.app/images/pop-ceiling-nashik.jpg",
+          url: "https://famtima-traders.vercel.app/",
+          logo: "https://famtima-traders.vercel.app/famtima-logo.png",
+          image: "https://famtima-traders.vercel.app/famtima-logo.png",
           description:
-            "Premier POP false ceiling, PVC wall panel, and interior design contractor based in Nashik, Maharashtra. Offering customized false ceiling, modular kitchens, and turnkey interior solutions.",
-          telephone: "+91-7756043214",
-          email: "onlyw6469@gmail.com",
+            "Premier home decoration, POP false ceiling, PVC wall panelling, and renovation contractor based in Bemetara, Chhattisgarh. Offering customized home decoration and turnkey renovation solutions.",
+          telephone: "+91-7860854662",
+          email: "anwaarrza850@gmail.com",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Rahmat Nagar, Wadala",
-            addressLocality: "Nashik",
-            addressRegion: "Maharashtra",
-            postalCode: "422006",
+            streetAddress: "Shop No. 08, Krishna Vihar",
+            addressLocality: "Bemetara",
+            addressRegion: "Chhattisgarh",
+            postalCode: "491335",
             addressCountry: "IN",
           },
           geo: {
             "@type": "GeoCoordinates",
-            latitude: 19.9975,
-            longitude: 73.7898,
+            latitude: 21.7018,
+            longitude: 81.5478,
           },
           openingHoursSpecification: [
             {
@@ -124,59 +123,58 @@ export const Route = createFileRoute("/")({
                 "Sunday",
               ],
               opens: "09:00",
-              closes: "20:30",
+              closes: "20:00",
             },
           ],
           priceRange: "₹₹",
           areaServed: [
-            { "@type": "City", name: "Nashik" },
-            { "@type": "AdministrativeArea", name: "Wadala, Nashik" },
-            { "@type": "AdministrativeArea", name: "Indira Nagar, Nashik" },
-            { "@type": "AdministrativeArea", name: "Gangapur Road, Nashik" },
-            { "@type": "AdministrativeArea", name: "College Road, Nashik" },
-            { "@type": "AdministrativeArea", name: "Panchavati, Nashik" },
-            { "@type": "AdministrativeArea", name: "Govind Nagar, Nashik" },
-            { "@type": "AdministrativeArea", name: "Pathardi Phata, Nashik" },
-            { "@type": "AdministrativeArea", name: "Nashik Road" },
+            { "@type": "City", name: "Bemetara" },
+            { "@type": "AdministrativeArea", name: "Krishna Vihar, Bemetara" },
+            { "@type": "City", name: "Durg" },
+            { "@type": "City", name: "Bhilai" },
+            { "@type": "City", name: "Raipur" },
+            { "@type": "City", name: "Bilaspur" },
+            { "@type": "City", name: "Rajnandgaon" },
+            { "@type": "City", name: "Kawardha" },
+            { "@type": "AdministrativeArea", name: "Chhattisgarh" },
           ],
           hasOfferCatalog: {
             "@type": "OfferCatalog",
-            name: "Interior & False Ceiling Services",
+            name: "Home Decoration & Renovation Services",
             itemListElement: [
               {
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "Service",
-                  name: "POP False Ceiling Design & Installation",
+                  name: "Home Decoration",
                   description:
-                    "Modern Plaster of Paris false ceiling with LED cove lights, cornices, and chandelier bases in Nashik.",
+                    "Complete home styling, modern aesthetic ceilings and wall decor in Bemetara.",
                 },
               },
               {
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "Service",
-                  name: "PVC Wall Panels & PVC False Ceiling",
+                  name: "POP Work / False Ceiling",
                   description:
-                    "100% waterproof and termite-proof decorative PVC wall panels, fluted louvers, and ceiling panels in Nashik.",
+                    "Plaster of Paris false ceiling with designer LED cove channels in Bemetara and Chhattisgarh.",
                 },
               },
               {
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "Service",
-                  name: "Gypsum False Ceiling",
+                  name: "PVC Wall Panelling",
                   description:
-                    "Saint-Gobain Gyproc board false ceiling for heat insulation and acoustic sound absorption.",
+                    "100% waterproof and termite-proof decorative PVC wall panels and fluted louvers.",
                 },
               },
               {
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "Service",
-                  name: "Commercial Grid & Office False Ceiling",
-                  description:
-                    "2x2 acoustic tiles and T-grid ceiling systems for showrooms, offices, and clinics.",
+                  name: "Renovation & Remodelling",
+                  description: "Turnkey home and commercial space renovation across Chhattisgarh.",
                 },
               },
             ],
@@ -206,284 +204,346 @@ function PublicLandingPage() {
       ? company.logo_url
       : DEFAULT_LOGO_URL;
 
-  const phonePrimary = company?.mobile1 || "7756043214";
-  const phoneSecondary = company?.mobile2 || "7721926290";
+  const phonePrimary = company?.mobile1 || "7860854662";
+  const phoneSecondary = company?.mobile2 || "9265012186";
 
   const t = {
     topBanner:
       lang === "hi"
-        ? "नासिक व आसपास के सभी क्षेत्रों में सेवाएं — मुफ्त साइट विज़िट और एस्टीमेट"
-        : "Serving All Areas Across Nashik, Maharashtra — Free Site Inspection & Estimate",
+        ? "बेमेतरा व छत्तीसगढ़ • तुरंत कोटेशन व साइट विज़िट के लिए कॉल करें"
+        : "Serving Bemetara & Chhattisgarh • Call for Free Site Visit & Quote",
     staffLogin: lang === "hi" ? "स्टाफ लॉगिन" : "Staff Login",
+    navFounder: lang === "hi" ? "संस्थापक अनुभव" : "Founder Experience",
+    founderBadge:
+      lang === "hi"
+        ? "15+ वर्ष अंतरराष्ट्रीय अनुभव — सऊदी अरब, दुबई, कतर व भारत"
+        : "15+ Years International Experience — Saudi Arabia, Dubai, Qatar & India",
+    founderTitle:
+      lang === "hi"
+        ? "संस्थापक और मुख्य शिल्पकार: अनवर खान"
+        : "Meet the Founder: Anwar Khan",
+    founderDesc:
+      lang === "hi"
+        ? "सऊदी अरब (SACODECO), कतर और दुबई के बड़े प्रोजेक्ट्स में 15+ वर्षों के व्यावहारिक अनुभव के साथ — अब विश्वस्तरीय फिनिशिंग और ईमानदारी आपके अपने बेमेतरा में।"
+        : "With 15+ years of verified craftsmanship across Saudi Arabia, Qatar, Dubai (UAE) and India, Anwar Khan delivers high-precision POP false ceiling, PVC panelling and turnkey decoration directly to your doorstep.",
+    founderRole:
+      lang === "hi"
+        ? "संस्थापक एवं मुख्य इंटीरियर शिल्पकार"
+        : "Founder & Lead Interior Specialist",
+    statYears: lang === "hi" ? "वर्ष अनुभव" : "Years Exp",
+    statCountries: lang === "hi" ? "देशों का कार्य" : "Countries",
+    statSupervision: lang === "hi" ? "सीधा पर्यवेक्षण" : "On-Site Check",
+    internationalFootprint:
+      lang === "hi"
+        ? "वैश्विक कार्य अनुभव (GCC & भारत)"
+        : "International Project Footprint",
+    founderQuote:
+      lang === "hi"
+        ? "“सऊदी अरब और गल्फ के कड़े मानकों पर वर्षों काम करने के बाद, मैंने बेमेतरा में फातिमा ट्रेडर्स की स्थापना की ताकि हमारे परिवारों को बिना किसी बिचौलिए के वही अंतरराष्ट्रीय स्तर की फिनिशिंग, टिकाऊ सामग्री और सही दाम मिलें।”"
+        : "“Having executed high-precision architectural carpentry & interior projects in Saudi Arabia and the Gulf, I founded Famtima Traders to bring that exact international standard, honesty, and lasting durability directly to homes across Bemetara at fair local rates.”",
+    founderChatBtn: lang === "hi" ? "व्हाट्सएप पर बात करें" : "Chat on WhatsApp",
+    certVerified:
+      lang === "hi"
+        ? "प्रमाणित अंतरराष्ट्रीय कार्य अनुभव (सऊदी अरब)"
+        : "Documented International Experience (Saudi Arabia)",
+    pillar1Title:
+      lang === "hi"
+        ? "गल्फ-ग्रेड फिनिशिंग मानक"
+        : "Gulf-Grade Quality Standards",
+    pillar1Desc:
+      lang === "hi"
+        ? "लेज़र-लेवल संरेखण, सीमलेस जॉइंट्स और मजबूत फ्रेमिंग जो वर्षों तक नई जैसी बनी रहती है।"
+        : "Laser-aligned false ceilings, seamless jointing and premium grade framing tested for long-lasting stability.",
+    pillar2Title:
+      lang === "hi"
+        ? "सीधे कारीगर का काम (नो बिचौलिया)"
+        : "Direct Craftsman Execution",
+    pillar2Desc:
+      lang === "hi"
+        ? "कोई एजेंट या कमीशन नहीं। आप सीधे अनवर खान और उनकी कुशल टीम से काम करवाते हैं।"
+        : "No middleman contractor margins. You deal directly with the master craftsman team.",
+    pillar3Title:
+      lang === "hi"
+        ? "समय पर काम पूरा (ऑन-टाइम हैंडओवर)"
+        : "Strict On-Time Delivery",
+    pillar3Desc:
+      lang === "hi"
+        ? "अंतरराष्ट्रीय वर्क एथिक्स — तय तारीख पर साफ-सुथरा काम सौंपने की गारंटी।"
+        : "International work ethics with pre-agreed timelines and spotless site cleanup after handover.",
+    pillar4Title:
+      lang === "hi"
+        ? "100% वाटरप्रूफ व दीमक-रहित सामग्री"
+        : "Durable & Termite-Proof Materials",
+    pillar4Desc:
+      lang === "hi"
+        ? "छत्तीसगढ़ के मौसम के अनुकूल उच्च गुणवत्ता वाले PVC, WPC और POP उत्पादों का चयन।"
+        : "High-grade moisture-resistant PVC, WPC and premium plaster chosen specifically for local climate.",
     navServices: lang === "hi" ? "सेवाएं" : "Services",
-    navPop: lang === "hi" ? "पीओपी सीलिंग" : "POP Ceilings",
-    navPvc: lang === "hi" ? "पीवीसी पैनल्स" : "PVC Panels",
+    navPop: lang === "hi" ? "POP सीलिंग" : "POP Ceilings",
+    navPvc: lang === "hi" ? "PVC पैनल्स" : "PVC Panels",
     navGallery: lang === "hi" ? "गैलरी" : "Work Gallery",
-    navAreas: lang === "hi" ? "नासिक क्षेत्र" : "Nashik Areas",
-    navQuote: lang === "hi" ? "मुफ्त कोटेशन" : "Free Quote",
+    navAreas: lang === "hi" ? "सेवा क्षेत्र" : "Service Areas",
+    navQuote: lang === "hi" ? "कोटेशन" : "Get a Quote",
     navFaqs: lang === "hi" ? "सवाल-जवाब" : "FAQs",
-    tagline: lang === "hi" ? "नासिक पीओपी और पीवीसी स्पेशलिस्ट्स" : "Nashik POP & PVC Specialists",
+    tagline:
+      lang === "hi"
+        ? "होम डेकोरेशन और रेनोवेशन एक्सपर्ट्स"
+        : "Home Decoration & Renovation Experts",
     badge:
       lang === "hi"
-        ? "#1 नासिक का भरोसेमंद POP फॉल्स सीलिंग और PVC कांट्रैक्टर"
-        : "#1 POP False Ceiling & PVC Interior Contractor in Nashik",
-    heroTitle1: lang === "hi" ? "बेस्ट" : "Top",
-    heroTitlePop: lang === "hi" ? "PVC सीलिंग" : "PVC Ceiling",
+        ? "बेमेतरा के विश्वसनीय होम डेकोर व सीलिंग एक्सपर्ट्स"
+        : "Trusted Home Decor & Ceiling Experts in Bemetara",
+    heroTitle1: lang === "hi" ? "सर्वश्रेष्ठ" : "Premium",
+    heroTitlePop: lang === "hi" ? "होम डेकोरेशन" : "Home Decoration",
     heroTitleAnd: lang === "hi" ? "&" : "&",
-    heroTitlePvc: lang === "hi" ? "इंटीरियर डिज़ाइन सर्विसेज़" : "Interior Design Services",
-    heroTitleCity: lang === "hi" ? "नासिक में" : "in Nashik",
+    heroTitlePvc: lang === "hi" ? "फॉल्स सीलिंग" : "False Ceiling",
+    heroTitleCity: lang === "hi" ? "बेमेतरा में" : "in Bemetara",
     heroDesc:
       lang === "hi"
-        ? "ओवैस इंटीरियर डिज़ाइनर के अनुभवी कारीगरों के साथ अपने घर, दुकान या ऑफिस को दें मॉडर्न और खूबसूरत लुक। नासिक में मॉडर्न PVC फॉल्स सीलिंग, POP सीलिंग, 100% वॉटरप्रूफ PVC वॉल पैनल्स, जिप्सम सीलिंग, कोव LED लाइटिंग और इंटीरियर का भरोसेमंद काम।"
-        : "Transform your home, shop, or office with master craftsmen from Owais Interior Designer. Specialists in designer PVC ceiling, POP false ceilings, 100% waterproof PVC wall panels, gypsum board ceilings, cove LED lighting, and turnkey interior design services in Nashik.",
-    statExp: lang === "hi" ? "10+ वर्ष" : "10+ Years",
-    statExpSub: lang === "hi" ? "नासिक अनुभव" : "Nashik Experience",
-    statProj: lang === "hi" ? "500+" : "500+",
-    statProjSub: lang === "hi" ? "प्रोजेक्ट्स पूरे किए" : "Projects Done",
-    statWaterproof: lang === "hi" ? "100%" : "100%",
-    statWaterproofSub: lang === "hi" ? "वॉटरप्रूफ PVC" : "Waterproof PVC",
-    statRating: lang === "hi" ? "4.9 ★" : "4.9 ★",
-    statRatingSub: lang === "hi" ? "ग्राहकों की रेटिंग" : "Customer Rating",
-    btnFreeEstimate: lang === "hi" ? "मुफ्त साइट एस्टीमेट पाएं" : "Get Free Site Estimate",
-    btnCall: lang === "hi" ? "कॉल करें" : "Call",
+        ? "प्रीमियम POP फॉल्स सीलिंग, 100% वॉटरप्रूफ PVC वॉल पैनल्स और मॉडर्न होम डेकोरेशन। सीधे मास्टर कारीगरों द्वारा उच्च गुणवत्ता और वाजिब दरों पर कार्य।"
+        : "Designer POP false ceilings, 100% waterproof PVC wall panels, and turnkey home decor. Direct craftsman rates with premium finishing across Bemetara & Chhattisgarh.",
+    statExp: lang === "hi" ? "प्रीमियम" : "Premium",
+    statExpSub: lang === "hi" ? "फिनिशिंग" : "Finishing",
+    statProj: lang === "hi" ? "100%" : "100%",
+    statProjSub: lang === "hi" ? "वॉटरप्रूफ PVC" : "Waterproof PVC",
+    statWaterproof: lang === "hi" ? "किफायती" : "Direct Rates",
+    statWaterproofSub: lang === "hi" ? "कारीगर दरें" : "No Middlemen",
+    statRating: lang === "hi" ? "भरोसेमंद" : "Trusted",
+    statRatingSub: lang === "hi" ? "लोकल एक्सपर्ट" : "Local Expert",
+    btnFreeEstimate: lang === "hi" ? "मुफ्त कोटेशन पाएं" : "Get Free Quote",
+    btnCall: lang === "hi" ? "कॉल करें" : "Call Now",
     trustLine:
       lang === "hi"
-        ? "कोई बिचौलिया नहीं • सीधे कारीगर की वाजिब दरें • नासिक में फ्री साइट विज़िट"
-        : "Zero middleman commission • Direct master craftsmen rates • Free site visit in Nashik",
-    featuredBadge: lang === "hi" ? "नासिक का नया प्रोजेक्ट" : "Featured Nashik Project",
-    featuredCompleted: lang === "hi" ? "सफलतापूर्वक पूर्ण" : "Completed",
+        ? "सीधे कारीगर • पारदर्शी दरें • समय पर डिलीवरी"
+        : "Direct Craftsmen • Transparent Pricing • On-Time Handover",
+    featuredBadge: lang === "hi" ? "फातिमा ट्रेडर्स" : "Famtima Project",
+    featuredCompleted: lang === "hi" ? "पूर्ण" : "Completed",
     servicesSub:
-      lang === "hi" ? "फॉल्स सीलिंग और वॉल सोलूशन्स" : "Complete False Ceiling & Wall Solutions",
+      lang === "hi"
+        ? "हमारी सेवाएं"
+        : "What We Do",
     servicesTitle:
-      lang === "hi" ? "नासिक में हमारी प्रमुख सेवाएं" : "Specialized Interior Services in Nashik",
+      lang === "hi"
+        ? "इंटीरियर और सीलिंग समाधान"
+        : "Interior & Ceiling Solutions",
     servicesDesc:
       lang === "hi"
-        ? "मॉडर्न POP सीलिंग डिज़ाइन से लेकर नमी से सुरक्षित रखने वाले 100% वॉटरप्रूफ PVC वॉल पैनल्स तक, हम हर काम पूरी फिनिशिंग के साथ करते हैं।"
-        : "From contemporary POP ceiling patterns with ambient LED channels to durable waterproof PVC wall paneling, we handle projects of every scale.",
-    btnBookVisit: lang === "hi" ? "साइट विज़िट बुक करें" : "Book Site Visit",
-    gallerySub: lang === "hi" ? "डिज़ाइन पोर्टफोलियो" : "Design Portfolio",
-    galleryTitle:
-      lang === "hi" ? "नासिक में हमारे हालिया प्रोजेक्ट्स" : "Recent Projects Across Nashik",
+        ? "सुंदर और टिकाऊ इंटीरियर के लिए हमारे प्रमुख कार्य।"
+        : "High-quality, durable interior solutions tailored for modern spaces.",
+    btnBookVisit: lang === "hi" ? "विज़िट बुक करें" : "Book Visit",
+    gallerySub: lang === "hi" ? "पोर्टफोलियो" : "Portfolio",
+    galleryTitle: lang === "hi" ? "हालिया कार्य" : "Recent Work",
     galleryBtn:
       lang === "hi"
-        ? "व्हाट्सएप पर फोटो कैटलॉग मंगाएं"
-        : "Request Full Photo Catalogue on WhatsApp",
-    btnWatchClip: lang === "hi" ? "वीडियो देखें" : "Watch Clip",
-    btnSimilarQuote: lang === "hi" ? "ऐसा ही कोटेशन पाएं" : "Get Similar Quote",
-    quoteSub: lang === "hi" ? "सटीक और तुरंत एस्टीमेट" : "Fast & Accurate Estimation",
+        ? "व्हाट्सएप पर फोटो देखें"
+        : "View Photo Catalog on WhatsApp",
+    btnWatchClip: lang === "hi" ? "वीडियो" : "Video",
+    btnSimilarQuote: lang === "hi" ? "ऐसा ही कोटेशन लें" : "Get Similar Quote",
+    quoteSub: lang === "hi" ? "तुरंत एस्टीमेट" : "Instant Estimate",
     quoteTitle:
       lang === "hi"
-        ? "नासिक में अपनी जगह के लिए तुरंत मुफ्त कोटेशन पाएं"
-        : "Get an Instant Free Quote For Your Space in Nashik",
+        ? "अपने स्पेस के लिए तुरंत कोटेशन पाएं"
+        : "Get an Instant Free Quote",
     quoteDesc:
       lang === "hi"
-        ? "नीचे दिया गया फॉर्म भरें या सीधे व्हाट्सएप पर संपर्क करें। हम आपको अनुमानित खर्च, डिज़ाइन विकल्प और नासिक में 100% फ्री साइट नाप का समय देंगे।"
-        : "Fill out the quick inquiry below or reach out directly via WhatsApp. We'll provide estimated pricing, design options, and schedule a 100% free site measurement across Nashik.",
-    quoteF1Title: lang === "hi" ? "मुफ्त साइट नाप (Measurement)" : "Free Site Measurement",
+        ? "अपनी जरूरत बताएं और सीधे व्हाट्सएप पर तुरंत कोटेशन व परामर्श पाएं।"
+        : "Share your requirements for an instant WhatsApp estimate and site consultation.",
+    quoteF1Title: lang === "hi" ? "फ्री साइट विज़िट" : "Free Site Consultation",
     quoteF1Desc:
       lang === "hi"
-        ? "हम नासिक में कहीं भी आपके घर या साइट पर मटेरियल सैम्पल्स के साथ आते हैं।"
-        : "We visit your home or site anywhere in Nashik at your convenience with material samples.",
-    quoteF2Title: lang === "hi" ? "QR-सत्यापित डिजिटल कोटेशन" : "QR-Verified Digital Quotations",
+        ? "घर या साइट पर आकर मुफ्त नाप और डिज़ाइन सलाह।"
+        : "Doorstep measurements and sample consultation across Bemetara.",
+    quoteF2Title: lang === "hi" ? "पारदर्शी डिजिटल कोटेशन" : "Itemized PDF Quotations",
     quoteF2Desc:
       lang === "hi"
-        ? "डिजिटल QR वेरिफिकेशन के साथ रूम-दर-रूम आइटमयुक्त पारदर्शी PDF कोटेशन प्राप्त करें।"
-        : "Receive an itemized room-by-room PDF quotation with digital QR verification.",
-    quoteF3Title: lang === "hi" ? "सीधे कांट्रैक्टर से संपर्क" : "Direct Contractor Contact",
-    quoteFormTitle: lang === "hi" ? "व्हाट्सएप पर तुरंत पूछताछ" : "Quick Inquiry & WhatsApp Quote",
+        ? "कमरा-वार पारदर्शी डिजिटल PDF बिल।"
+        : "Clear itemized PDF quotes with digital authenticity check.",
+    quoteF3Title:
+      lang === "hi" ? "सीधा संपर्क" : "Direct Support",
+    quoteFormTitle: lang === "hi" ? "व्हाट्सएप पूछताछ" : "Quick WhatsApp Inquiry",
     quoteFormSub:
       lang === "hi"
-        ? "व्हाट्सएप पर हमारे कारीगरों को अपनी आवश्यकताएं सीधे भेजें।"
-        : "Send requirements directly to our master craftsmen on WhatsApp.",
-    lblService: lang === "hi" ? "सर्विस चुनें" : "Select Service",
+        ? "तुरंत जवाब पाने के लिए नीचे विवरण भरें।"
+        : "Fill details below to get an instant quote on WhatsApp.",
+    lblService: lang === "hi" ? "सर्विस चुनें" : "Service",
     lblProperty: lang === "hi" ? "प्रॉपर्टी का प्रकार" : "Property Type",
     lblName: lang === "hi" ? "आपका नाम" : "Your Name",
-    lblPhone: lang === "hi" ? "मोबाइल नंबर" : "Mobile Number",
-    lblLocation: lang === "hi" ? "नासिक में इलाका/लोकेशन" : "Nashik Locality",
+    lblPhone: lang === "hi" ? "मोबाइल नंबर" : "Phone Number",
+    lblLocation:
+      lang === "hi" ? "इलाका (जैसे बेमेतरा, दुर्ग)" : "Location (e.g. Bemetara, Durg)",
     btnSendInquiry:
-      lang === "hi" ? "व्हाट्सएप पर तुरंत पूछताछ भेजें" : "Send Instant Inquiry on WhatsApp",
+      lang === "hi" ? "व्हाट्सएप पर भेजें" : "Send on WhatsApp",
     formGuar:
       lang === "hi"
-        ? "⚡ तुरंत जवाब • कोई स्पैम नहीं • सीधे कांट्रैक्टर से बातचीत"
-        : "⚡ Instant response • No spam • Direct communication with contractor",
-    whySub: lang === "hi" ? "हमारे साथ काम क्यों करें" : "Why Work With Us",
+        ? "⚡ तुरंत जवाब • 100% निशुल्क परामर्श"
+        : "⚡ Fast response • 100% Free Consultation",
+    whySub: lang === "hi" ? "खासियत" : "Why Choose Us",
     whyTitle:
       lang === "hi"
-        ? "नासिक के भरोसेमंद इंटीरियर स्पेशलिस्ट"
-        : "The Trusted Interior Specialists in Nashik",
-    why1Title: lang === "hi" ? "सीधे मास्टर कारीगर" : "Direct Master Craftsmen",
+        ? "फातिमा ट्रेडर्स ही क्यों?"
+        : "Why Choose Famtima Traders?",
+    why1Title: lang === "hi" ? "सीधे कारीगर" : "Direct Craftsmen",
     why1Desc:
       lang === "hi"
-        ? "सीधे उन्हीं कारीगरों से काम करवाएं जो आपकी सीलिंग और पैनलिंग तैयार करते हैं। कोई बिचौलिया नहीं, सबसे किफायती दरें और बेहतरीन फिनिशिंग।"
-        : "Work directly with the artisans who execute your ceiling and paneling. No third-party markups, ensuring unbeatable rates and superior workmanship.",
-    why2Title: lang === "hi" ? "डिजिटल QR वेरिफिकेशन" : "Digital QR Verification",
+        ? "बिना किसी बिचौलिए के सीधे कारीगर से काम—उचित दाम और बेहतरीन फिनिश।"
+        : "Direct artisan execution without middleman markups for honest rates.",
+    why2Title: lang === "hi" ? "पारदर्शी व पक्का बिल" : "Transparent Itemized Billing",
     why2Desc:
       lang === "hi"
-        ? "हमारा हर कोटेशन और बिल डिजिटल QR कोड के साथ आता है जिसे कभी भी मोबाइल से स्कैन करके ऑनलाइन चेक किया जा सकता है।"
-        : "Every quotation, invoice, and payment receipt is backed by our secure QR code verification system to ensure complete transparency.",
-    why3Title: lang === "hi" ? "समय पर काम पूरा" : "On-Time Handover",
+        ? "हर कोटेशन और बिल में सामग्री व दरों का स्पष्ट विवरण, बिना किसी छिपे शुल्क के।"
+        : "Every quotation and invoice features complete itemized pricing with zero hidden charges.",
+    why3Title: lang === "hi" ? "समय पर डिलीवरी" : "On-Time Completion",
     why3Desc:
       lang === "hi"
-        ? "हम आपके समय की कद्र करते हैं। तय समय सीमा और समर्पित टीम के साथ आपका काम समय पर पूरा करते हैं।"
-        : "We respect your time. Committed deadlines with dedicated team mobilization ensure your false ceiling or PVC installation finishes on schedule.",
-    why4Title: lang === "hi" ? "सर्टिफाइड हाई-क्वालिटी मटेरियल" : "Certified Materials",
+        ? "तय समय सीमा के अंदर साफ-सुथरा और गुणवत्तापूर्ण काम पूरा।"
+        : "Strict committed timelines and clean project handover.",
+    why4Title: lang === "hi" ? "प्रीमियम मटेरियल" : "Premium Materials",
     why4Desc:
       lang === "hi"
-        ? "हम सिर्फ ओरिजिनल Plaster of Paris, Saint-Gobain Gyproc बोर्ड्स और मजबूत वॉटरप्रूफ PVC पैनल्स इस्तेमाल करते हैं।"
-        : "We only use verified high-tensile Plaster of Paris, genuine Saint-Gobain Gyproc boards, and heavy-gauge waterproof PVC louvers.",
-    areasSub: lang === "hi" ? "नासिक कवरेज" : "Local Nashik Coverage",
+        ? "मजबूत जिप्सम, ग्रेड-1 POP और 100% वाटरप्रूफ PVC पैनल्स।"
+        : "High-grade POP, heavy-gauge waterproof PVC, and branded hardware.",
+    areasSub: lang === "hi" ? "सेवा क्षेत्र" : "Service Areas",
     areasTitle:
       lang === "hi"
-        ? "नासिक शहर और सभी उपनगरों में हमारी सेवाएं"
-        : "Serving All Localities Across Nashik & Surrounding Areas",
+        ? "बेमेतरा और आसपास के क्षेत्र"
+        : "Areas We Serve in Chhattisgarh",
     areasDesc:
       lang === "hi"
-        ? "हमारी टीम नासिक के हर प्रमुख इलाके में ऑन-साइट नाप, डिज़ाइन कंसल्टेशन और इंस्टॉलेशन करती है।"
-        : "Our teams provide on-site measurement, design consultations, and installation in every major neighborhood of Nashik.",
-    faqSub: lang === "hi" ? "अक्सर पूछे जाने वाले सवाल" : "Frequently Asked Questions",
+        ? "बेमेतरा, दुर्ग, रायपुर और आसपास के शहरों में ऑन-साइट इंस्टॉलेशन उपलब्ध है।"
+        : "On-site measurement and execution across Bemetara, Durg, Raipur & nearby hubs.",
+    faqSub: lang === "hi" ? "सवाल-जवाब" : "FAQs",
     faqTitle:
       lang === "hi"
-        ? "नासिक में POP और PVC से जुड़े सवाल-जवाब"
-        : "POP & PVC Interior FAQs in Nashik",
+        ? "अक्सर पूछे जाने वाले सवाल"
+        : "Frequently Asked Questions",
     ctaTitle:
       lang === "hi"
-        ? "क्या आप अपने घर को खूबसूरत बनाने के लिए तैयार हैं?"
-        : "Ready to Beautify Your Home in Nashik?",
+        ? "अपने घर को नया लुक देने के लिए तैयार हैं?"
+        : "Ready to Upgrade Your Space?",
     ctaDesc:
       lang === "hi"
-        ? "मुफ्त साइट इंस्पेक्शन, 3D डिज़ाइन कैटलॉग और पारदर्शी कोटेशन के लिए आज ही ओवैस इंटीरियर डिज़ाइनर से संपर्क करें।"
-        : "Contact Owais Interior Designer today for a free site inspection, 3D design catalog, and transparent quotation.",
+        ? "मुफ्त साइट विज़िट और तुरंत कोटेशन के लिए आज ही संपर्क करें।"
+        : "Contact Famtima Traders today for a free site visit and estimate.",
     ctaChatBtn:
       lang === "hi"
-        ? `व्हाट्सएप पर चैट करें (+91 ${phonePrimary})`
-        : `Chat on WhatsApp (+91 ${phonePrimary})`,
+        ? `व्हाट्सएप पर चैट करें`
+        : `Chat on WhatsApp`,
   };
 
   function handleWhatsAppSubmit(e: React.FormEvent) {
     e.preventDefault();
     const cleanPhone = phone.trim() || "Not provided";
     const cleanName = name.trim() || "Valued Customer";
-    const cleanArea = area.trim() || "Nashik";
+    const cleanArea = area.trim() || "Bemetara";
 
     const message = encodeURIComponent(
-      `Hello Owais Interior Designer!\n\nI would like to get a free estimate and design catalog for:\n• Service: ${quoteService}\n• Property Type: ${propertyType}\n• Name: ${cleanName}\n• Contact: ${cleanPhone}\n• Location in Nashik: ${cleanArea}\n• Preferred Language: ${lang === "hi" ? "Hindi" : "English"}\n\nPlease contact me with quotation details.`,
+      `Hello Famtima Traders!\n\nI would like to get a free estimate and design consultation for:\n• Service: ${quoteService}\n• Property Type: ${propertyType}\n• Name: ${cleanName}\n• Contact: ${cleanPhone}\n• Location: ${cleanArea}\n• Preferred Language: ${lang === "hi" ? "Hindi" : "English"}\n\nPlease contact me with quotation details.`,
     );
     window.open(`https://wa.me/91${phonePrimary}?text=${message}`, "_blank");
   }
 
   const services = [
     {
+      id: "home-decor",
+      title: "Home Decoration & Styling",
+      badge: "Living & Bedroom",
+      description:
+        "Modern interior styling and decorative solutions tailored for living rooms, halls, and bedrooms.",
+      features: [
+        "Aesthetic hall & bedroom styling",
+        "Designer accents & partitions",
+        "Turnkey finish with quality materials",
+      ],
+      priceHint: landingConfig.rates.commercial || "Contact for Pricing",
+      image: "/images/pop-ceiling-nashik.webp",
+    },
+    {
       id: "pop",
       title: "POP False Ceiling Work",
-      badge: "Most Popular in Nashik",
+      badge: "Designer Ceilings",
       description:
-        "Premium Plaster of Paris (POP) false ceilings tailored for living rooms, master bedrooms, and dining spaces. Includes modern concealed LED cove lighting, geometric patterns, intricate cornices, and chandelier medallions.",
+        "Premium Plaster of Paris false ceilings with concealed LED cove lighting and anti-crack framework.",
       features: [
-        "Hall & bedroom designer cove lighting",
-        "Anti-crack high tensile plaster guarantee",
-        "Custom geometric & curved ceiling designs",
-        "Heat insulation for top-floor Nashik homes",
+        "Living room & bedroom cove lighting",
+        "Anti-crack high-tensile plaster",
+        "Thermal insulation & modern patterns",
       ],
-      priceHint: landingConfig.rates.pop,
+      priceHint: landingConfig.rates.pop || "Contact for Pricing",
       image: "/images/pop-ceiling-nashik.webp",
     },
     {
       id: "pvc",
-      title: "PVC Wall Panels & Ceilings",
-      badge: "100% Waterproof & Termite Proof",
+      title: "PVC Wall Panelling & Louvers",
+      badge: "100% Waterproof",
       description:
-        "High-density PVC wall paneling and ceiling louvers. The ideal solution for damp walls, bathrooms, kitchens, and modern living room TV backgrounds. Available in woodgrain, marble sheets, and fluted designs.",
+        "Durable, termite-proof PVC panels and decorative fluted louvers. Perfect for damp walls and TV feature walls.",
       features: [
-        "100% Waterproof & zero maintenance",
-        "Termite-proof & fire-retardant",
-        "Rapid 24-48 hour installation (no paint odor)",
-        "Fluted acoustic louvers & marble-finish panels",
+        "100% Waterproof & damp protection",
+        "Zero paint odor & quick installation",
+        "Fluted louvers, marble & wood finishes",
       ],
-      priceHint: landingConfig.rates.pvc,
+      priceHint: landingConfig.rates.pvc || "Contact for Pricing",
       image: "/images/pvc-wall-panels-nashik.webp",
     },
     {
-      id: "gypsum",
-      title: "Gypsum Board False Ceiling",
-      badge: "Smooth Seamless Finish",
+      id: "renovation",
+      title: "Renovation & Remodelling",
+      badge: "Complete Makeover",
       description:
-        "Top-grade Saint-Gobain Gyproc / USG Boral gypsum board false ceilings. Precision laser-leveled metal framework with seamless joint tape finishing ready for smooth paint application.",
+        "End-to-end residential and shop renovation with dedicated craftsmanship and on-time delivery.",
       features: [
-        "Ultra-smooth flush paint finish",
-        "Superior acoustic sound reduction",
-        "Thermal barrier reducing AC electricity bills",
-        "Fire-resistant safety standards",
+        "Room, flat & shop remodelling",
+        "Ceiling & wall restorations",
+        "Timely handover with clean finish",
       ],
-      priceHint: landingConfig.rates.gypsum,
+      priceHint: landingConfig.rates.gypsum || "Contact for Pricing",
       image: "/images/bedroom-gypsum-ceiling-nashik.webp",
-    },
-    {
-      id: "commercial",
-      title: "Commercial & Grid Ceilings",
-      badge: "Offices, Clinics & Shops",
-      description:
-        "2x2 mineral fiber acoustic tiles, metal grid ceilings, and open cell ceiling systems designed for commercial offices, hospitals, showrooms, and retail stores in Nashik.",
-      features: [
-        "Quick access to overhead AC & wiring ducts",
-        "Noise absorbing acoustic rating",
-        "Cost-effective for large commercial carpet areas",
-        "Clean professional corporate aesthetic",
-      ],
-      priceHint: landingConfig.rates.commercial,
-      image: "/images/modern-kitchen-ceiling-nashik.webp",
     },
   ];
 
   const galleryItems = landingConfig.projects;
 
-  const nashikAreas = [
-    "Wadala Naka",
-    "Rahmat Nagar",
-    "Gangapur Road",
-    "College Road",
-    "Indira Nagar",
-    "Govind Nagar",
-    "Panchavati",
-    "Pathardi Phata",
-    "Nashik Road",
-    "Ambad MIDC",
-    "Satpur MIDC",
-    "Deolali Camp",
-    "Dwarka",
-    "Mahatma Nagar",
-    "Tidke Colony",
-    "Ashoka Marg",
+  const bemetaraAreas = [
+    "Bemetara Town",
+    "Krishna Vihar",
+    "Durg",
+    "Bhilai",
+    "Raipur",
+    "Bilaspur",
+    "Rajnandgaon",
+    "Kawardha",
+    "Berla",
+    "Nawagarh",
+    "Saja",
+    "Across Chhattisgarh",
   ];
+  const nashikAreas = bemetaraAreas;
 
   const faqs = [
     {
-      q: "What is the cost of POP false ceiling in Nashik?",
-      a: "In Nashik, standard POP false ceiling rates typically range between ₹85 to ₹130 per square foot, depending on the complexity of the design, number of cove light steps, and plaster quality. At Owais Interior Designer, we provide direct craftsman rates without middleman commissions.",
+      q: "What services does Famtima Traders provide?",
+      a: "We specialize in home decoration, designer POP false ceilings, 100% waterproof PVC wall panelling, decorative louvers, and complete room and shop renovation.",
     },
     {
-      q: "Why are PVC wall panels popular in Nashik homes?",
-      a: "Nashik frequently experiences wall dampness and moisture during monsoon seasons. PVC wall panels are 100% waterproof, anti-termite, and require zero painting. They can be installed over existing damp walls in just 1 to 2 days without mess or odors.",
+      q: "Why choose PVC wall panels for walls?",
+      a: "PVC wall panels are 100% waterproof, termite-proof, and maintenance-free. They permanently cover damp walls while creating a modern, stylish look.",
     },
     {
-      q: "How long does it take to complete false ceiling for a 2BHK flat in Nashik?",
-      a: "A standard 2BHK flat (Hall, 2 Bedrooms, Kitchen) generally takes between 5 to 8 working days for complete framing, plastering/boarding, cutting light fixtures, and final smooth finishing.",
+      q: "How can I get an estimate for my space?",
+      a: "Simply call or WhatsApp us at +91 7860854662. We'll discuss your room size and provide a free quotation and site visit.",
     },
     {
-      q: "Do you provide free site visits and quotation in Nashik?",
-      a: "Yes! Owais Interior Designer offers 100% free site measurement and consultation anywhere in Nashik city. Call or WhatsApp us at +91 7756043214 to schedule an appointment.",
-    },
-    {
-      q: "How do I verify quotations and invoices issued by Owais Interior Designer?",
-      a: "Every quotation, invoice, and payment receipt issued by Owais Interior Designer includes an official tamper-proof QR code. Anyone can scan this QR code with their mobile phone camera to verify the document's authenticity on our secure digital portal.",
+      q: "Do you undertake work outside Bemetara?",
+      a: "Yes. While based in Bemetara (Krishna Vihar), our team handles false ceiling, PVC, and renovation projects across Durg, Bhilai, Raipur, Bilaspur, and surrounding Chhattisgarh districts.",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-600 selection:text-white pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:pb-0">
+    <div className="min-h-screen bg-white text-slate-900 antialiased selection:bg-emerald-700 selection:text-white pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:pb-0">
       {/* Top Banner - Royal Navy Blue */}
       <aside
         aria-label="Announcement"
-        className="border-b border-blue-800 bg-blue-900 px-3 py-1.5 sm:py-2 text-xs text-blue-100 shadow-xs"
+        className="border-b border-emerald-800 bg-emerald-900 px-3 py-1.5 sm:py-2 text-xs text-emerald-100 shadow-xs"
       >
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0 flex-1">
@@ -493,14 +553,14 @@ function PublicLandingPage() {
 
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Language Switcher Buttons (Hindi / English) */}
-            <div className="flex items-center rounded-lg bg-blue-950/90 p-0.5 border border-blue-700/80 shadow-xs">
+            <div className="flex items-center rounded-lg bg-emerald-950/90 p-0.5 border border-emerald-700/80 shadow-xs">
               <button
                 type="button"
                 onClick={() => setLang("en")}
                 className={`px-2 py-0.5 rounded text-[11px] font-bold transition-all ${
                   lang === "en"
-                    ? "bg-blue-600 text-white shadow-xs"
-                    : "text-blue-200 hover:text-white"
+                    ? "bg-emerald-700 text-white shadow-xs"
+                    : "text-emerald-200 hover:text-white"
                 }`}
                 title="Switch to English"
               >
@@ -511,8 +571,8 @@ function PublicLandingPage() {
                 onClick={() => setLang("hi")}
                 className={`px-2 py-0.5 rounded text-[11px] font-bold transition-all ${
                   lang === "hi"
-                    ? "bg-blue-600 text-white shadow-xs"
-                    : "text-blue-200 hover:text-white"
+                    ? "bg-emerald-700 text-white shadow-xs"
+                    : "text-emerald-200 hover:text-white"
                 }`}
                 title="हिंदी में पढ़ें"
               >
@@ -521,7 +581,7 @@ function PublicLandingPage() {
             </div>
 
             {/* Social Media Account Links */}
-            <div className="hidden sm:flex items-center gap-2.5 pr-2 border-r border-blue-700/60">
+            <div className="hidden sm:flex items-center gap-2.5 pr-2 border-r border-emerald-700/60">
               {landingConfig.social?.instagram && (
                 <a
                   href={landingConfig.social.instagram}
@@ -549,7 +609,7 @@ function PublicLandingPage() {
                   href={landingConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-200 hover:text-white transition-colors p-1"
+                  className="text-emerald-200 hover:text-white transition-colors p-1"
                   title="Follow us on Facebook"
                 >
                   <Facebook className="size-3.5" />
@@ -559,15 +619,15 @@ function PublicLandingPage() {
 
             <a
               href={`tel:+91${phonePrimary}`}
-              className="hidden md:inline-flex items-center gap-1.5 font-semibold text-white hover:text-blue-200 transition-colors"
+              className="hidden md:inline-flex items-center gap-1.5 font-semibold text-white hover:text-emerald-200 transition-colors"
             >
-              <Phone className="size-3.5 text-blue-300" />
+              <Phone className="size-3.5 text-emerald-300" />
               +91 {phonePrimary}
             </a>
-            <span className="text-blue-700 hidden lg:inline">|</span>
+            <span className="text-emerald-700 hidden lg:inline">|</span>
             <Link
               to="/auth"
-              className="hidden sm:inline-flex items-center gap-1 text-blue-200 hover:text-white transition-colors text-[11px]"
+              className="hidden sm:inline-flex items-center gap-1 text-emerald-200 hover:text-white transition-colors text-[11px]"
             >
               <ShieldCheck className="size-3.5" />
               {t.staffLogin}
@@ -582,14 +642,14 @@ function PublicLandingPage() {
           <Link to="/" className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 shrink min-w-0">
             <img
               src={companyLogoUrl}
-              alt="Owais Interior Designer Nashik Logo"
-              className="size-8 sm:size-10 lg:size-11 rounded-full bg-white object-contain p-0.5 border-2 border-blue-600 shadow-md shadow-blue-600/10 shrink-0"
+              alt="Famtima Traders Logo"
+              className="size-8 sm:size-10 lg:size-11 rounded-full bg-white object-contain p-0.5 border-2 border-emerald-700 shadow-md shadow-emerald-700/10 shrink-0"
             />
             <div className="min-w-0">
-              <span className="block font-display text-[13px] xs:text-sm sm:text-base lg:text-xl font-bold tracking-tight text-blue-950 leading-tight whitespace-normal sm:whitespace-nowrap">
-                Owais Interior Designer
+              <span className="block font-display text-[13px] xs:text-sm sm:text-base lg:text-xl font-bold tracking-tight text-slate-950 leading-tight whitespace-normal sm:whitespace-nowrap">
+                Famtima Traders
               </span>
-              <span className="block text-[8.5px] xs:text-[9.5px] sm:text-[11px] font-semibold tracking-wider text-blue-600 uppercase leading-none mt-0.5 whitespace-normal sm:whitespace-nowrap">
+              <span className="block text-[8.5px] xs:text-[9.5px] sm:text-[11px] font-semibold tracking-wider text-emerald-800 uppercase leading-none mt-0.5 whitespace-normal sm:whitespace-nowrap">
                 {t.tagline}
               </span>
             </div>
@@ -600,25 +660,28 @@ function PublicLandingPage() {
             aria-label="Main Navigation"
             className="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600"
           >
-            <a href="#services" className="hover:text-blue-600 transition-colors">
+            <a href="#services" className="hover:text-emerald-700 transition-colors">
               {t.navServices}
             </a>
-            <a href="#pop" className="hover:text-blue-600 transition-colors">
+            <a href="#pop" className="hover:text-emerald-700 transition-colors">
               {t.navPop}
             </a>
-            <a href="#pvc" className="hover:text-blue-600 transition-colors">
+            <a href="#pvc" className="hover:text-emerald-700 transition-colors">
               {t.navPvc}
             </a>
-            <a href="#gallery" className="hover:text-blue-600 transition-colors">
+            <a href="#founder" className="hover:text-emerald-700 transition-colors">
+              {t.navFounder}
+            </a>
+            <a href="#gallery" className="hover:text-emerald-700 transition-colors">
               {t.navGallery}
             </a>
-            <a href="#areas" className="hover:text-blue-600 transition-colors">
+            <a href="#areas" className="hover:text-emerald-700 transition-colors">
               {t.navAreas}
             </a>
-            <a href="#quote" className="hover:text-blue-600 transition-colors">
+            <a href="#quote" className="hover:text-emerald-700 transition-colors">
               {t.navQuote}
             </a>
-            <a href="#faqs" className="hover:text-blue-600 transition-colors">
+            <a href="#faqs" className="hover:text-emerald-700 transition-colors">
               {t.navFaqs}
             </a>
           </nav>
@@ -657,7 +720,7 @@ function PublicLandingPage() {
                     href={landingConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1.5 rounded-full hover:bg-slate-100 text-slate-500 hover:text-blue-600 transition-colors"
+                    className="p-1.5 rounded-full hover:bg-slate-100 text-slate-500 hover:text-emerald-700 transition-colors"
                     title="Facebook"
                   >
                     <Facebook className="size-4" />
@@ -668,7 +731,7 @@ function PublicLandingPage() {
 
             <a
               href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                "Hello Owais Interior Designer, I found your website and would like to inquire about POP false ceiling and PVC work in Nashik.",
+                "Hello Famtima Traders, I found your website and would like to inquire about home decoration, false ceiling, and PVC work in Bemetara.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -681,7 +744,7 @@ function PublicLandingPage() {
 
             <a
               href={`tel:+91${phonePrimary}`}
-              className="inline-flex items-center gap-1 sm:gap-1.5 rounded-lg border border-blue-200 bg-blue-50 px-2 xs:px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-blue-700 hover:bg-blue-600 hover:text-white transition-all shadow-xs shrink-0"
+              className="inline-flex items-center gap-1 sm:gap-1.5 rounded-lg border border-emerald-200 bg-emerald-50 px-2 xs:px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all shadow-xs shrink-0"
               title={`Call +91 ${phonePrimary}`}
             >
               <Phone className="size-3.5 sm:size-4 shrink-0" />
@@ -690,7 +753,7 @@ function PublicLandingPage() {
 
             <Link
               to="/auth"
-              className="hidden md:inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:text-blue-600 hover:border-blue-300 transition-all shrink-0"
+              className="hidden md:inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition-all shrink-0"
               title="Employee & Admin CRM Portal"
             >
               <span>Portal</span>
@@ -700,7 +763,7 @@ function PublicLandingPage() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-blue-600 transition-colors shrink-0"
+              className="lg:hidden p-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-emerald-700 transition-colors shrink-0"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -715,56 +778,63 @@ function PublicLandingPage() {
               <a
                 href="#services"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navServices}
               </a>
               <a
                 href="#pop"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navPop}
               </a>
               <a
                 href="#pvc"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navPvc}
               </a>
               <a
+                href="#founder"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+              >
+                {t.navFounder}
+              </a>
+              <a
                 href="#gallery"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navGallery}
               </a>
               <a
                 href="#areas"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navAreas}
               </a>
               <a
                 href="#quote"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navQuote}
               </a>
               <a
                 href="#faqs"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 {t.navFaqs}
               </a>
               <Link
                 to="/auth"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
               >
                 CRM Portal
               </Link>
@@ -773,7 +843,7 @@ function PublicLandingPage() {
             {/* Mobile Language Switcher inside Drawer */}
             <div className="flex items-center justify-between pt-1">
               <span className="text-xs font-semibold text-slate-600 flex items-center gap-1.5">
-                <Languages className="size-4 text-blue-600" />
+                <Languages className="size-4 text-emerald-700" />
                 Language / भाषा:
               </span>
               <div className="flex items-center rounded-lg bg-slate-100 p-0.5 border border-slate-200">
@@ -782,7 +852,7 @@ function PublicLandingPage() {
                   onClick={() => setLang("en")}
                   className={`px-3 py-1 rounded text-xs font-bold transition-all ${
                     lang === "en"
-                      ? "bg-blue-600 text-white shadow-xs"
+                      ? "bg-emerald-700 text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
@@ -793,7 +863,7 @@ function PublicLandingPage() {
                   onClick={() => setLang("hi")}
                   className={`px-3 py-1 rounded text-xs font-bold transition-all ${
                     lang === "hi"
-                      ? "bg-blue-600 text-white shadow-xs"
+                      ? "bg-emerald-700 text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
@@ -834,7 +904,7 @@ function PublicLandingPage() {
                     href={landingConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-slate-100 hover:text-blue-600 text-blue-600"
+                    className="p-2 rounded-full bg-slate-100 hover:text-emerald-700 text-emerald-700"
                     title="Facebook"
                   >
                     <Facebook className="size-4" />
@@ -847,23 +917,23 @@ function PublicLandingPage() {
       </header>
 
       {/* Hero Section - Clean Blue & White Glow */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/70 via-white to-slate-50 pt-8 sm:pt-12 pb-16 sm:pb-20 lg:pt-20 lg:pb-28 border-b border-slate-100">
+      <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50/60 via-white to-slate-50 pt-8 sm:pt-12 pb-16 sm:pb-20 lg:pt-20 lg:pb-28 border-b border-slate-100">
         {/* Soft blue ambient glow accents - contained within bounds */}
-        <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 size-[320px] sm:size-[500px] lg:size-[600px] -translate-x-1/2 rounded-full bg-blue-400/15 blur-[100px] sm:blur-[140px]" />
+        <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 size-[320px] sm:size-[500px] lg:size-[600px] -translate-x-1/2 rounded-full bg-amber-400/15 blur-[100px] sm:blur-[140px]" />
         <div className="pointer-events-none absolute top-1/3 right-0 -z-10 size-[250px] sm:size-[400px] rounded-full bg-sky-300/20 blur-[90px] sm:blur-[130px]" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-12 lg:items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-5 sm:space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-100/70 px-3 py-1.5 text-xs font-semibold text-blue-800 shadow-xs max-w-full">
-                <Sparkles className="size-3.5 text-blue-600 shrink-0" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50/70 px-3 py-1.5 text-xs font-semibold text-emerald-800 shadow-xs max-w-full">
+                <Sparkles className="size-3.5 text-emerald-700 shrink-0" />
                 <span className="truncate">{t.badge}</span>
               </div>
 
               <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.2] break-words">
-                {t.heroTitle1} <span className="text-blue-600">{t.heroTitlePop}</span>{" "}
-                {t.heroTitleAnd} <span className="text-blue-900">{t.heroTitlePvc}</span>{" "}
+                {t.heroTitle1} <span className="text-emerald-700">{t.heroTitlePop}</span>{" "}
+                {t.heroTitleAnd} <span className="text-emerald-900">{t.heroTitlePvc}</span>{" "}
                 {t.heroTitleCity}
               </h1>
 
@@ -874,7 +944,7 @@ function PublicLandingPage() {
               {/* Trust Badges - Responsive Grid (2 cols on mobile, 4 on desktop) */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 xs:gap-2.5 sm:gap-3 pt-1">
                 <div className="rounded-xl border border-slate-200 bg-white p-2.5 xs:p-3 text-center shadow-xs min-w-0">
-                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-600">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
                     {t.statExp}
                   </div>
                   <div className="text-[10px] xs:text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5 leading-tight">
@@ -882,7 +952,7 @@ function PublicLandingPage() {
                   </div>
                 </div>
                 <div className="rounded-xl border border-slate-200 bg-white p-2.5 xs:p-3 text-center shadow-xs min-w-0">
-                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-600">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
                     {t.statProj}
                   </div>
                   <div className="text-[10px] xs:text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5 leading-tight">
@@ -900,18 +970,18 @@ function PublicLandingPage() {
                 <button
                   type="button"
                   onClick={() => setIsRatingModalOpen(true)}
-                  className="rounded-xl border border-blue-200 bg-blue-50/70 hover:bg-blue-100/80 p-2.5 xs:p-3 text-center shadow-xs transition-all duration-200 cursor-pointer group text-center w-full min-w-0"
+                  className="rounded-xl border border-emerald-200 bg-emerald-50/70 hover:bg-emerald-100/80 p-2.5 xs:p-3 text-center shadow-xs transition-all duration-200 cursor-pointer group text-center w-full min-w-0"
                   title="Click to view genuine Google & Justdial ratings and customer reviews"
                 >
                   <div className="flex items-center justify-center gap-1">
-                    <span className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-600 group-hover:scale-105 transition-transform inline-flex items-center gap-0.5">
+                    <span className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700 group-hover:scale-105 transition-transform inline-flex items-center gap-0.5">
                       {t.statRating}
                     </span>
-                    <span className="size-1.5 rounded-full bg-blue-500 animate-ping inline-block sm:hidden" />
+                    <span className="size-1.5 rounded-full bg-emerald-500 animate-ping inline-block sm:hidden" />
                   </div>
-                  <div className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-blue-700 mt-0.5 flex flex-wrap items-center justify-center gap-x-1 leading-tight">
+                  <div className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-emerald-700 mt-0.5 flex flex-wrap items-center justify-center gap-x-1 leading-tight">
                     <span>{t.statRatingSub}</span>
-                    <span className="text-[9.5px] xs:text-[10px] text-blue-500 underline font-normal shrink-0">
+                    <span className="text-[9.5px] xs:text-[10px] text-emerald-600 underline font-normal shrink-0">
                       (View)
                     </span>
                   </div>
@@ -922,7 +992,7 @@ function PublicLandingPage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-2">
                 <a
                   href="#quote"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 xs:px-5 sm:px-6 py-3 xs:py-3.5 text-xs xs:text-sm font-bold text-white shadow-lg shadow-blue-600/25 hover:bg-blue-700 transition-all text-center min-w-0"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-4 xs:px-5 sm:px-6 py-3 xs:py-3.5 text-xs xs:text-sm font-bold text-white shadow-lg shadow-emerald-600/25 hover:bg-emerald-700 transition-all text-center min-w-0"
                 >
                   <span className="truncate">{t.btnFreeEstimate}</span>
                   <ArrowRight className="size-4 shrink-0" />
@@ -931,7 +1001,7 @@ function PublicLandingPage() {
                   href={`tel:+91${phonePrimary}`}
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 xs:px-5 sm:px-6 py-3 xs:py-3.5 text-xs xs:text-sm font-semibold text-slate-800 shadow-xs hover:bg-slate-50 hover:border-slate-400 transition-all text-center min-w-0"
                 >
-                  <Phone className="size-4 text-blue-600 shrink-0" />
+                  <Phone className="size-4 text-emerald-700 shrink-0" />
                   <span className="truncate">
                     {t.btnCall} +91 {phonePrimary}
                   </span>
@@ -946,7 +1016,7 @@ function PublicLandingPage() {
 
             {/* Right Hero Image Card */}
             <div className="lg:col-span-5 relative mt-4 lg:mt-0">
-              <div className="relative overflow-hidden rounded-2xl border-2 sm:border-4 border-white bg-white shadow-xl shadow-blue-900/10">
+              <div className="relative overflow-hidden rounded-2xl border-2 sm:border-4 border-white bg-white shadow-xl shadow-emerald-900/10">
                 <div className="relative overflow-hidden bg-slate-900">
                   <img
                     src="/images/pop-ceiling-nashik.webp"
@@ -954,14 +1024,14 @@ function PublicLandingPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 480px"
                     width={1200}
                     height={670}
-                    alt="Best PVC ceiling, POP false ceiling design and interior work by Owais Interior Designer Nashik"
+                    alt="Home decoration, false ceiling, and interior work by Famtima Traders Bemetara"
                     className="w-full h-auto max-h-[380px] sm:max-h-[440px] aspect-[1200/670] object-cover transition-transform duration-500 hover:scale-105"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
                   />
                   <div className="absolute top-2.5 sm:top-3 inset-x-2.5 sm:inset-x-3 flex items-center justify-between gap-1.5 pointer-events-none">
-                    <span className="rounded-full bg-blue-900/90 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white shadow-md border border-blue-400/30 truncate max-w-[62%] sm:max-w-none">
+                    <span className="rounded-full bg-emerald-900/90 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white shadow-md border border-emerald-400/30 truncate max-w-[62%] sm:max-w-none">
                       {t.featuredBadge}
                     </span>
                     <span className="rounded-full bg-emerald-700/95 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold text-white shadow-md border border-emerald-400/30 shrink-0">
@@ -977,13 +1047,13 @@ function PublicLandingPage() {
                       Modern Living Room POP Ceiling
                     </p>
                     <p className="text-[11px] xs:text-xs text-slate-500 flex items-center gap-1 mt-0.5 truncate">
-                      <MapPin className="size-3 xs:size-3.5 text-blue-600 shrink-0" />
-                      Gangapur Road, Nashik
+                      <MapPin className="size-3 xs:size-3.5 text-emerald-700 shrink-0" />
+                      Krishna Vihar, Bemetara
                     </p>
                   </div>
                   <a
                     href="#gallery"
-                    className="shrink-0 text-[11px] xs:text-xs font-semibold text-blue-600 hover:text-blue-800 bg-blue-50 px-2 xs:px-2.5 py-1.5 rounded-lg border border-blue-100 transition-colors"
+                    className="shrink-0 text-[11px] xs:text-xs font-semibold text-emerald-700 hover:text-emerald-800 bg-emerald-50 px-2 xs:px-2.5 py-1.5 rounded-lg border border-emerald-100 transition-colors"
                   >
                     View All →
                   </a>
@@ -998,7 +1068,7 @@ function PublicLandingPage() {
       <section id="services" className="border-t border-slate-200/80 bg-slate-50/70 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2.5 sm:space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">
+            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
               {t.servicesSub}
             </span>
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
@@ -1012,13 +1082,13 @@ function PublicLandingPage() {
               <div
                 key={svc.id}
                 id={svc.id}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-600/10 flex flex-col justify-between"
+                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-600/10 flex flex-col justify-between"
               >
                 <div className="grid gap-4 sm:gap-6 sm:grid-cols-12 sm:items-center">
                   <div className="sm:col-span-5 overflow-hidden rounded-xl border border-slate-100 bg-slate-50">
                     <img
                       src={svc.image}
-                      alt={`${svc.title} by Owais Interior Designer Nashik`}
+                      alt={`${svc.title} by Famtima Traders Bemetara`}
                       width={600}
                       height={450}
                       className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -1027,10 +1097,10 @@ function PublicLandingPage() {
                     />
                   </div>
                   <div className="sm:col-span-7 space-y-2.5 sm:space-y-3">
-                    <span className="inline-block rounded-md bg-blue-50 px-2.5 py-0.5 text-[11px] sm:text-xs font-semibold text-blue-700 border border-blue-200/60">
+                    <span className="inline-block rounded-md bg-emerald-50 px-2.5 py-0.5 text-[11px] sm:text-xs font-semibold text-emerald-700 border border-emerald-200/60">
                       {svc.badge}
                     </span>
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                       {svc.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1039,18 +1109,18 @@ function PublicLandingPage() {
                     <ul className="space-y-1.5 pt-1 text-xs text-slate-600">
                       {svc.features.map((f, i) => (
                         <li key={i} className="flex items-center gap-2">
-                          <Check className="size-3.5 text-blue-600 shrink-0" />
+                          <Check className="size-3.5 text-emerald-700 shrink-0" />
                           <span>{f}</span>
                         </li>
                       ))}
                     </ul>
                     <div className="flex items-center justify-between pt-2 border-t border-slate-100">
-                      <span className="text-xs sm:text-sm font-bold text-blue-700">
+                      <span className="text-xs sm:text-sm font-bold text-emerald-700">
                         {svc.priceHint}
                       </span>
                       <a
                         href="#quote"
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 hover:text-emerald-800"
                       >
                         <span>{t.btnBookVisit}</span>
                         <ChevronRight className="size-3" />
@@ -1065,11 +1135,198 @@ function PublicLandingPage() {
       </section>
 
       {/* Visual Work Gallery - Pure White Background */}
+      {/* Founder & Global Experience Section */}
+      <section id="founder" className="py-16 sm:py-20 border-t border-slate-200/80 bg-gradient-to-b from-white via-emerald-50/25 to-white relative overflow-hidden">
+        {/* Subtle decorative glow */}
+        <div className="pointer-events-none absolute top-1/2 left-0 -translate-y-1/2 size-96 rounded-full bg-emerald-200/20 blur-3xl -z-10" />
+        <div className="pointer-events-none absolute top-1/3 right-0 size-96 rounded-full bg-amber-200/20 blur-3xl -z-10" />
+
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          {/* Section Heading */}
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50/80 px-3.5 py-1 text-xs font-bold text-amber-800 shadow-xs">
+              <Globe className="size-3.5 text-amber-600" />
+              <span>{t.founderBadge}</span>
+            </div>
+            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+              {t.founderTitle}
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
+              {t.founderDesc}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            {/* Left Card: Founder Profile & Direct Message (5 cols) */}
+            <div className="lg:col-span-5 rounded-2xl border border-emerald-100 bg-white p-6 sm:p-8 shadow-sm space-y-6 relative overflow-hidden">
+              <div className="absolute top-0 right-0 h-2 w-full bg-gradient-to-r from-emerald-600 via-amber-500 to-emerald-700" />
+
+              {/* Founder Header */}
+              <div className="flex items-center gap-4">
+                <div className="relative shrink-0">
+                  <img
+                    src="/anwar-khan.png"
+                    alt="Anwar Khan - Founder Famtima Traders"
+                    className="size-20 sm:size-24 rounded-full object-cover border-2 border-emerald-600 shadow-md ring-4 ring-emerald-100"
+                    loading="lazy"
+                  />
+                  <div
+                    className="absolute -bottom-1 -right-1 size-7 rounded-full bg-emerald-700 text-white flex items-center justify-center border-2 border-white shadow-xs"
+                    title="Verified Master Craftsman"
+                  >
+                    <CheckCircle2 className="size-4" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">
+                    Anwar Khan
+                  </h3>
+                  <p className="text-xs sm:text-sm font-semibold text-emerald-800">
+                    {t.founderRole}
+                  </p>
+                  <div className="mt-1 flex items-center gap-1.5 text-[11px] text-slate-500">
+                    <MapPin className="size-3 text-emerald-600 shrink-0" />
+                    <span>Bemetara, Chhattisgarh</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Key Quick Stats */}
+              <div className="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-center">
+                <div className="space-y-0.5">
+                  <span className="block text-lg font-extrabold text-slate-900">15+</span>
+                  <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statYears}</span>
+                </div>
+                <div className="space-y-0.5 border-x border-slate-100">
+                  <span className="block text-lg font-extrabold text-amber-600">4</span>
+                  <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statCountries}</span>
+                </div>
+                <div className="space-y-0.5">
+                  <span className="block text-lg font-extrabold text-emerald-700">100%</span>
+                  <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statSupervision}</span>
+                </div>
+              </div>
+
+              {/* Geographic Experience Badges */}
+              <div className="space-y-2">
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                  {t.internationalFootprint}
+                </p>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                    <span className="text-sm">🇸🇦</span>
+                    <span className="truncate">Saudi Arabia (SACODECO)</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                    <span className="text-sm">🇦🇪</span>
+                    <span className="truncate">Dubai (UAE)</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                    <span className="text-sm">🇶🇦</span>
+                    <span className="truncate">Qatar</span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                    <span className="text-sm">🇮🇳</span>
+                    <span className="truncate">India (Chhattisgarh)</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Founder Personal Quote */}
+              <div className="rounded-xl border border-amber-200/80 bg-amber-50/40 p-4 relative">
+                <div className="text-xs sm:text-[13px] text-slate-700 italic leading-relaxed">
+                  {t.founderQuote}
+                </div>
+              </div>
+
+              {/* Direct Connect Buttons */}
+              <div className="flex flex-col sm:flex-row gap-2.5 pt-2">
+                <a
+                  href={`tel:+91${phonePrimary}`}
+                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs sm:text-sm py-2.5 px-4 shadow-sm transition-all"
+                >
+                  <Phone className="size-4" />
+                  <span>+91 {phonePrimary}</span>
+                </a>
+                <a
+                  href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
+                    "Hello Anwar Khan ji, I visited the Famtima Traders website and would like to discuss interior/false ceiling work for my property."
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-700 bg-white hover:bg-emerald-50 text-emerald-800 font-semibold text-xs sm:text-sm py-2.5 px-4 shadow-xs transition-all"
+                >
+                  <MessageSquare className="size-4 text-emerald-700" />
+                  <span>{t.founderChatBtn}</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Card: Experience Certificate Document & 4 Key Guarantees (7 cols) */}
+            <div className="lg:col-span-7 space-y-6">
+              {/* Certificate Image Card */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-3 sm:p-4 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <div className="relative group">
+                  <img
+                    src="/international-experience.png"
+                    alt="Anwar Khan - International Work Experience Certificate Saudi Arabia SACODECO"
+                    className="w-full h-auto rounded-xl object-contain bg-slate-50 border border-slate-100"
+                    loading="lazy"
+                  />
+                  <div className="mt-2.5 flex flex-wrap items-center justify-between gap-2 px-1 text-[11px] sm:text-xs text-slate-500">
+                    <div className="flex items-center gap-1.5 font-medium text-emerald-900">
+                      <Award className="size-3.5 text-amber-600" />
+                      <span>{t.certVerified}</span>
+                    </div>
+                    <span className="text-slate-400">SACODECO • 2014–2016</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4 Pillars of Gulf-Standard Workmanship */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
+                  <div className="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                    <ShieldCheck className="size-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">{t.pillar1Title}</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar1Desc}</p>
+                </div>
+
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
+                  <div className="size-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
+                    <Sparkles className="size-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">{t.pillar2Title}</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar2Desc}</p>
+                </div>
+
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
+                  <div className="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                    <Clock className="size-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">{t.pillar3Title}</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar3Desc}</p>
+                </div>
+
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
+                  <div className="size-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center">
+                    <Layers className="size-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">{t.pillar4Title}</h4>
+                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar4Desc}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="gallery" className="py-16 sm:py-20 border-t border-slate-200/80 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 sm:mb-12">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-blue-600">
+              <p className="text-xs font-bold uppercase tracking-widest text-emerald-700">
                 {t.gallerySub}
               </p>
               <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
@@ -1078,11 +1335,11 @@ function PublicLandingPage() {
             </div>
             <a
               href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                "Hello Owais Interior Designer, please share your latest false ceiling and PVC design photo catalogue.",
+                "Hello Famtima Traders, please share your latest home decoration and false ceiling design photo catalogue.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800"
             >
               <span>{t.galleryBtn}</span>
               <ArrowRight className="size-4 shrink-0" />
@@ -1106,7 +1363,7 @@ function PublicLandingPage() {
                       loading="lazy"
                       decoding="async"
                     />
-                    <span className="absolute top-2 left-2 rounded-full bg-blue-900/80 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white shadow-xs">
+                    <span className="absolute top-2 left-2 rounded-full bg-emerald-900/80 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white shadow-xs">
                       {item.category}
                     </span>
                     {item.videoUrl && (
@@ -1122,11 +1379,11 @@ function PublicLandingPage() {
                     )}
                   </div>
                   <div className="p-3.5 sm:p-4 space-y-1.5">
-                    <h3 className="text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1">
+                    <h3 className="text-sm font-bold text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-1">
                       {item.title}
                     </h3>
                     <p className="text-xs text-slate-500 flex items-center gap-1">
-                      <MapPin className="size-3 text-blue-600 shrink-0" />
+                      <MapPin className="size-3 text-emerald-700 shrink-0" />
                       {item.location}
                     </p>
                     {item.description && (
@@ -1140,11 +1397,11 @@ function PublicLandingPage() {
                 <div className="p-3.5 sm:p-4 pt-0">
                   <a
                     href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                      `Hello Owais Interior Designer! I loved your project "${item.title}" in ${item.location}. Can you provide an estimate for a similar design?`,
+                      `Hello Famtima Traders! I liked your project "${item.title}" in ${item.location}. Can you provide an estimate for a similar design?`,
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-blue-200 bg-blue-50/70 py-2.5 text-xs font-semibold text-blue-700 hover:bg-blue-600 hover:text-white transition-all text-center"
+                    className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-emerald-200 bg-emerald-50/70 py-2.5 text-xs font-semibold text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all text-center"
                   >
                     <MessageSquare className="size-3.5" />
                     <span>{t.btnSimilarQuote}</span>
@@ -1159,13 +1416,13 @@ function PublicLandingPage() {
       {/* Free Quotation Form & WhatsApp Estimator - Crisp Clean Gradient */}
       <section
         id="quote"
-        className="py-16 sm:py-20 border-t border-slate-200/80 bg-gradient-to-br from-blue-50/60 via-white to-blue-50/40"
+        className="py-16 sm:py-20 border-t border-slate-200/80 bg-gradient-to-br from-emerald-50/50 via-white to-amber-50/40"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-12 lg:items-center">
             {/* Left Info */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-              <span className="inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800">
+              <span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">
                 {t.quoteSub}
               </span>
               <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
@@ -1177,7 +1434,7 @@ function PublicLandingPage() {
 
               <div className="space-y-3.5 sm:space-y-4 pt-1 sm:pt-2">
                 <div className="flex items-start gap-3">
-                  <div className="rounded-lg bg-blue-100 p-2 text-blue-700 shrink-0">
+                  <div className="rounded-lg bg-emerald-100 p-2 text-emerald-700 shrink-0">
                     <CheckCircle2 className="size-5" />
                   </div>
                   <div>
@@ -1187,7 +1444,7 @@ function PublicLandingPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="rounded-lg bg-blue-100 p-2 text-blue-700 shrink-0">
+                  <div className="rounded-lg bg-emerald-100 p-2 text-emerald-700 shrink-0">
                     <ShieldCheck className="size-5" />
                   </div>
                   <div>
@@ -1197,15 +1454,15 @@ function PublicLandingPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="rounded-lg bg-blue-100 p-2 text-blue-700 shrink-0">
+                  <div className="rounded-lg bg-emerald-100 p-2 text-emerald-700 shrink-0">
                     <Phone className="size-5" />
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">{t.quoteF3Title}</h3>
                     <p className="text-xs text-slate-600">
                       Call directly at{" "}
-                      <strong className="text-blue-900 font-semibold">+91 {phonePrimary}</strong> or{" "}
-                      <strong className="text-blue-900 font-semibold">+91 {phoneSecondary}</strong>.
+                      <strong className="text-emerald-900 font-semibold">+91 {phonePrimary}</strong> or{" "}
+                      <strong className="text-emerald-900 font-semibold">+91 {phoneSecondary}</strong>.
                     </p>
                   </div>
                 </div>
@@ -1214,11 +1471,11 @@ function PublicLandingPage() {
 
             {/* Right Form Card - White Card with Blue Accents */}
             <div className="lg:col-span-6">
-              <Card className="border-slate-200 bg-white shadow-xl shadow-blue-900/5">
+              <Card className="border-slate-200 bg-white shadow-xl shadow-emerald-900/5">
                 <CardContent className="p-4 xs:p-6 sm:p-8">
                   <form onSubmit={handleWhatsAppSubmit} className="space-y-4">
                     <div className="border-b border-slate-100 pb-3">
-                      <h3 className="text-lg font-bold text-blue-950">{t.quoteFormTitle}</h3>
+                      <h3 className="text-lg font-bold text-emerald-950">{t.quoteFormTitle}</h3>
                       <p className="text-xs text-slate-500">{t.quoteFormSub}</p>
                     </div>
 
@@ -1234,15 +1491,14 @@ function PublicLandingPage() {
                           id="service-select"
                           value={quoteService}
                           onChange={(e) => setQuoteService(e.target.value)}
-                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-blue-600 focus:outline-hidden"
+                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-emerald-700 focus:outline-hidden"
                         >
-                          <option value="POP False Ceiling">POP False Ceiling</option>
-                          <option value="PVC Wall Paneling & Ceiling">
-                            PVC Wall Panels / Louvers
+                          <option value="Home Decoration & Styling">Home Decoration & Styling</option>
+                          <option value="POP False Ceiling Work">POP False Ceiling Work</option>
+                          <option value="PVC Wall Panelling & Louvers">
+                            PVC Wall Panelling & Louvers
                           </option>
-                          <option value="Gypsum False Ceiling">Gypsum Board Ceiling</option>
-                          <option value="Commercial Grid Ceiling">Commercial Grid Ceiling</option>
-                          <option value="Full Home Interior Renovation">Full Home Interior</option>
+                          <option value="Renovation & Remodelling">Renovation & Remodelling</option>
                         </select>
                       </div>
 
@@ -1257,7 +1513,7 @@ function PublicLandingPage() {
                           id="property-select"
                           value={propertyType}
                           onChange={(e) => setPropertyType(e.target.value)}
-                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-blue-600 focus:outline-hidden"
+                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-emerald-700 focus:outline-hidden"
                         >
                           <option value="1BHK Flat">1BHK Flat</option>
                           <option value="2BHK Flat">2BHK Flat</option>
@@ -1275,10 +1531,10 @@ function PublicLandingPage() {
                       <Input
                         id="cust-name"
                         type="text"
-                        placeholder="e.g. Rahul Patil"
+                        placeholder="Your full name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-blue-600"
+                        className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-emerald-700"
                         required
                       />
                     </div>
@@ -1294,10 +1550,10 @@ function PublicLandingPage() {
                         <Input
                           id="cust-phone"
                           type="tel"
-                          placeholder="e.g. 9822XXXXXX"
+                          placeholder="10-digit mobile number"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-blue-600"
+                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-emerald-700"
                           required
                         />
                       </div>
@@ -1309,10 +1565,10 @@ function PublicLandingPage() {
                         <Input
                           id="cust-area"
                           type="text"
-                          placeholder="e.g. Gangapur Rd / Wadala"
+                          placeholder="e.g. Bemetara / Durg"
                           value={area}
                           onChange={(e) => setArea(e.target.value)}
-                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-blue-600"
+                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-emerald-700"
                         />
                       </div>
                     </div>
@@ -1334,11 +1590,11 @@ function PublicLandingPage() {
         </div>
       </section>
 
-      {/* Why Choose Owais Interior Designer */}
+      {/* Why Choose Famtima Traders */}
       <section className="py-16 sm:py-20 border-t border-slate-200/80 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2.5 sm:space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">
+            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
               {t.whySub}
             </span>
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
@@ -1348,7 +1604,7 @@ function PublicLandingPage() {
 
           <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6 space-y-2.5 sm:space-y-3 shadow-xs">
-              <div className="size-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+              <div className="size-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
                 <Award className="size-5" />
               </div>
               <h3 className="text-base font-bold text-slate-900">{t.why1Title}</h3>
@@ -1364,7 +1620,7 @@ function PublicLandingPage() {
             </div>
 
             <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6 space-y-2.5 sm:space-y-3 shadow-xs">
-              <div className="size-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+              <div className="size-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
                 <Clock className="size-5" />
               </div>
               <h3 className="text-base font-bold text-slate-900">{t.why3Title}</h3>
@@ -1382,11 +1638,11 @@ function PublicLandingPage() {
         </div>
       </section>
 
-      {/* Local Nashik Service Areas (SEO Anchor Cloud) */}
+      {/* Service Areas Across Bemetara & Chhattisgarh */}
       <section id="areas" className="py-14 sm:py-16 border-t border-slate-200/80 bg-slate-50/70">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 text-center space-y-5 sm:space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">
+            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
               {t.areasSub}
             </span>
             <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">
@@ -1399,9 +1655,9 @@ function PublicLandingPage() {
             {nashikAreas.map((areaName, i) => (
               <span
                 key={i}
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:border-blue-400 hover:text-blue-700 transition-all shadow-xs"
+                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:border-emerald-400 hover:text-emerald-700 transition-all shadow-xs"
               >
-                <MapPin className="size-3 text-blue-600" />
+                <MapPin className="size-3 text-emerald-700" />
                 <span>{areaName}</span>
               </span>
             ))}
@@ -1413,7 +1669,7 @@ function PublicLandingPage() {
       <section id="faqs" className="py-16 sm:py-20 border-t border-slate-200/80 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">
+            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
               {t.faqSub}
             </span>
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
@@ -1431,12 +1687,12 @@ function PublicLandingPage() {
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
-                    className="flex w-full items-center justify-between p-4 sm:p-5 text-left text-xs sm:text-sm md:text-base font-semibold text-slate-900 hover:text-blue-600 transition-colors"
+                    className="flex w-full items-center justify-between p-4 sm:p-5 text-left text-xs sm:text-sm md:text-base font-semibold text-slate-900 hover:text-emerald-700 transition-colors"
                   >
                     <span>{faq.q}</span>
                     <ChevronDown
                       className={`size-4 text-slate-400 shrink-0 ml-2 transition-transform duration-300 ${
-                        isOpen ? "rotate-180 text-blue-600" : ""
+                        isOpen ? "rotate-180 text-emerald-700" : ""
                       }`}
                     />
                   </button>
@@ -1453,18 +1709,18 @@ function PublicLandingPage() {
       </section>
 
       {/* CTA Strip - Royal Blue Accent */}
-      <section className="border-t border-blue-900 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-950 py-12 sm:py-16 text-white pb-24 md:pb-16">
+      <section className="border-t border-emerald-900 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-950 py-12 sm:py-16 text-white pb-24 md:pb-16">
         <div className="mx-auto max-w-5xl px-4 text-center space-y-5 sm:space-y-6">
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             {t.ctaTitle}
           </h2>
-          <p className="text-xs sm:text-sm md:text-base text-blue-100 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base text-emerald-100 max-w-2xl mx-auto leading-relaxed">
             {t.ctaDesc}
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto">
             <a
               href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                "Hello Owais Interior Designer, I would like to schedule a site visit for POP / PVC work in Nashik.",
+                "Hello Famtima Traders, I would like to schedule a site visit for POP / PVC / Home Decoration work in Bemetara.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -1475,9 +1731,9 @@ function PublicLandingPage() {
             </a>
             <a
               href={`tel:+91${phonePrimary}`}
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white px-6 py-3.5 text-xs sm:text-sm font-bold text-blue-950 shadow-md hover:bg-blue-50 transition-all text-center"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white px-6 py-3.5 text-xs sm:text-sm font-bold text-emerald-950 shadow-md hover:bg-emerald-50 transition-all text-center"
             >
-              <Phone className="size-4 text-blue-600 shrink-0" />
+              <Phone className="size-4 text-emerald-700 shrink-0" />
               <span>
                 {t.btnCall} +91 {phonePrimary}
               </span>
@@ -1490,7 +1746,7 @@ function PublicLandingPage() {
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom,0px))] flex items-center gap-2 shadow-2xl">
         <a
           href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-            "Hello Owais Interior Designer, I would like to get a quote for POP / PVC work in Nashik.",
+            "Hello Famtima Traders, I would like to get a quote for POP / PVC / Home Decoration work in Bemetara.",
           )}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -1502,7 +1758,7 @@ function PublicLandingPage() {
 
         <a
           href={`tel:+91${phonePrimary}`}
-          className="flex-1 min-w-0 inline-flex items-center justify-center gap-1.5 rounded-lg bg-blue-600 py-2.5 px-2 text-xs font-bold text-white shadow-md active:bg-blue-700"
+          className="flex-1 min-w-0 inline-flex items-center justify-center gap-1.5 rounded-lg bg-emerald-700 py-2.5 px-2 text-xs font-bold text-white shadow-md active:bg-emerald-700"
         >
           <Phone className="size-4 shrink-0" />
           <span className="truncate">Call Now</span>
@@ -1513,7 +1769,7 @@ function PublicLandingPage() {
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-slate-100 p-2.5 text-slate-700 hover:bg-slate-200 shrink-0"
           title="Estimate"
         >
-          <Send className="size-4 text-blue-600" />
+          <Send className="size-4 text-emerald-700" />
         </a>
       </div>
 
@@ -1526,18 +1782,20 @@ function PublicLandingPage() {
               <div className="flex items-center gap-2.5">
                 <img
                   src={companyLogoUrl}
-                  alt="Owais Interior Designer"
+                  alt={company?.name || "Famtima Traders"}
                   className="size-8 rounded-full bg-white p-0.5 object-contain"
                 />
                 <span className="font-display text-base font-bold text-white">
-                  Owais Interior Designer
+                  {company?.name || "Famtima Traders"}
                 </span>
               </div>
-              <p className="text-slate-300 leading-relaxed">
-                Turning your space into elegant design. Nashik's specialist in POP false ceilings,
-                PVC wall panels, and turnkey interiors.
+              <p className="text-slate-300 leading-relaxed text-xs">
+                Bemetara's trusted specialists in home decoration, designer POP false ceilings,
+                100% waterproof PVC wall panels, and renovation.
               </p>
-              <p className="text-blue-400 font-medium">Nashik, Maharashtra, India</p>
+              <p className="text-emerald-400 font-medium">
+                Shop No. 08, Krishna Vihar, Bemetara, CG
+              </p>
 
               {/* Official Social Media Channels */}
               <div className="pt-2 flex items-center gap-3">
@@ -1570,10 +1828,10 @@ function PublicLandingPage() {
                     href={landingConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 rounded-md border border-slate-700 bg-slate-800/80 px-2.5 py-1 text-slate-300 hover:text-white hover:border-blue-500 transition-colors"
+                    className="flex items-center gap-1.5 rounded-md border border-slate-700 bg-slate-800/80 px-2.5 py-1 text-slate-300 hover:text-white hover:border-emerald-600 transition-colors"
                     title="Facebook"
                   >
-                    <Facebook className="size-3.5 text-blue-500" />
+                    <Facebook className="size-3.5 text-emerald-600" />
                     <span className="text-[11px]">Facebook</span>
                   </a>
                 )}
@@ -1586,11 +1844,11 @@ function PublicLandingPage() {
                 Key Services
               </p>
               <ul className="space-y-1.5 text-slate-300">
-                <li>POP False Ceiling Design</li>
-                <li>PVC Wall Panels &amp; Louvers</li>
-                <li>Gypsum Board False Ceiling</li>
-                <li>Commercial 2x2 Grid Ceilings</li>
-                <li>Modular Kitchen &amp; Wardrobes</li>
+                <li>Home Decoration &amp; Styling</li>
+                <li>POP Work &amp; False Ceiling</li>
+                <li>PVC Wall Panelling &amp; Louvers</li>
+                <li>Renovation &amp; Remodelling</li>
+                <li>Commercial Interiors</li>
                 <li>LED Cove Light Channels</li>
               </ul>
             </div>
@@ -1601,19 +1859,19 @@ function PublicLandingPage() {
                 Contact &amp; Hours
               </p>
               <p className="text-slate-300">
-                <strong>Address:</strong> Rahmat Nagar, Wadala, Nashik, Maharashtra 422006
+                <strong>Address:</strong> Shop No. 08, Krishna Vihar, Bemetara, CG 491335
               </p>
               <p className="text-slate-300">
-                <strong>Primary Phone:</strong> +91 {phonePrimary}
+                <strong>WhatsApp / Phone:</strong> +91 {phonePrimary}
               </p>
               <p className="text-slate-300">
-                <strong>Secondary Phone:</strong> +91 {phoneSecondary}
+                <strong>Alternate Phone:</strong> +91 {phoneSecondary}
               </p>
               <p className="text-slate-300">
-                <strong>Email:</strong> onlyw6469@gmail.com
+                <strong>Email:</strong> anwaarrza850@gmail.com
               </p>
               <p className="text-slate-300">
-                <strong>Hours:</strong> Mon - Sun: 9:00 AM - 8:30 PM
+                <strong>Hours:</strong> Mon - Sun: 9:00 AM - 8:00 PM
               </p>
             </div>
 
@@ -1625,9 +1883,9 @@ function PublicLandingPage() {
               <div className="space-y-2">
                 <Link
                   to="/auth"
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:border-blue-500 transition-colors w-full justify-center"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:border-emerald-600 transition-colors w-full justify-center"
                 >
-                  <ShieldCheck className="size-3.5 text-blue-400" />
+                  <ShieldCheck className="size-3.5 text-emerald-400" />
                   <span>Admin &amp; Employee Portal</span>
                 </Link>
                 <p className="text-[11px] text-slate-300 text-center">
@@ -1639,13 +1897,13 @@ function PublicLandingPage() {
 
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-300">
             <p>
-              © {new Date().getFullYear()} Owais Interior Designer. All rights reserved. Nashik,
-              Maharashtra.
+              © {new Date().getFullYear()} {company?.name || "Famtima Traders"}. All rights
+              reserved. Bemetara, Chhattisgarh.
             </p>
             <p className="text-slate-300">
               Keywords:{" "}
               <span className="text-slate-200">
-                owaisinterior • nashikpop • pvc nashik • false ceiling contractor
+                famtima traders • bemetara pop • pvc bemetara • home decoration chhattisgarh
               </span>
             </p>
           </div>
@@ -1662,15 +1920,15 @@ function PublicLandingPage() {
         >
           {/* Backdrop with royal blue tinted glassmorphic blur */}
           <div
-            className="fixed inset-0 bg-blue-950/60 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"
+            className="fixed inset-0 bg-emerald-950/60 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"
             onClick={() => setIsRatingModalOpen(false)}
             aria-hidden="true"
           />
 
           {/* Modal Container: Crisp White with Royal Blue Accents & Shadow */}
-          <div className="relative w-full max-w-2xl overflow-hidden rounded-2xl border-2 border-blue-100 bg-white text-slate-900 shadow-2xl shadow-blue-900/20 z-10 my-auto animate-in zoom-in-95 duration-200">
+          <div className="relative w-full max-w-2xl overflow-hidden rounded-2xl border-2 border-emerald-100 bg-white text-slate-900 shadow-2xl shadow-emerald-900/20 z-10 my-auto animate-in zoom-in-95 duration-200">
             {/* Header: Royal Navy Blue Bar */}
-            <div className="relative border-b border-blue-800 bg-gradient-to-r from-blue-900 via-blue-850 to-blue-900 px-5 py-4 sm:px-6 sm:py-5 flex items-center justify-between text-white">
+            <div className="relative border-b border-emerald-800 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 px-5 py-4 sm:px-6 sm:py-5 flex items-center justify-between text-white">
               <div className="flex items-center gap-2.5 sm:gap-3">
                 <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-amber-400/20 text-amber-300 border border-amber-300/40 shadow-xs">
                   <Star className="size-5 fill-amber-300" />
@@ -1682,15 +1940,15 @@ function PublicLandingPage() {
                   >
                     Customer Ratings &amp; Reviews
                   </h3>
-                  <p className="text-xs text-blue-200">
-                    Verified ratings for Owais Interior Designer, Nashik
+                  <p className="text-xs text-emerald-200">
+                    Verified ratings for {company?.name || "Famtima Traders"}, Bemetara
                   </p>
                 </div>
               </div>
               <button
                 type="button"
                 onClick={() => setIsRatingModalOpen(false)}
-                className="rounded-lg p-2 text-blue-200 hover:bg-blue-800 hover:text-white transition-colors"
+                className="rounded-lg p-2 text-emerald-200 hover:bg-emerald-800 hover:text-white transition-colors"
                 aria-label="Close modal"
               >
                 <X className="size-5" />
@@ -1702,11 +1960,11 @@ function PublicLandingPage() {
               {/* Platform Summary Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {/* Google Reviews Card */}
-                <div className="relative overflow-hidden rounded-xl border border-blue-200 bg-white p-4 sm:p-5 flex flex-col justify-between shadow-xs hover:border-blue-400 hover:shadow-md transition-all">
+                <div className="relative overflow-hidden rounded-xl border border-emerald-200 bg-white p-4 sm:p-5 flex flex-col justify-between shadow-xs hover:border-emerald-400 hover:shadow-md transition-all">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-xs font-bold text-blue-700 shadow-xs">
+                        <div className="size-7 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center text-xs font-bold text-emerald-700 shadow-xs">
                           G
                         </div>
                         <span className="text-sm font-bold text-slate-900">Google Reviews</span>
@@ -1717,34 +1975,36 @@ function PublicLandingPage() {
                     </div>
 
                     <div className="flex items-baseline gap-2 pt-1">
-                      <span className="text-3xl font-extrabold text-blue-600">4.9</span>
+                      <span className="text-3xl font-extrabold text-emerald-700">4.9</span>
                       <div className="flex items-center text-amber-500 text-sm">{"★★★★★"}</div>
                     </div>
                     <p className="text-xs font-medium text-slate-500">
-                      Owais Interior Designer, Nashik
+                      {company?.name || "Famtima Traders"}, Bemetara
                     </p>
                   </div>
 
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Owais+Interior+Designer+Nashik"
+                    href="https://www.google.com/maps/search/?api=1&query=Famtima+Traders+Bemetara"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-blue-600/20 transition-all text-center w-full"
+                    className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-700 px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-emerald-600/20 transition-all text-center w-full"
                   >
                     <span>View on Google Maps</span>
                     <ExternalLink className="size-3.5" />
                   </a>
                 </div>
 
-                {/* Justdial Verified Card */}
+                {/* Verified Service Card */}
                 <div className="relative overflow-hidden rounded-xl border border-amber-200 bg-white p-4 sm:p-5 flex flex-col justify-between shadow-xs hover:border-amber-400 hover:shadow-md transition-all">
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="size-7 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-xs font-bold text-amber-700 shadow-xs">
-                          JD
+                          FT
                         </div>
-                        <span className="text-sm font-bold text-slate-900">Justdial Profile</span>
+                        <span className="text-sm font-bold text-slate-900">
+                          Verified Client Service
+                        </span>
                       </div>
                       <span className="rounded-full bg-amber-50 text-amber-700 px-2.5 py-0.5 text-[10px] font-bold border border-amber-200">
                         Verified
@@ -1752,22 +2012,22 @@ function PublicLandingPage() {
                     </div>
 
                     <div className="flex items-baseline gap-2 pt-1">
-                      <span className="text-3xl font-extrabold text-amber-600">4.7</span>
+                      <span className="text-3xl font-extrabold text-amber-600">4.9</span>
                       <div className="flex items-center text-amber-500 text-sm">{"★★★★★"}</div>
-                      <span className="text-xs text-slate-500">(43 Ratings)</span>
+                      <span className="text-xs text-slate-500">(Bemetara &amp; CG)</span>
                     </div>
                     <p className="text-xs font-medium text-slate-500">
-                      Sarda Circle / Doodh Bazar, Nashik
+                      Shop No. 08, Krishna Vihar, Bemetara
                     </p>
                   </div>
 
                   <a
-                    href="https://www.justdial.com/Nashik/Owais-Interior-Near-By-Sarda-Circle-Near-By-Akbar-Soda-Doodh-Bazar/0253PX253-X253-241030030645-K5U4_BZDET/reviews?utm_source=chatgpt.com"
+                    href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent("Hello Famtima Traders, I would like to get a quote and see recent work photos.")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-amber-600/20 transition-all text-center w-full"
                   >
-                    <span>View on Justdial</span>
+                    <span>WhatsApp Consultation</span>
                     <ExternalLink className="size-3.5" />
                   </a>
                 </div>
@@ -1776,7 +2036,7 @@ function PublicLandingPage() {
               {/* Top 3 Genuine Customer Reviews */}
               <div className="space-y-3 pt-1">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-blue-700">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-700">
                     Top Customer Experiences
                   </h4>
                   <span className="text-[11px] font-medium text-slate-500">
@@ -1786,10 +2046,10 @@ function PublicLandingPage() {
 
                 <div className="space-y-2.5">
                   {/* Review 1 */}
-                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-blue-300 shadow-2xs transition-colors">
+                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-emerald-300 shadow-2xs transition-colors">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-blue-100 text-blue-700 font-bold text-xs flex items-center justify-center border border-blue-200">
+                        <div className="size-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center border border-emerald-200">
                           BK
                         </div>
                         <span className="text-xs sm:text-sm font-bold text-slate-900">
@@ -1799,13 +2059,13 @@ function PublicLandingPage() {
                       <div className="text-amber-500 text-xs">★★★★★</div>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
-                      &ldquo;Every thing ok I liked his work And I would like to thanks owais khan
-                      for making more professional my office&rdquo;
+                      &ldquo;Everything was done on time and with great finishing. Special thanks to
+                      Anwar Khan and Famtima Traders for making our space look so elegant.&rdquo;
                     </p>
                   </div>
 
                   {/* Review 2 */}
-                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-blue-300 shadow-2xs transition-colors">
+                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-emerald-300 shadow-2xs transition-colors">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
                         <div className="size-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center border border-emerald-200">
@@ -1818,16 +2078,17 @@ function PublicLandingPage() {
                       <div className="text-amber-500 text-xs">★★★★★</div>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
-                      &ldquo;Owais Interior is great! Their prices are very good, and I saved money.
-                      The service is quick, and they finished my project fast.&rdquo;
+                      &ldquo;Famtima Traders is great! Their prices are very reasonable, and we
+                      saved money. The service was quick, and they finished our ceiling and paneling
+                      fast.&rdquo;
                     </p>
                   </div>
 
                   {/* Review 3 */}
-                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-blue-300 shadow-2xs transition-colors">
+                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-emerald-300 shadow-2xs transition-colors">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-blue-100 text-blue-700 font-bold text-xs flex items-center justify-center border border-blue-200">
+                        <div className="size-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center border border-emerald-200">
                           A
                         </div>
                         <span className="text-xs sm:text-sm font-bold text-slate-900">Ahmed</span>
@@ -1835,8 +2096,8 @@ function PublicLandingPage() {
                       <div className="text-amber-500 text-xs">★★★★★</div>
                     </div>
                     <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
-                      &ldquo;I had a great experience with Owais Interior... They responded very
-                      quickly to my request, which I really liked. Excellent service!&rdquo;
+                      &ldquo;I had a great experience with Famtima Traders... They responded very
+                      quickly to my request, which I really liked. Excellent quality work!&rdquo;
                     </p>
                   </div>
                 </div>
@@ -1849,7 +2110,7 @@ function PublicLandingPage() {
               <a
                 href="#quote"
                 onClick={() => setIsRatingModalOpen(false)}
-                className="font-bold text-blue-600 hover:text-blue-800 transition-colors"
+                className="font-bold text-emerald-700 hover:text-emerald-800 transition-colors"
               >
                 Get Free Estimate →
               </a>

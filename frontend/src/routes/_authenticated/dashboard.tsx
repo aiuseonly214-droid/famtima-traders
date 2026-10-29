@@ -12,22 +12,18 @@ import { PageHeader } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  fetchInquiryStats,
-  fetchRecentDocs,
-  fetchSummary,
-} from "@/lib/crm";
+import { fetchInquiryStats, fetchRecentDocs, fetchSummary } from "@/lib/crm";
 import { formatDate, formatINR } from "@/lib/format";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard · Owais Interior Designer CRM" },
+      { title: "Dashboard · Famtima Traders CRM" },
       {
         name: "description",
         content: "Overview of customers, quotations, invoices and outstanding payments.",
       },
-      { property: "og:title", content: "Dashboard · Owais Interior Designer CRM" },
+      { property: "og:title", content: "Dashboard · Famtima Traders CRM" },
       { property: "og:description", content: "Quotation, invoice and receipt overview." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -58,12 +54,42 @@ function Dashboard() {
   });
 
   const cards = [
-    { label: "Inquiries", value: String(inq?.total ?? "—"), icon: Users, color: "text-blue-600 bg-blue-50" },
-    { label: "Conversion", value: inq ? `${inq.conversion}%` : "—", icon: TrendingUp, color: "text-emerald-600 bg-emerald-50" },
-    { label: "Customers", value: String(s?.customers ?? "—"), icon: Users, color: "text-primary bg-primary/10" },
-    { label: "Quotations", value: String(s?.quotations ?? "—"), icon: ScrollText, color: "text-primary bg-primary/10" },
-    { label: "Invoiced", value: s ? formatINR(s.invoiced) : "—", icon: FileText, color: "text-amber-600 bg-amber-50" },
-    { label: "Outstanding", value: s ? formatINR(s.outstanding) : "—", icon: ReceiptIcon, color: s?.outstanding ? "text-red-600 bg-red-50" : "text-emerald-600 bg-emerald-50" },
+    {
+      label: "Inquiries",
+      value: String(inq?.total ?? "—"),
+      icon: Users,
+      color: "text-blue-600 bg-blue-50",
+    },
+    {
+      label: "Conversion",
+      value: inq ? `${inq.conversion}%` : "—",
+      icon: TrendingUp,
+      color: "text-emerald-600 bg-emerald-50",
+    },
+    {
+      label: "Customers",
+      value: String(s?.customers ?? "—"),
+      icon: Users,
+      color: "text-primary bg-primary/10",
+    },
+    {
+      label: "Quotations",
+      value: String(s?.quotations ?? "—"),
+      icon: ScrollText,
+      color: "text-primary bg-primary/10",
+    },
+    {
+      label: "Invoiced",
+      value: s ? formatINR(s.invoiced) : "—",
+      icon: FileText,
+      color: "text-amber-600 bg-amber-50",
+    },
+    {
+      label: "Outstanding",
+      value: s ? formatINR(s.outstanding) : "—",
+      icon: ReceiptIcon,
+      color: s?.outstanding ? "text-red-600 bg-red-50" : "text-emerald-600 bg-emerald-50",
+    },
   ];
 
   return (
@@ -107,7 +133,9 @@ function Dashboard() {
         {cards.map(({ label, value, icon: Icon, color }) => (
           <Card key={label} className="transition-shadow hover:shadow-md">
             <CardContent className="flex items-center gap-4 pt-6">
-              <span className={`flex size-10 shrink-0 items-center justify-center rounded-lg ${color}`}>
+              <span
+                className={`flex size-10 shrink-0 items-center justify-center rounded-lg ${color}`}
+              >
                 <Icon className="size-5" />
               </span>
               <div className="min-w-0">
@@ -125,11 +153,7 @@ function Dashboard() {
 
       {/* Recent activity cards */}
       <div className="grid gap-5 lg:grid-cols-3">
-        <RecentCard
-          title="Recent Quotations"
-          to="/quotations"
-          isLoading={loadingRecent}
-        >
+        <RecentCard title="Recent Quotations" to="/quotations" isLoading={loadingRecent}>
           {(recent?.quotations ?? []).map((q) => (
             <Link
               key={q.id}
@@ -143,7 +167,9 @@ function Dashboard() {
                   {q.customers?.name} · {formatDate(q.date)}
                 </span>
               </span>
-              <span className="shrink-0 tabular-nums text-sm font-medium">{formatINR(q.grand_total)}</span>
+              <span className="shrink-0 tabular-nums text-sm font-medium">
+                {formatINR(q.grand_total)}
+              </span>
             </Link>
           ))}
           {!loadingRecent && (recent?.quotations ?? []).length === 0 && (
@@ -151,11 +177,7 @@ function Dashboard() {
           )}
         </RecentCard>
 
-        <RecentCard
-          title="Recent Invoices"
-          to="/invoices"
-          isLoading={loadingRecent}
-        >
+        <RecentCard title="Recent Invoices" to="/invoices" isLoading={loadingRecent}>
           {(recent?.invoices ?? []).map((i) => (
             <Link
               key={i.id}
@@ -169,7 +191,9 @@ function Dashboard() {
                   {i.customers?.name} · {formatDate(i.date)}
                 </span>
               </span>
-              <span className="shrink-0 tabular-nums text-sm font-medium">{formatINR(i.grand_total)}</span>
+              <span className="shrink-0 tabular-nums text-sm font-medium">
+                {formatINR(i.grand_total)}
+              </span>
             </Link>
           ))}
           {!loadingRecent && (recent?.invoices ?? []).length === 0 && (
@@ -177,11 +201,7 @@ function Dashboard() {
           )}
         </RecentCard>
 
-        <RecentCard
-          title="Recent Receipts"
-          to="/receipts"
-          isLoading={loadingRecent}
-        >
+        <RecentCard title="Recent Receipts" to="/receipts" isLoading={loadingRecent}>
           {(recent?.receipts ?? []).map((r) => (
             <Link
               key={r.id}

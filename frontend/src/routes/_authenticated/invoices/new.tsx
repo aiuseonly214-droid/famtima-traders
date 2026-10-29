@@ -14,9 +14,9 @@ export const Route = createFileRoute("/_authenticated/invoices/new")({
   }),
   head: () => ({
     meta: [
-      { title: "New invoice · Owais Interior Designer CRM" },
+      { title: "New invoice · Famtima Traders CRM" },
       { name: "description", content: "Raise a new invoice, or convert an approved quotation." },
-      { property: "og:title", content: "New invoice · Owais Interior Designer CRM" },
+      { property: "og:title", content: "New invoice · Famtima Traders CRM" },
       { property: "og:description", content: "Line items, discount and amount in words." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

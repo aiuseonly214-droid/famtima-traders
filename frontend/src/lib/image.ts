@@ -52,7 +52,6 @@ export async function projectPhotoToDataUrl(file: File, maxSize = 800): Promise<
   return canvas.toDataURL("image/jpeg", 0.82);
 }
 
-
 /**
  * Knock the white/near-white paper out of a scanned stamp or signature so it
  * sits transparently on the letterhead, and optionally soften the ink a bit.

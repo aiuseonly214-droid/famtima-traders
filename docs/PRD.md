@@ -2,9 +2,9 @@
 
 ## 1. Project Overview
 
-**Name**: Owais Interior Designer CRM
-**Purpose**: A professional web-based CRM for Owais Interior Designer to manage customer inquiries, quotations, invoices, and payment receipts.
-**Target Audience**: Employees and Admin of Owais Interior Designer.
+**Name**: Famtima Traders CRM
+**Purpose**: A professional web-based CRM for Famtima Traders to manage customer inquiries, quotations, invoices, and payment receipts.
+**Target Audience**: Employees and Admin of Famtima Traders.
 
 ## 2. Business Workflows
 

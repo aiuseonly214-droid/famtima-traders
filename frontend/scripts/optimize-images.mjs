@@ -11,12 +11,12 @@ const imagesDir = path.resolve(publicDir, "images");
 async function run() {
   console.log("Optimizing images in:", publicDir);
 
-  // 1. Logo: owais-logo.png
+  // 1. Logo: famtima-logo.png
   // Rendered at 42x42px (and up to 80px on high-DPI / modals / print).
   // We'll generate a crisp 160x160 webp, and a compressed 160x160 png fallback.
-  const logoPath = path.join(publicDir, "owais-logo.png");
-  const logoWebpPath = path.join(publicDir, "owais-logo.webp");
-  
+  const logoPath = path.join(publicDir, "famtima-logo.png");
+  const logoWebpPath = path.join(publicDir, "famtima-logo.webp");
+
   if (fs.existsSync(logoPath)) {
     const origLogoStat = fs.statSync(logoPath);
     console.log(`Original logo size: ${(origLogoStat.size / 1024 / 1024).toFixed(2)} MB`);
@@ -31,7 +31,7 @@ async function run() {
     console.log(`Optimized WebP logo size: ${(webpStat.size / 1024).toFixed(2)} KB`);
 
     // Also overwrite or optimize PNG to be small just in case any client loads png
-    const logoPngOptimized = path.join(publicDir, "owais-logo-optimized.png");
+    const logoPngOptimized = path.join(publicDir, "famtima-logo-optimized.png");
     await sharp(logoPath)
       .resize(160, 160, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
       .png({ quality: 90, compressionLevel: 9, effort: 7 })
@@ -67,7 +67,7 @@ async function run() {
       .resize({ width: 1200, withoutEnlargement: true })
       .webp({ quality: 82, effort: 5 })
       .toFile(webpPath);
-    
+
     const webpStat = fs.statSync(webpPath);
     console.log(`Generated ${baseName}.webp: ${(webpStat.size / 1024).toFixed(2)} KB`);
 

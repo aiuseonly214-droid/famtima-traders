@@ -26,18 +26,12 @@ import {
 import { ConfirmDelete } from "@/components/doc/ConfirmDelete";
 import { Skeleton } from "@/components/ui/skeleton";
 import { formatINR, onlyNumeric } from "@/lib/format";
-import {
-  fetchExpenses,
-  saveExpense,
-  deleteExpense,
-  fetchCashflow,
-  type Expense,
-} from "@/lib/crm";
+import { fetchExpenses, saveExpense, deleteExpense, fetchCashflow, type Expense } from "@/lib/crm";
 
 export const Route = createFileRoute("/_authenticated/expenses")({
   head: () => ({
     meta: [
-      { title: "Expenses & Cashflow · Owais Interior Designer CRM" },
+      { title: "Expenses & Cashflow · Famtima Traders CRM" },
       { name: "description", content: "Track company expenses and overall cashflow." },
     ],
   }),
@@ -52,13 +46,13 @@ const EXPENSE_CATEGORIES = [
   "Food/Chai",
   "Office Supplies",
   "Marketing",
-  "Other"
+  "Other",
 ];
 
 function ExpensesPage() {
   const qc = useQueryClient();
   const [draft, setDraft] = useState<DraftExpense | null>(null);
-  
+
   const currentMonth = new Date().toISOString().slice(0, 7);
 
   const { data: expenses = [], isLoading } = useQuery({
@@ -118,13 +112,17 @@ function ExpensesPage() {
         <Card>
           <CardContent className="p-6">
             <p className="text-sm font-medium text-muted-foreground">Lifetime Inflow</p>
-            <p className="mt-2 text-2xl font-bold text-emerald-600">{formatINR(cashflow?.inflow ?? 0)}</p>
+            <p className="mt-2 text-2xl font-bold text-emerald-600">
+              {formatINR(cashflow?.inflow ?? 0)}
+            </p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-6">
             <p className="text-sm font-medium text-muted-foreground">Lifetime Outflow</p>
-            <p className="mt-2 text-2xl font-bold text-rose-600">{formatINR(cashflow?.outflow ?? 0)}</p>
+            <p className="mt-2 text-2xl font-bold text-rose-600">
+              {formatINR(cashflow?.outflow ?? 0)}
+            </p>
           </CardContent>
         </Card>
         <Card>
@@ -144,8 +142,19 @@ function ExpensesPage() {
       </div>
 
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-lg font-semibold flex items-center gap-2"><ReceiptIcon className="size-5"/> Expense Log</h2>
-        <Button onClick={() => setDraft({ date: new Date().toISOString().slice(0,10), amount: 0, category: "Material", mode: "upi" })}>
+        <h2 className="text-lg font-semibold flex items-center gap-2">
+          <ReceiptIcon className="size-5" /> Expense Log
+        </h2>
+        <Button
+          onClick={() =>
+            setDraft({
+              date: new Date().toISOString().slice(0, 10),
+              amount: 0,
+              category: "Material",
+              mode: "upi",
+            })
+          }
+        >
           <Plus className="size-4" /> Add Expense
         </Button>
       </div>
@@ -166,12 +175,24 @@ function ExpensesPage() {
             {isLoading &&
               Array.from({ length: 4 }).map((_, i) => (
                 <TableRow key={`skeleton-exp-${i}`}>
-                  <TableCell><Skeleton className="h-4 w-20" /></TableCell>
-                  <TableCell><Skeleton className="h-5 w-20 rounded-full" /></TableCell>
-                  <TableCell><Skeleton className="h-4 w-32" /></TableCell>
-                  <TableCell><Skeleton className="h-4 w-12" /></TableCell>
-                  <TableCell className="text-right"><Skeleton className="ml-auto h-4 w-20" /></TableCell>
-                  <TableCell className="text-right"><Skeleton className="ml-auto h-7 w-12" /></TableCell>
+                  <TableCell>
+                    <Skeleton className="h-4 w-20" />
+                  </TableCell>
+                  <TableCell>
+                    <Skeleton className="h-5 w-20 rounded-full" />
+                  </TableCell>
+                  <TableCell>
+                    <Skeleton className="h-4 w-32" />
+                  </TableCell>
+                  <TableCell>
+                    <Skeleton className="h-4 w-12" />
+                  </TableCell>
+                  <TableCell className="text-right">
+                    <Skeleton className="ml-auto h-4 w-20" />
+                  </TableCell>
+                  <TableCell className="text-right">
+                    <Skeleton className="ml-auto h-7 w-12" />
+                  </TableCell>
                 </TableRow>
               ))}
             {!isLoading && expenses.length === 0 && (
@@ -225,27 +246,33 @@ function ExpensesPage() {
               </div>
               <div className="grid gap-2">
                 <Label>Category</Label>
-                <select 
+                <select
                   className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm"
                   value={draft.category || ""}
-                  onChange={e => setDraft({...draft, category: e.target.value})}
+                  onChange={(e) => setDraft({ ...draft, category: e.target.value })}
                 >
-                  {EXPENSE_CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
+                  {EXPENSE_CATEGORIES.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="grid gap-2">
                 <Label>Amount</Label>
                 <Input
                   value={draft.amount || ""}
-                  onChange={(e) => setDraft({ ...draft, amount: Number(onlyNumeric(e.target.value)) || 0 })}
+                  onChange={(e) =>
+                    setDraft({ ...draft, amount: Number(onlyNumeric(e.target.value)) || 0 })
+                  }
                 />
               </div>
               <div className="grid gap-2">
                 <Label>Mode of Payment</Label>
-                <select 
+                <select
                   className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm"
                   value={draft.mode || "upi"}
-                  onChange={e => setDraft({...draft, mode: e.target.value})}
+                  onChange={(e) => setDraft({ ...draft, mode: e.target.value })}
                 >
                   <option value="cash">Cash</option>
                   <option value="upi">UPI</option>

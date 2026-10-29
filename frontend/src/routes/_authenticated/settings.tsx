@@ -1,7 +1,17 @@
 import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { Check, Loader2, Save, ShieldCheck, ShieldX, Upload, UserCheck, UserX, Users } from "lucide-react";
+import {
+  Check,
+  Loader2,
+  Save,
+  ShieldCheck,
+  ShieldX,
+  Upload,
+  UserCheck,
+  UserX,
+  Users,
+} from "lucide-react";
 import { toast } from "sonner";
 import { PageHeader } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
@@ -27,15 +37,32 @@ import {
 } from "@/lib/crm";
 import { fileToDataUrl, projectPhotoToDataUrl, removeWhiteBackground } from "@/lib/image";
 import { useRole, useSession } from "@/hooks/use-session";
-import { Globe, Instagram, Youtube, Facebook, Plus, Trash2, Video, Sparkles, MapPin, Tag } from "lucide-react";
+import {
+  Globe,
+  Instagram,
+  Youtube,
+  Facebook,
+  Plus,
+  Trash2,
+  Video,
+  Sparkles,
+  MapPin,
+  Tag,
+} from "lucide-react";
 
 export const Route = createFileRoute("/_authenticated/settings")({
   head: () => ({
     meta: [
-      { title: "Settings · Owais Interior Designer CRM" },
-      { name: "description", content: "Company profile, branding, website showcase manager and user permissions." },
-      { property: "og:title", content: "Settings · Owais Interior Designer CRM" },
-      { property: "og:description", content: "Update company profile, pricing rates, and showcase gallery." },
+      { title: "Settings · Famtima Traders CRM" },
+      {
+        name: "description",
+        content: "Company profile, branding, website showcase manager and user permissions.",
+      },
+      { property: "og:title", content: "Settings · Famtima Traders CRM" },
+      {
+        property: "og:description",
+        content: "Update company profile, pricing rates, and showcase gallery.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -65,8 +92,8 @@ function SettingsPage() {
     description: string;
   }>({
     title: "",
-    category: "POP False Ceiling",
-    location: "Nashik, Maharashtra",
+    category: "POP Work / False Ceiling",
+    location: "Bemetara, Chhattisgarh",
     imageUrl: "",
     videoUrl: "",
     description: "",
@@ -123,7 +150,7 @@ function SettingsPage() {
       id: "proj-" + Date.now(),
       title: newProject.title.trim(),
       category: newProject.category,
-      location: newProject.location.trim() || "Nashik",
+      location: newProject.location.trim() || "Bemetara",
       imageUrl: newProject.imageUrl,
       videoUrl: newProject.videoUrl.trim() || undefined,
       description: newProject.description.trim() || undefined,
@@ -136,8 +163,8 @@ function SettingsPage() {
 
     setNewProject({
       title: "",
-      category: "POP False Ceiling",
-      location: "Nashik, Maharashtra",
+      category: "POP Work / False Ceiling",
+      location: "Bemetara, Chhattisgarh",
       imageUrl: "",
       videoUrl: "",
       description: "",
@@ -238,11 +265,11 @@ function SettingsPage() {
             </Row>
             <Row label="Website (Public URL)">
               <Input
-                value={landingConfig.websiteUrl ?? "https://owais-interior.vercel.app"}
+                value={landingConfig.websiteUrl ?? ""}
                 onChange={(e) =>
                   setLandingConfig((prev) => ({ ...prev, websiteUrl: e.target.value }))
                 }
-                placeholder="https://owais-interior.vercel.app"
+                placeholder="https://famtima-traders.vercel.app"
               />
             </Row>
             <Row label="Default terms & conditions" full>
@@ -309,11 +336,12 @@ function SettingsPage() {
         <div className="flex items-center justify-between border-b pb-3">
           <div>
             <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <Sparkles className="size-5 text-blue-600" />
+              <Sparkles className="size-5 text-emerald-700" />
               Public Landing Page Showcase &amp; Customization
             </h2>
             <p className="text-xs text-slate-500">
-              Customize starting rates, connect your official social channels, and showcase genuine Nashik projects live on the website.
+              Customize starting rates, connect your official social channels, and showcase genuine
+              projects live on the website.
             </p>
           </div>
         </div>
@@ -327,12 +355,15 @@ function SettingsPage() {
                 Service Starting Rates (Admin Fix / Customize)
               </CardTitle>
               <CardDescription className="text-xs">
-                These rates show up directly on the homepage service cards (e.g., "Starting from ₹85/sq.ft").
+                These rates show up directly on the homepage service cards (e.g., "Starting from
+                ₹85/sq.ft").
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-4 grid gap-3 sm:grid-cols-2">
               <div>
-                <Label className="text-xs mb-1 block font-semibold text-slate-700">POP False Ceiling Rate</Label>
+                <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                  POP False Ceiling Rate
+                </Label>
                 <Input
                   value={landingConfig.rates?.pop ?? ""}
                   onChange={(e) =>
@@ -345,7 +376,9 @@ function SettingsPage() {
                 />
               </div>
               <div>
-                <Label className="text-xs mb-1 block font-semibold text-slate-700">PVC Wall Panels Rate</Label>
+                <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                  PVC Wall Panels Rate
+                </Label>
                 <Input
                   value={landingConfig.rates?.pvc ?? ""}
                   onChange={(e) =>
@@ -358,7 +391,9 @@ function SettingsPage() {
                 />
               </div>
               <div>
-                <Label className="text-xs mb-1 block font-semibold text-slate-700">Gypsum Board False Ceiling Rate</Label>
+                <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                  Gypsum Board False Ceiling Rate
+                </Label>
                 <Input
                   value={landingConfig.rates?.gypsum ?? ""}
                   onChange={(e) =>
@@ -371,7 +406,9 @@ function SettingsPage() {
                 />
               </div>
               <div>
-                <Label className="text-xs mb-1 block font-semibold text-slate-700">Commercial &amp; Grid Rate</Label>
+                <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                  Commercial &amp; Grid Rate
+                </Label>
                 <Input
                   value={landingConfig.rates?.commercial ?? ""}
                   onChange={(e) =>
@@ -394,7 +431,8 @@ function SettingsPage() {
                 Official Social Media Accounts
               </CardTitle>
               <CardDescription className="text-xs">
-                Add your real profiles. Clicking these on the website takes visitors straight to your channel.
+                Add your real profiles. Clicking these on the website takes visitors straight to
+                your channel.
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-4 space-y-3">
@@ -410,7 +448,7 @@ function SettingsPage() {
                       social: { ...prev.social, instagram: e.target.value },
                     }))
                   }
-                  placeholder="https://www.instagram.com/owais_interior_nashik"
+                  placeholder="https://www.instagram.com/famtima_traders"
                 />
               </div>
 
@@ -426,7 +464,7 @@ function SettingsPage() {
                       social: { ...prev.social, youtube: e.target.value },
                     }))
                   }
-                  placeholder="https://www.youtube.com/@owaisinteriornashik"
+                  placeholder="https://www.youtube.com/@famtimatraders"
                 />
               </div>
 
@@ -442,7 +480,7 @@ function SettingsPage() {
                       social: { ...prev.social, facebook: e.target.value },
                     }))
                   }
-                  placeholder="https://www.facebook.com/owaisinteriornashik"
+                  placeholder="https://www.facebook.com/famtimatraders"
                 />
               </div>
             </CardContent>
@@ -450,70 +488,90 @@ function SettingsPage() {
         </div>
 
         {/* Section 3: Genuine Recent Projects Showcase Manager */}
-        <Card className="border-blue-100 shadow-sm">
-          <CardHeader className="bg-blue-50/50 pb-3">
-            <CardTitle className="text-base flex items-center gap-2 text-blue-950">
-              <Sparkles className="size-4 text-blue-600" />
-              Recent Genuine Projects in Nashik (Upload Photos &amp; Video Clips)
+        <Card className="border-emerald-100 shadow-sm">
+          <CardHeader className="bg-emerald-50/50 pb-3">
+            <CardTitle className="text-base flex items-center gap-2 text-emerald-950">
+              <Sparkles className="size-4 text-emerald-700" />
+              Recent Genuine Projects (Upload Photos &amp; Video Clips)
             </CardTitle>
             <CardDescription className="text-xs">
-              Upload real site images or short video/reel links with site location and category. These appear live on the public landing page!
+              Upload real site images or short video/reel links with site location and category.
+              These appear live on the public landing page!
             </CardDescription>
           </CardHeader>
           <CardContent className="pt-5 space-y-6">
             {/* Add Project Form */}
             <div className="rounded-lg border border-slate-200 bg-slate-50/70 p-4">
               <h3 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-1.5">
-                <Plus className="size-4 text-blue-600" /> Add New Genuine Project
+                <Plus className="size-4 text-emerald-700" /> Add New Genuine Project
               </h3>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 <div>
-                  <Label className="text-xs mb-1 block font-semibold text-slate-700">Project Title *</Label>
+                  <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                    Project Title *
+                  </Label>
                   <Input
                     value={newProject.title}
                     onChange={(e) => setNewProject((prev) => ({ ...prev, title: e.target.value }))}
-                    placeholder="e.g. Modern Living Room POP False Ceiling"
+                    placeholder="e.g. Living Room POP Ceiling or PVC Louvers"
                   />
                 </div>
 
                 <div>
-                  <Label className="text-xs mb-1 block font-semibold text-slate-700">Category *</Label>
+                  <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                    Category *
+                  </Label>
                   <select
                     value={newProject.category}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, category: e.target.value }))}
+                    onChange={(e) =>
+                      setNewProject((prev) => ({ ...prev, category: e.target.value }))
+                    }
                     className="flex h-9 w-full rounded-md border border-input bg-white px-3 py-1 text-sm shadow-xs focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring"
                   >
-                    <option value="POP False Ceiling">POP False Ceiling</option>
-                    <option value="PVC Wall Panels">PVC Wall Panels</option>
-                    <option value="Gypsum False Ceiling">Gypsum False Ceiling</option>
-                    <option value="Commercial & Grid">Commercial &amp; Grid</option>
-                    <option value="Modular Interior">Modular Interior &amp; Lights</option>
+                    <option value="Home Decoration">Home Decoration</option>
+                    <option value="POP Work / False Ceiling">POP Work / False Ceiling</option>
+                    <option value="PVC Wall Panelling">PVC Wall Panelling</option>
+                    <option value="Renovation & Remodelling">Renovation &amp; Remodelling</option>
+                    <option value="Painting & Wall Finishing">Painting &amp; Wall Finishing</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
 
                 <div>
-                  <Label className="text-xs mb-1 block font-semibold text-slate-700">Nashik Location *</Label>
+                  <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                    Project Location *
+                  </Label>
                   <Input
                     value={newProject.location}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, location: e.target.value }))}
-                    placeholder="e.g. Gangapur Road, Nashik"
+                    onChange={(e) =>
+                      setNewProject((prev) => ({ ...prev, location: e.target.value }))
+                    }
+                    placeholder="e.g. Krishna Vihar, Bemetara"
                   />
                 </div>
 
                 <div>
-                  <Label className="text-xs mb-1 block font-semibold text-slate-700">Short Video / Instagram Reel Link (Optional)</Label>
+                  <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                    Short Video / Instagram Reel Link (Optional)
+                  </Label>
                   <Input
                     value={newProject.videoUrl}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, videoUrl: e.target.value }))}
+                    onChange={(e) =>
+                      setNewProject((prev) => ({ ...prev, videoUrl: e.target.value }))
+                    }
                     placeholder="https://www.instagram.com/reel/... or YouTube link"
                   />
                 </div>
 
                 <div className="sm:col-span-2">
-                  <Label className="text-xs mb-1 block font-semibold text-slate-700">Site Information / Description (Optional)</Label>
+                  <Label className="text-xs mb-1 block font-semibold text-slate-700">
+                    Site Information / Description (Optional)
+                  </Label>
                   <Input
                     value={newProject.description}
-                    onChange={(e) => setNewProject((prev) => ({ ...prev, description: e.target.value }))}
+                    onChange={(e) =>
+                      setNewProject((prev) => ({ ...prev, description: e.target.value }))
+                    }
                     placeholder="e.g. Finished with warm white cove LED channels and 2-step cornice border."
                   />
                 </div>
@@ -540,7 +598,11 @@ function SettingsPage() {
 
                   {newProject.imageUrl && (
                     <div className="size-14 rounded-md border overflow-hidden bg-white shrink-0">
-                      <img src={newProject.imageUrl} alt="Preview" className="size-full object-cover" />
+                      <img
+                        src={newProject.imageUrl}
+                        alt="Preview"
+                        className="size-full object-cover"
+                      />
                     </div>
                   )}
 
@@ -580,19 +642,26 @@ function SettingsPage() {
                           {item.category}
                         </span>
                         {item.videoUrl && (
-                          <span className="absolute top-2 right-2 rounded-full bg-red-600/90 backdrop-blur-xs p-1 text-white" title="Has video/reel">
+                          <span
+                            className="absolute top-2 right-2 rounded-full bg-red-600/90 backdrop-blur-xs p-1 text-white"
+                            title="Has video/reel"
+                          >
                             <Video className="size-3" />
                           </span>
                         )}
                       </div>
                       <div className="p-3 space-y-1">
-                        <h4 className="text-xs font-bold text-slate-900 line-clamp-1">{item.title}</h4>
+                        <h4 className="text-xs font-bold text-slate-900 line-clamp-1">
+                          {item.title}
+                        </h4>
                         <p className="text-[11px] text-slate-500 flex items-center gap-1">
                           <MapPin className="size-3 text-blue-600 shrink-0" />
                           {item.location}
                         </p>
                         {item.description && (
-                          <p className="text-[10px] text-slate-400 line-clamp-2">{item.description}</p>
+                          <p className="text-[10px] text-slate-400 line-clamp-2">
+                            {item.description}
+                          </p>
                         )}
                         {item.videoUrl && (
                           <a
@@ -626,7 +695,11 @@ function SettingsPage() {
       </div>
 
       <div className="mt-8 flex items-center gap-3">
-        <Button onClick={save} disabled={saving || !isAdmin} className="bg-blue-600 hover:bg-blue-700 text-white px-6">
+        <Button
+          onClick={save}
+          disabled={saving || !isAdmin}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6"
+        >
           {saving ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />}
           Save all changes (Live on Website)
         </Button>
@@ -642,7 +715,11 @@ function SettingsPage() {
 
 function UserAccessManager({ currentUserId }: { currentUserId?: string }) {
   const qc = useQueryClient();
-  const { data: users, isLoading, error } = useQuery<UserAccess[]>({
+  const {
+    data: users,
+    isLoading,
+    error,
+  } = useQuery<UserAccess[]>({
     queryKey: ["users-access"],
     queryFn: fetchAllUsersAccess,
   });
@@ -697,7 +774,9 @@ function UserAccessManager({ currentUserId }: { currentUserId?: string }) {
               <Loader2 className="size-5 animate-spin mr-2" /> Loading registered users...
             </div>
           ) : error ? (
-            <p className="text-sm text-destructive">Could not load users: {(error as Error).message}</p>
+            <p className="text-sm text-destructive">
+              Could not load users: {(error as Error).message}
+            </p>
           ) : !users || users.length === 0 ? (
             <p className="text-sm text-muted-foreground">No registered users found.</p>
           ) : (
@@ -707,10 +786,15 @@ function UserAccessManager({ currentUserId }: { currentUserId?: string }) {
                 const isBusy = actingId === u.id;
 
                 return (
-                  <div key={u.id} className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div
+                    key={u.id}
+                    className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between"
+                  >
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="font-medium text-foreground">{u.full_name || "Anonymous User"}</span>
+                        <span className="font-medium text-foreground">
+                          {u.full_name || "Anonymous User"}
+                        </span>
                         {isSelf && (
                           <span className="rounded bg-muted px-1.5 py-0.5 text-[10px] font-semibold text-muted-foreground">
                             You
@@ -747,7 +831,11 @@ function UserAccessManager({ currentUserId }: { currentUserId?: string }) {
                           disabled={isBusy}
                           onClick={() => handleGrant(u.id, "employee")}
                         >
-                          {isBusy ? <Loader2 className="size-3.5 animate-spin" /> : <UserCheck className="size-3.5 mr-1" />}
+                          {isBusy ? (
+                            <Loader2 className="size-3.5 animate-spin" />
+                          ) : (
+                            <UserCheck className="size-3.5 mr-1" />
+                          )}
                           {u.role ? "Set Employee" : "Approve Employee"}
                         </Button>
                       )}
@@ -759,7 +847,11 @@ function UserAccessManager({ currentUserId }: { currentUserId?: string }) {
                           disabled={isBusy}
                           onClick={() => handleGrant(u.id, "admin")}
                         >
-                          {isBusy ? <Loader2 className="size-3.5 animate-spin" /> : <ShieldCheck className="size-3.5 mr-1" />}
+                          {isBusy ? (
+                            <Loader2 className="size-3.5 animate-spin" />
+                          ) : (
+                            <ShieldCheck className="size-3.5 mr-1" />
+                          )}
                           Make Admin
                         </Button>
                       )}
@@ -772,7 +864,11 @@ function UserAccessManager({ currentUserId }: { currentUserId?: string }) {
                           disabled={isBusy}
                           onClick={() => handleRevoke(u.id)}
                         >
-                          {isBusy ? <Loader2 className="size-3.5 animate-spin" /> : <UserX className="size-3.5 mr-1" />}
+                          {isBusy ? (
+                            <Loader2 className="size-3.5 animate-spin" />
+                          ) : (
+                            <UserX className="size-3.5 mr-1" />
+                          )}
                           Revoke Access
                         </Button>
                       )}

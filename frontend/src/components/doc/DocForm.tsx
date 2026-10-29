@@ -274,7 +274,10 @@ export function DocForm({
       }
     } catch (e: any) {
       console.error("Save error details:", e);
-      const msg = e?.message || e?.error_description || (typeof e === "string" ? e : "Could not save document");
+      const msg =
+        e?.message ||
+        e?.error_description ||
+        (typeof e === "string" ? e : "Could not save document");
       toast.error(msg);
     } finally {
       setSaving(false);
