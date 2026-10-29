@@ -6,6 +6,8 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { nitro } from "nitro/vite";
 
 export default defineConfig({
+  // Expose both VITE_* and SUPABASE_* variables to import.meta.env
+  envPrefix: ["VITE_", "SUPABASE_"],
   plugins: [
     tailwindcss(),
     tsconfigPaths(),
