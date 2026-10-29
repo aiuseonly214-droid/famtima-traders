@@ -15,7 +15,6 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
       new Headers(init.headers).forEach((value, key) => headers.set(key, value));
     }
 
-    // New Supabase API keys are opaque strings, not bearer JWTs.
     if (
       isNewSupabaseApiKey(supabaseKey) &&
       headers.get("Authorization") === `Bearer ${supabaseKey}`
@@ -28,35 +27,66 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
   };
 }
 
+function resolveEnv(candidates: string[]): string | undefined {
+  const metaEnv = (import.meta.env || {}) as Record<string, string | undefined>;
+  const procEnv = (typeof process !== "undefined" ? process.env || {} : {}) as Record<string, string | undefined>;
+
+  // 1. Direct key match
+  for (const k of candidates) {
+    if (metaEnv[k]?.trim()) return metaEnv[k]?.trim();
+    if (procEnv[k]?.trim()) return procEnv[k]?.trim();
+  }
+
+  // 2. Case-insensitive search across all environment keys
+  const merged = { ...procEnv, ...metaEnv };
+  for (const [k, v] of Object.entries(merged)) {
+    if (v?.trim() && candidates.some((c) => c.toLowerCase() === k.toLowerCase())) {
+      return v.trim();
+    }
+  }
+
+  return undefined;
+}
+
+const resolvedUrl = resolveEnv([
+  "VITE_SUPABASE_URL",
+  "SUPABASE_URL",
+  "NEXT_PUBLIC_SUPABASE_URL",
+  "url",
+  "URL",
+  "supabase_url",
+  "SUPABASE_PROJECT_URL",
+]);
+
+const resolvedKey = resolveEnv([
+  "VITE_SUPABASE_PUBLISHABLE_KEY",
+  "VITE_SUPABASE_ANON_KEY",
+  "SUPABASE_PUBLISHABLE_KEY",
+  "SUPABASE_ANON_KEY",
+  "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+  "public_key",
+  "PUBLIC_KEY",
+  "public-key",
+  "public",
+  "PUBLIC",
+  "anon_key",
+  "ANON_KEY",
+  "anon",
+  "ANON",
+  "supabase_key",
+  "SUPABASE_KEY",
+]);
+
+export const isSupabaseConfigured = Boolean(resolvedUrl && resolvedKey);
+
 function createSupabaseClient() {
-  // Supports all standard naming conventions (VITE_SUPABASE_URL, SUPABASE_URL, ANON_KEY, PUBLISHABLE_KEY)
-  const metaEnv = import.meta.env as Record<string, string | undefined>;
-  const procEnv = (typeof process !== "undefined" ? process.env : {}) as Record<string, string | undefined>;
+  const SUPABASE_URL = resolvedUrl || "https://placeholder-project.supabase.co";
+  const SUPABASE_PUBLISHABLE_KEY = resolvedKey || "placeholder-anon-key";
 
-  const SUPABASE_URL =
-    metaEnv.VITE_SUPABASE_URL ||
-    metaEnv.SUPABASE_URL ||
-    procEnv.VITE_SUPABASE_URL ||
-    procEnv.SUPABASE_URL;
-
-  const SUPABASE_PUBLISHABLE_KEY =
-    metaEnv.VITE_SUPABASE_PUBLISHABLE_KEY ||
-    metaEnv.VITE_SUPABASE_ANON_KEY ||
-    metaEnv.SUPABASE_PUBLISHABLE_KEY ||
-    metaEnv.SUPABASE_ANON_KEY ||
-    procEnv.VITE_SUPABASE_PUBLISHABLE_KEY ||
-    procEnv.VITE_SUPABASE_ANON_KEY ||
-    procEnv.SUPABASE_PUBLISHABLE_KEY ||
-    procEnv.SUPABASE_ANON_KEY;
-
-  if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
-    const missing = [
-      ...(!SUPABASE_URL ? ["SUPABASE_URL"] : []),
-      ...(!SUPABASE_PUBLISHABLE_KEY ? ["SUPABASE_PUBLISHABLE_KEY"] : []),
-    ];
-    const message = `Missing Supabase environment variable(s): ${missing.join(", ")}. Add them to your .env file.`;
-    console.error(`[Supabase] ${message}`);
-    throw new Error(message);
+  if (!isSupabaseConfigured) {
+    console.warn(
+      "[Supabase] Environment variables not detected. Please add VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in Vercel settings."
+    );
   }
 
   return createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
@@ -67,14 +97,13 @@ function createSupabaseClient() {
       storage: typeof window !== "undefined" ? window.localStorage : undefined,
       persistSession: true,
       autoRefreshToken: true,
+      detectSessionInUrl: true,
     },
   });
 }
 
 let _supabase: ReturnType<typeof createSupabaseClient> | undefined;
 
-// Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
 export const supabase = new Proxy({} as ReturnType<typeof createSupabaseClient>, {
   get(_, prop, receiver) {
     if (!_supabase) _supabase = createSupabaseClient();
