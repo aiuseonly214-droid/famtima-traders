@@ -1,12 +1,17 @@
 import { createClient } from "@supabase/supabase-js";
 import type { Database } from "./types";
 
+const DEFAULT_URL = "https://jmnhbkvlgabbvrviycmi.supabase.co";
+const DEFAULT_ANON_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imptbmhia3ZsZ2FiYnZydml5Y21pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyNzUyODUsImV4cCI6MjEwODg1MTI4NX0.UprjZVJ9Rb6aCrc5UMjZhsKlCnYX_0IGfj-MIUPaGSU";
+
 // These are baked at build time by vite.config.ts `define` block,
 // which resolves any naming variant (url, public_key, SUPABASE_URL, etc.)
 // into the canonical VITE_ names before the build.
 const SUPABASE_URL =
   import.meta.env.VITE_SUPABASE_URL?.trim() ||
-  (typeof process !== "undefined" ? (process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || "") : "");
+  (typeof process !== "undefined" ? (process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || "") : "") ||
+  DEFAULT_URL;
 
 const SUPABASE_PUBLISHABLE_KEY =
   import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim() ||
@@ -16,7 +21,8 @@ const SUPABASE_PUBLISHABLE_KEY =
        process.env.SUPABASE_ANON_KEY ||
        process.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
        "")
-    : "");
+    : "") ||
+  DEFAULT_ANON_KEY;
 
 export const isSupabaseConfigured = Boolean(
   SUPABASE_URL &&

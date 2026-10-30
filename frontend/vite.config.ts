@@ -5,6 +5,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { nitro } from "nitro/vite";
 
+const DEFAULT_SUPABASE_URL = "https://jmnhbkvlgabbvrviycmi.supabase.co";
+const DEFAULT_SUPABASE_ANON_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imptbmhia3ZsZ2FiYnZydml5Y21pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyNzUyODUsImV4cCI6MjEwODg1MTI4NX0.UprjZVJ9Rb6aCrc5UMjZhsKlCnYX_0IGfj-MIUPaGSU";
+
 // Resolve Supabase credentials from any environment variable naming convention
 function resolveSupabaseEnv() {
   const e = process.env;
@@ -14,7 +18,7 @@ function resolveSupabaseEnv() {
     e.NEXT_PUBLIC_SUPABASE_URL ||
     e.url ||
     e.URL ||
-    "";
+    DEFAULT_SUPABASE_URL;
   const key =
     e.VITE_SUPABASE_PUBLISHABLE_KEY ||
     e.VITE_SUPABASE_ANON_KEY ||
@@ -26,7 +30,7 @@ function resolveSupabaseEnv() {
     e.anon_key ||
     e.ANON_KEY ||
     e.anon ||
-    "";
+    DEFAULT_SUPABASE_ANON_KEY;
   return { url, key };
 }
 
