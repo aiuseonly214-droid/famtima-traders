@@ -6,7 +6,6 @@
 -- Contact: +91 7860854662 / +91 9265012186
 -- Email: anwaarrza850@gmail.com
 --
-
 -- INSTRUCTIONS:
 -- 1. Create a new project in your Supabase dashboard (https://supabase.com).
 -- 2. Open the SQL Editor in your Supabase dashboard.
