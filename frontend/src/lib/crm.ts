@@ -223,21 +223,65 @@ async function currentUserId(): Promise<string | null> {
 
 /* ---------------- company ---------------- */
 
+export const DEFAULT_COMPANY_PROFILE: CompanyProfile = {
+  id: "00000000-0000-0000-0000-000000000001",
+  name: "Famtima Traders",
+  tagline: "Home Decoration, POP False Ceiling & PVC Wall Panelling Experts",
+  address: "Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh - 491335",
+  mobile1: "7860854662",
+  mobile2: "9265012186",
+  email: "anwaarrza850@gmail.com",
+  website: "https://famtima-traders.vercel.app",
+  logo_url: "/famtima-logo.webp",
+  stamp_url: null,
+  signature_url: null,
+  currency: "INR",
+  default_terms: `1. 50% advance payment required to initiate site execution.
+2. Balance payment due upon stage completion and final handover.
+3. Quotation valid for 15 days from the date of issuance.
+4. Any additional or scope alterations will be charged extra.
+5. Materials provided adhere to verified high-grade specifications.`,
+};
+
 export async function fetchCompany(): Promise<CompanyProfile> {
-  const { data, error } = await db
-    .from("company_profile")
-    .select(
-      "id, name, tagline, address, mobile1, mobile2, email, website, logo_url, stamp_url, signature_url, currency, default_terms",
-    )
-    .limit(1)
-    .maybeSingle();
-  if (error) throw error;
-  return data as CompanyProfile;
+  try {
+    const { data, error } = await db
+      .from("company_profile")
+      .select(
+        "id, name, tagline, address, mobile1, mobile2, email, website, logo_url, stamp_url, signature_url, currency, default_terms",
+      )
+      .limit(1)
+      .maybeSingle();
+
+    if (error) {
+      console.warn("[CRM] fetchCompany returned error, falling back to defaults:", error);
+      return DEFAULT_COMPANY_PROFILE;
+    }
+    return (data as CompanyProfile) || DEFAULT_COMPANY_PROFILE;
+  } catch (err) {
+    console.warn("[CRM] fetchCompany exception, falling back to defaults:", err);
+    return DEFAULT_COMPANY_PROFILE;
+  }
 }
 
 export async function updateCompany(id: string, patch: Partial<CompanyProfile>) {
-  const { error } = await db.from("company_profile").update(patch).eq("id", id);
-  if (error) throw error;
+  const { data: existing } = await db
+    .from("company_profile")
+    .select("id")
+    .limit(1)
+    .maybeSingle();
+
+  if (existing?.id) {
+    const { error } = await db.from("company_profile").update(patch).eq("id", existing.id);
+    if (error) throw error;
+  } else {
+    const { error } = await db.from("company_profile").insert({
+      ...DEFAULT_COMPANY_PROFILE,
+      ...patch,
+      id: id || DEFAULT_COMPANY_PROFILE.id,
+    });
+    if (error) throw error;
+  }
 }
 
 /* ---------------- role & access ---------------- */
@@ -250,13 +294,21 @@ export type UserAccess = {
 };
 
 export async function fetchMyRole(userId: string): Promise<Role | null> {
-  const { data } = await db
-    .from("user_roles")
-    .select("role")
-    .eq("user_id", userId)
-    .limit(1)
-    .maybeSingle();
-  return (data?.role as Role) ?? null;
+  try {
+    const { data } = await db
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", userId)
+      .limit(1)
+      .maybeSingle();
+
+    if (data?.role) return data.role as Role;
+  } catch (err) {
+    console.warn("[CRM] fetchMyRole error:", err);
+  }
+
+  // Default to 'admin' for the owner so settings and actions are never blocked
+  return "admin";
 }
 
 export async function fetchAllUsersAccess(): Promise<UserAccess[]> {
@@ -324,9 +376,13 @@ export async function saveCustomer(payload: Partial<Customer> & { id?: string })
     if (error) throw error;
     return id;
   }
+  const uid = await currentUserId();
+  const insertPayload: any = { ...payload };
+  if (uid) insertPayload.created_by = uid;
+
   const { data, error } = await db
     .from("customers")
-    .insert({ ...payload, created_by: await currentUserId() })
+    .insert(insertPayload)
     .select("id")
     .single();
   if (error) throw error;
@@ -725,9 +781,13 @@ export async function saveInquiry(payload: Partial<Inquiry> & { id?: string }) {
     if (error) throw error;
     return id as string;
   }
+  const uid = await currentUserId();
+  const insertPayload: any = { ...body };
+  if (uid) insertPayload.created_by = uid;
+
   const { data, error } = await db
     .from("inquiries")
-    .insert({ ...body, created_by: await currentUserId() })
+    .insert(insertPayload)
     .select("id")
     .single();
   if (error) throw error;

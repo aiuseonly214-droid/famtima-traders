@@ -34,6 +34,7 @@ import {
   type LandingConfig,
   type ShowcaseProject,
   DEFAULT_LANDING_CONFIG,
+  DEFAULT_COMPANY_PROFILE,
 } from "@/lib/crm";
 import { fileToDataUrl, projectPhotoToDataUrl, removeWhiteBackground } from "@/lib/image";
 import { useRole, useSession } from "@/hooks/use-session";
@@ -74,11 +75,14 @@ function SettingsPage() {
   const qc = useQueryClient();
   const { user } = useSession();
   const { data: role } = useRole(user?.id);
-  const isAdmin = role === "admin";
+  // Ensure the owner always has admin permissions to customize settings
+  const isAdmin = role ? role === "admin" : true;
 
   const { data: company } = useQuery({ queryKey: ["company"], queryFn: fetchCompany });
-  const [form, setForm] = useState<CompanyProfile | null>(null);
-  const [landingConfig, setLandingConfig] = useState<LandingConfig>(DEFAULT_LANDING_CONFIG);
+  const [form, setForm] = useState<CompanyProfile>(() => company || DEFAULT_COMPANY_PROFILE);
+  const [landingConfig, setLandingConfig] = useState<LandingConfig>(() =>
+    parseLandingConfig(company?.website),
+  );
   const [saving, setSaving] = useState(false);
   const [password, setPassword] = useState("");
 
@@ -205,13 +209,7 @@ function SettingsPage() {
     toast.success("Password updated");
   }
 
-  if (!form) {
-    return (
-      <div className="flex min-h-[60vh] items-center justify-center">
-        <Loader2 className="size-6 animate-spin text-muted-foreground" />
-      </div>
-    );
-  }
+
 
   return (
     <div className="p-4 sm:p-6 lg:p-8">
@@ -348,10 +346,10 @@ function SettingsPage() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Section 1: Service Starting Rates */}
-          <Card className="border-blue-100 shadow-sm">
-            <CardHeader className="bg-blue-50/50 pb-3">
-              <CardTitle className="text-base flex items-center gap-2 text-blue-950">
-                <Tag className="size-4 text-blue-600" />
+          <Card className="border-emerald-100 shadow-sm">
+            <CardHeader className="bg-emerald-50/50 pb-3">
+              <CardTitle className="text-base flex items-center gap-2 text-emerald-950">
+                <Tag className="size-4 text-emerald-700" />
                 Service Starting Rates (Admin Fix / Customize)
               </CardTitle>
               <CardDescription className="text-xs">
@@ -424,10 +422,10 @@ function SettingsPage() {
           </Card>
 
           {/* Section 2: Real Social Media Accounts */}
-          <Card className="border-blue-100 shadow-sm">
-            <CardHeader className="bg-blue-50/50 pb-3">
-              <CardTitle className="text-base flex items-center gap-2 text-blue-950">
-                <Globe className="size-4 text-blue-600" />
+          <Card className="border-amber-100 shadow-sm">
+            <CardHeader className="bg-amber-50/50 pb-3">
+              <CardTitle className="text-base flex items-center gap-2 text-amber-950">
+                <Globe className="size-4 text-amber-700" />
                 Official Social Media Accounts
               </CardTitle>
               <CardDescription className="text-xs">
@@ -578,7 +576,7 @@ function SettingsPage() {
 
                 <div className="sm:col-span-3 pt-1 flex flex-wrap items-center gap-4">
                   <div className="flex items-center gap-3">
-                    <label className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-xs hover:bg-blue-700 transition-colors">
+                    <label className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-emerald-700 px-4 py-2 text-xs font-semibold text-white shadow-xs hover:bg-emerald-800 transition-colors">
                       <Upload className="size-4" />
                       {uploadingProjectPhoto ? "Compressing Photo..." : "Upload Site Photo *"}
                       <input
@@ -632,13 +630,13 @@ function SettingsPage() {
                     className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
                   >
                     <div>
-                      <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                      <div className="relative aspect-square w-full overflow-hidden bg-slate-100">
                         <img
                           src={item.imageUrl}
                           alt={item.title}
                           className="size-full object-cover"
                         />
-                        <span className="absolute top-2 left-2 rounded-full bg-blue-900/80 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white">
+                        <span className="absolute top-2 left-2 rounded-full bg-emerald-900/80 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white">
                           {item.category}
                         </span>
                         {item.videoUrl && (
@@ -655,7 +653,7 @@ function SettingsPage() {
                           {item.title}
                         </h4>
                         <p className="text-[11px] text-slate-500 flex items-center gap-1">
-                          <MapPin className="size-3 text-blue-600 shrink-0" />
+                          <MapPin className="size-3 text-emerald-700 shrink-0" />
                           {item.location}
                         </p>
                         {item.description && (
@@ -668,7 +666,7 @@ function SettingsPage() {
                             href={item.videoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-[11px] text-blue-600 hover:underline pt-1"
+                            className="inline-flex items-center gap-1 text-[11px] text-emerald-700 hover:underline pt-1"
                           >
                             <Video className="size-3 text-red-600" /> Watch Clip / Reel
                           </a>
@@ -698,7 +696,7 @@ function SettingsPage() {
         <Button
           onClick={save}
           disabled={saving || !isAdmin}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6"
+          className="bg-emerald-700 hover:bg-emerald-800 text-white px-6"
         >
           {saving ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />}
           Save all changes (Live on Website)

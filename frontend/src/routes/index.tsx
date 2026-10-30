@@ -1025,7 +1025,7 @@ function PublicLandingPage() {
                     width={1200}
                     height={670}
                     alt="Home decoration, false ceiling, and interior work by Famtima Traders Bemetara"
-                    className="w-full h-auto max-h-[380px] sm:max-h-[440px] aspect-[1200/670] object-cover transition-transform duration-500 hover:scale-105"
+                    className="w-full h-auto max-h-[360px] sm:max-h-[420px] aspect-square object-cover transition-transform duration-500 hover:scale-105"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
@@ -1353,7 +1353,7 @@ function PublicLandingPage() {
                 className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="overflow-hidden aspect-[4/3] relative bg-slate-100">
+                  <div className="overflow-hidden aspect-square relative bg-slate-100">
                     <img
                       src={item.imageUrl}
                       alt={`${item.title} in ${item.location}`}
