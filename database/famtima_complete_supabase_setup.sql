@@ -218,7 +218,8 @@ DROP POLICY IF EXISTS "staff read customers" ON public.customers;
 DROP POLICY IF EXISTS "staff insert customers" ON public.customers;
 DROP POLICY IF EXISTS "staff update customers" ON public.customers;
 DROP POLICY IF EXISTS "authenticated all customers" ON public.customers;
-CREATE POLICY "authenticated all customers" ON public.customers FOR ALL TO authenticated USING (true) WITH CHECK (true);
+DROP POLICY IF EXISTS "public all customers" ON public.customers;
+CREATE POLICY "public all customers" ON public.customers FOR ALL TO public USING (true) WITH CHECK (true);
 
 DROP TRIGGER IF EXISTS customers_updated ON public.customers;
 CREATE TRIGGER customers_updated BEFORE UPDATE ON public.customers FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
@@ -399,9 +400,8 @@ DROP POLICY IF EXISTS "authenticated all inquiries" ON public.inquiries;
 DROP POLICY IF EXISTS "anon insert inquiries" ON public.inquiries;
 
 -- Authenticated team members can perform all operations on inquiries
-CREATE POLICY "authenticated all inquiries" ON public.inquiries FOR ALL TO authenticated USING (true) WITH CHECK (true);
--- Website visitors (anon) can submit online inquiries
-CREATE POLICY "anon insert inquiries" ON public.inquiries FOR INSERT TO anon WITH CHECK (true);
+DROP POLICY IF EXISTS "public all inquiries" ON public.inquiries;
+CREATE POLICY "public all inquiries" ON public.inquiries FOR ALL TO public USING (true) WITH CHECK (true);
 
 DROP TRIGGER IF EXISTS inquiries_updated ON public.inquiries;
 CREATE TRIGGER inquiries_updated BEFORE UPDATE ON public.inquiries FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();

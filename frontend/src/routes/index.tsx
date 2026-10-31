@@ -1022,15 +1022,15 @@ function PublicLandingPage() {
             {/* Right Hero Image Card */}
             <div className="lg:col-span-5 relative mt-4 lg:mt-0">
               <div className="relative overflow-hidden rounded-2xl border-2 sm:border-4 border-white bg-white shadow-xl shadow-emerald-900/10">
-                <div className="relative overflow-hidden bg-slate-900">
+                <div className="relative overflow-hidden bg-slate-900 aspect-square w-full">
                   <img
                     src="/images/pop-ceiling-nashik.webp"
                     srcSet="/images/pop-ceiling-nashik-sm.webp 600w, /images/pop-ceiling-nashik.webp 1200w"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 480px"
-                    width={1200}
-                    height={670}
+                    width={600}
+                    height={600}
                     alt="Home decoration, false ceiling, and interior work by Famtima Traders Bemetara"
-                    className="w-full h-auto max-h-[360px] sm:max-h-[420px] aspect-square object-cover transition-transform duration-500 hover:scale-105"
+                    className="size-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"

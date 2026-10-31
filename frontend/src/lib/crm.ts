@@ -49,7 +49,44 @@ export type LandingConfig = {
   projects: ShowcaseProject[];
 };
 
-export const DEFAULT_SHOWCASE_PROJECTS: ShowcaseProject[] = [];
+export const DEFAULT_SHOWCASE_PROJECTS: ShowcaseProject[] = [
+  {
+    id: "def-1",
+    title: "Luxury Living Room POP Ceiling",
+    category: "POP False Ceiling",
+    location: "Krishna Vihar, Bemetara",
+    imageUrl: "/images/pop-ceiling-nashik.webp",
+    description:
+      "Multi-layered Plaster of Paris false ceiling with warm LED cove light channels and modern geometric design.",
+  },
+  {
+    id: "def-2",
+    title: "Fluted PVC Wall Panelling & TV Unit",
+    category: "PVC Wall Panels",
+    location: "Bemetara Town, CG",
+    imageUrl: "/images/pvc-wall-panels-nashik.webp",
+    description:
+      "100% waterproof fluted wooden PVC louvers and glossy marble-finish wall sheets with backlit LED strips.",
+  },
+  {
+    id: "def-3",
+    title: "Master Bedroom Gypsum False Ceiling",
+    category: "Gypsum False Ceiling",
+    location: "Durg - Bhilai, CG",
+    imageUrl: "/images/bedroom-gypsum-ceiling-nashik.webp",
+    description:
+      "Minimalist gypsum false ceiling with acoustic sound damping and perimeter cove downlights.",
+  },
+  {
+    id: "def-4",
+    title: "Modern Kitchen & Dining Ceiling",
+    category: "Commercial & Modular",
+    location: "Raipur Road, Bemetara",
+    imageUrl: "/images/modern-kitchen-ceiling-nashik.webp",
+    description:
+      "Contemporary ceiling design with moisture-resistant board construction and spotlighting.",
+  },
+];
 
 export const DEFAULT_SERVICE_RATES: ServiceRates = {
   pop: "Contact for Pricing",
@@ -313,28 +350,33 @@ export async function fetchMyRole(userId: string): Promise<Role | null> {
 
 export async function fetchAllUsersAccess(): Promise<UserAccess[]> {
   // Admins can read all profiles and user_roles
-  const [{ data: profiles, error: pErr }, { data: roles, error: rErr }] = await Promise.all([
-    db
-      .from("profiles")
-      .select("id, full_name, created_at")
-      .order("created_at", { ascending: false }),
-    db.from("user_roles").select("user_id, role"),
-  ]);
+  try {
+    const [{ data: profiles, error: pErr }, { data: roles, error: rErr }] = await Promise.all([
+      db
+        .from("profiles")
+        .select("id, full_name, created_at")
+        .order("created_at", { ascending: false }),
+      db.from("user_roles").select("user_id, role"),
+    ]);
 
-  if (pErr) throw pErr;
-  if (rErr) throw rErr;
+    if (pErr) console.warn("[CRM] profiles query warning:", pErr);
+    if (rErr) console.warn("[CRM] user_roles query warning:", rErr);
 
-  const roleMap = new Map<string, Role>();
-  (roles || []).forEach((r: any) => {
-    roleMap.set(r.user_id, r.role as Role);
-  });
+    const roleMap = new Map<string, Role>();
+    (roles || []).forEach((r: any) => {
+      roleMap.set(r.user_id, r.role as Role);
+    });
 
-  return (profiles || []).map((p: any) => ({
-    id: p.id,
-    full_name: p.full_name,
-    created_at: p.created_at,
-    role: roleMap.get(p.id) ?? null,
-  }));
+    return (profiles || []).map((p: any) => ({
+      id: p.id,
+      full_name: p.full_name,
+      created_at: p.created_at,
+      role: roleMap.get(p.id) ?? null,
+    }));
+  } catch (err) {
+    console.warn("[CRM] fetchAllUsersAccess error:", err);
+    return [];
+  }
 }
 
 export async function grantUserRole(userId: string, role: Role = "employee") {
