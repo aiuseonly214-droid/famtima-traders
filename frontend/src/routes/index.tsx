@@ -40,27 +40,29 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara, CG",
+        title:
+          "Famtima Traders | Home Decoration, POP False Ceiling & PVC Wall Panelling | Bemetara, Chhattisgarh",
       },
       {
         name: "description",
         content:
-          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh. Call +91 7860854662 for quotation.",
+          "Top-rated home decoration, POP false ceiling design, PVC wall panelling & turnkey renovation contractor in Bemetara, Durg, Bhilai, Raipur, Kawardha & Chhattisgarh. 15+ years international craftsmanship by Anwar Khan. Free site measurement & quotation: +91 7860854662.",
       },
       {
         name: "keywords",
         content:
-          "famtima traders, famtima traders bemetara, home decoration bemetara, pop work bemetara, pvc wall panelling bemetara, false ceiling chhattisgarh, renovation contractor bemetara, interior services bemetara, krishna vihar bemetara, anwar khan famtima traders",
+          "famtima traders, famtima traders bemetara, pop work bemetara, pop false ceiling bemetara, pvc wall panelling bemetara, home decoration bemetara, false ceiling chhattisgarh, pop contractor bemetara, pvc ceiling contractor chhattisgarh, interior designer bemetara, pop design bemetara, pvc wall panel shop bemetara, gypsum false ceiling durg bhilai, home interior raipur chhattisgarh, false ceiling contractor raipur, pop ceiling rate per sq ft chhattisgarh, wall panelling kawardha, turnkey renovation bemetara, krishna vihar bemetara, anwar khan pop contractor, bemetara me pop ka kaam, false ceiling design 2026, fluted pvc louver panels bemetara, living room pop design chhattisgarh",
       },
       { property: "og:site_name", content: "Famtima Traders" },
       {
         property: "og:title",
-        content: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling",
+        content:
+          "Famtima Traders | POP False Ceiling, PVC Wall Panelling & Home Decoration in Bemetara, CG",
       },
       {
         property: "og:description",
         content:
-          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Contact Anwar Khan at +91 7860854662.",
+          "Bemetara's #1 POP false ceiling, PVC wall panelling & home decoration contractor. Serving Bemetara, Durg, Bhilai, Raipur & across Chhattisgarh. Call Anwar Khan at +91 7860854662.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://famtima-traders.vercel.app/" },
@@ -68,12 +70,12 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Famtima Traders | Home Decoration & Renovation in Bemetara",
+        content: "Famtima Traders | Home Decoration & False Ceiling Bemetara CG",
       },
       {
         name: "twitter:description",
         content:
-          "Bemetara's trusted home decoration, POP work, PVC wall panelling & renovation. Call +91 7860854662.",
+          "Premier home decoration, POP false ceiling & PVC wall panelling in Bemetara & Chhattisgarh. Call +91 7860854662.",
       },
       { name: "twitter:image", content: "/famtima-logo.png" },
     ],
@@ -127,15 +129,31 @@ export const Route = createFileRoute("/")({
             },
           ],
           priceRange: "₹₹",
+          knowsAbout: [
+            "POP False Ceiling Design",
+            "Plaster of Paris Work",
+            "PVC Wall Panelling",
+            "PVC Ceiling Panels",
+            "Gypsum Board False Ceiling",
+            "Fluted Wall Louvers",
+            "Living Room Ceiling Design",
+            "Home Decoration & Interior Renovation",
+            "Cornice & Molding Design",
+            "Commercial Grid Ceiling",
+          ],
           areaServed: [
             { "@type": "City", name: "Bemetara" },
             { "@type": "AdministrativeArea", name: "Krishna Vihar, Bemetara" },
+            { "@type": "AdministrativeArea", name: "Berla, Bemetara" },
+            { "@type": "AdministrativeArea", name: "Saja, Bemetara" },
+            { "@type": "AdministrativeArea", name: "Nawagarh, Bemetara" },
             { "@type": "City", name: "Durg" },
             { "@type": "City", name: "Bhilai" },
             { "@type": "City", name: "Raipur" },
             { "@type": "City", name: "Bilaspur" },
             { "@type": "City", name: "Rajnandgaon" },
             { "@type": "City", name: "Kawardha" },
+            { "@type": "City", name: "Simga" },
             { "@type": "AdministrativeArea", name: "Chhattisgarh" },
           ],
           hasOfferCatalog: {

@@ -72,16 +72,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara, CG" },
+      {
+        title:
+          "Famtima Traders | Home Decoration, POP False Ceiling & PVC Wall Panelling | Bemetara, Chhattisgarh",
+      },
       {
         name: "description",
         content:
-          "Bemetara's trusted home decoration, POP work, false ceiling, PVC wall panelling & renovation experts. Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh. Contact +91 7860854662 for quotation.",
+          "Top-rated home decoration, POP false ceiling design, PVC wall panelling & turnkey renovation contractor in Bemetara, Durg, Bhilai, Raipur, Kawardha & Chhattisgarh. 15+ years expert craftsmanship by Anwar Khan. Free site estimate: +91 7860854662.",
       },
       {
         name: "keywords",
         content:
-          "famtima traders, famtima traders bemetara, home decoration bemetara, pop work bemetara, pvc wall panelling bemetara, false ceiling chhattisgarh, renovation contractor bemetara, interior services chhattisgarh, krishna vihar bemetara, pop ceiling durg raipur",
+          "famtima traders, famtima traders bemetara, pop work bemetara, pop false ceiling bemetara, pvc wall panelling bemetara, home decoration bemetara, false ceiling chhattisgarh, pop contractor bemetara, pvc ceiling contractor chhattisgarh, interior designer bemetara, pop design bemetara, pvc wall panel shop bemetara, gypsum false ceiling durg bhilai, home interior raipur chhattisgarh, false ceiling contractor raipur, pop ceiling rate per sq ft chhattisgarh, wall panelling kawardha, turnkey renovation bemetara, krishna vihar bemetara, anwar khan pop contractor, bemetara me pop ka kaam, false ceiling design 2026",
       },
       { name: "author", content: "Famtima Traders" },
       {
