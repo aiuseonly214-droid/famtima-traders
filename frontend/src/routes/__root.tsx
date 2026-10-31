@@ -115,6 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Bemetara's trusted home decoration, POP work, PVC wall panelling & renovation. Call +91 7860854662.",
       },
       { name: "twitter:image", content: "/famtima-logo.png" },
+      { name: "google-site-verification", content: "ekcA6wQzHfHys-ze-aV36IEQ5JAnOHGA5OSsSbrkkOo" },
     ],
     links: [
       {
@@ -133,7 +134,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="hi">
       <head>
         <HeadContent />
       </head>

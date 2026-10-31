@@ -205,7 +205,7 @@ export const Route = createFileRoute("/")({
 });
 
 function PublicLandingPage() {
-  const [lang, setLang] = useState<"en" | "hi">("en");
+  const [lang, setLang] = useState<"en" | "hi">("hi");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [quoteService, setQuoteService] = useState("POP False Ceiling");
   const [propertyType, setPropertyType] = useState("2BHK Flat");
