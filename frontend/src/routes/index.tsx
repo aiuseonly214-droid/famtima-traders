@@ -705,7 +705,7 @@ function PublicLandingPage() {
           </nav>
 
           {/* Header Action Buttons */}
-          <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2.5 shrink-0">
+          <div className="flex flex-wrap items-center gap-1 xs:gap-1.5 sm:gap-2.5 min-w-0">
             {/* Header Social Icons (Tablet & Desktop) */}
             {(landingConfig.social?.instagram ||
               landingConfig.social?.youtube ||
