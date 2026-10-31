@@ -27,7 +27,6 @@ import {
   Languages,
   Menu,
   X,
-  ExternalLink,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -213,7 +212,6 @@ function PublicLandingPage() {
   const [phone, setPhone] = useState("");
   const [area, setArea] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [isRatingModalOpen, setIsRatingModalOpen] = useState(false);
 
   const { data: company } = useQuery({ queryKey: ["company"], queryFn: fetchCompany });
   const landingConfig = parseLandingConfig(company?.website);
@@ -985,25 +983,14 @@ function PublicLandingPage() {
                     {t.statWaterproofSub}
                   </div>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => setIsRatingModalOpen(true)}
-                  className="rounded-xl border border-emerald-200 bg-emerald-50/70 hover:bg-emerald-100/80 p-2.5 xs:p-3 text-center shadow-xs transition-all duration-200 cursor-pointer group text-center w-full min-w-0"
-                  title="Click to view genuine Google & Justdial ratings and customer reviews"
-                >
-                  <div className="flex items-center justify-center gap-1">
-                    <span className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700 group-hover:scale-105 transition-transform inline-flex items-center gap-0.5">
-                      {t.statRating}
-                    </span>
-                    <span className="size-1.5 rounded-full bg-emerald-500 animate-ping inline-block sm:hidden" />
+                <div className="rounded-xl border border-emerald-200 bg-emerald-50/70 p-2.5 xs:p-3 text-center shadow-xs min-w-0">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
+                    {t.statRating}
                   </div>
-                  <div className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-emerald-700 mt-0.5 flex flex-wrap items-center justify-center gap-x-1 leading-tight">
-                    <span>{t.statRatingSub}</span>
-                    <span className="text-[9.5px] xs:text-[10px] text-emerald-600 underline font-normal shrink-0">
-                      (View)
-                    </span>
+                  <div className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-emerald-700 mt-0.5 leading-tight">
+                    {t.statRatingSub}
                   </div>
-                </button>
+                </div>
               </div>
 
               {/* CTA buttons - full-width on mobile */}
@@ -1928,214 +1915,6 @@ function PublicLandingPage() {
         </div>
       </footer>
 
-      {/* Customer Ratings & Genuine Reviews Modal - Royal Blue & Crisp White Theme */}
-      {isRatingModalOpen && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="rating-modal-title"
-          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto"
-        >
-          {/* Backdrop with royal blue tinted glassmorphic blur */}
-          <div
-            className="fixed inset-0 bg-emerald-950/60 backdrop-blur-sm transition-opacity animate-in fade-in duration-200"
-            onClick={() => setIsRatingModalOpen(false)}
-            aria-hidden="true"
-          />
-
-          {/* Modal Container: Crisp White with Royal Blue Accents & Shadow */}
-          <div className="relative w-full max-w-2xl overflow-hidden rounded-2xl border-2 border-emerald-100 bg-white text-slate-900 shadow-2xl shadow-emerald-900/20 z-10 my-auto animate-in zoom-in-95 duration-200">
-            {/* Header: Royal Navy Blue Bar */}
-            <div className="relative border-b border-emerald-800 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 px-5 py-4 sm:px-6 sm:py-5 flex items-center justify-between text-white">
-              <div className="flex items-center gap-2.5 sm:gap-3">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-amber-400/20 text-amber-300 border border-amber-300/40 shadow-xs">
-                  <Star className="size-5 fill-amber-300" />
-                </div>
-                <div>
-                  <h3
-                    id="rating-modal-title"
-                    className="text-base sm:text-lg font-bold text-white leading-tight"
-                  >
-                    Customer Ratings &amp; Reviews
-                  </h3>
-                  <p className="text-xs text-emerald-200">
-                    Verified ratings for {company?.name || "Famtima Traders"}, Bemetara
-                  </p>
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsRatingModalOpen(false)}
-                className="rounded-lg p-2 text-emerald-200 hover:bg-emerald-800 hover:text-white transition-colors"
-                aria-label="Close modal"
-              >
-                <X className="size-5" />
-              </button>
-            </div>
-
-            {/* Content Body: Crisp White Background with Royal Blue Card Highlights */}
-            <div className="p-4 sm:p-6 space-y-5 sm:space-y-6 max-h-[75vh] overflow-y-auto bg-slate-50/50">
-              {/* Platform Summary Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                {/* Google Reviews Card */}
-                <div className="relative overflow-hidden rounded-xl border border-emerald-200 bg-white p-4 sm:p-5 flex flex-col justify-between shadow-xs hover:border-emerald-400 hover:shadow-md transition-all">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center text-xs font-bold text-emerald-700 shadow-xs">
-                          G
-                        </div>
-                        <span className="text-sm font-bold text-slate-900">Google Reviews</span>
-                      </div>
-                      <span className="rounded-full bg-emerald-50 text-emerald-700 px-2.5 py-0.5 text-[10px] font-bold border border-emerald-200">
-                        Top Rated
-                      </span>
-                    </div>
-
-                    <div className="flex items-baseline gap-2 pt-1">
-                      <span className="text-3xl font-extrabold text-emerald-700">4.9</span>
-                      <div className="flex items-center text-amber-500 text-sm">{"★★★★★"}</div>
-                    </div>
-                    <p className="text-xs font-medium text-slate-500">
-                      {company?.name || "Famtima Traders"}, Bemetara
-                    </p>
-                  </div>
-
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Famtima+Traders+Bemetara"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-700 px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-emerald-600/20 transition-all text-center w-full"
-                  >
-                    <span>View on Google Maps</span>
-                    <ExternalLink className="size-3.5" />
-                  </a>
-                </div>
-
-                {/* Verified Service Card */}
-                <div className="relative overflow-hidden rounded-xl border border-amber-200 bg-white p-4 sm:p-5 flex flex-col justify-between shadow-xs hover:border-amber-400 hover:shadow-md transition-all">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-xs font-bold text-amber-700 shadow-xs">
-                          FT
-                        </div>
-                        <span className="text-sm font-bold text-slate-900">
-                          Verified Client Service
-                        </span>
-                      </div>
-                      <span className="rounded-full bg-amber-50 text-amber-700 px-2.5 py-0.5 text-[10px] font-bold border border-amber-200">
-                        Verified
-                      </span>
-                    </div>
-
-                    <div className="flex items-baseline gap-2 pt-1">
-                      <span className="text-3xl font-extrabold text-amber-600">4.9</span>
-                      <div className="flex items-center text-amber-500 text-sm">{"★★★★★"}</div>
-                      <span className="text-xs text-slate-500">(Bemetara &amp; CG)</span>
-                    </div>
-                    <p className="text-xs font-medium text-slate-500">
-                      Shop No. 08, Krishna Vihar, Bemetara
-                    </p>
-                  </div>
-
-                  <a
-                    href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent("Hello Famtima Traders, I would like to get a quote and see recent work photos.")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 px-3.5 py-2 text-xs font-semibold text-white shadow-md shadow-amber-600/20 transition-all text-center w-full"
-                  >
-                    <span>WhatsApp Consultation</span>
-                    <ExternalLink className="size-3.5" />
-                  </a>
-                </div>
-              </div>
-
-              {/* Top 3 Genuine Customer Reviews */}
-              <div className="space-y-3 pt-1">
-                <div className="flex items-center justify-between">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-emerald-700">
-                    Top Customer Experiences
-                  </h4>
-                  <span className="text-[11px] font-medium text-slate-500">
-                    100% Genuine Feedback
-                  </span>
-                </div>
-
-                <div className="space-y-2.5">
-                  {/* Review 1 */}
-                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-emerald-300 shadow-2xs transition-colors">
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center border border-emerald-200">
-                          BK
-                        </div>
-                        <span className="text-xs sm:text-sm font-bold text-slate-900">
-                          Bilal Khan
-                        </span>
-                      </div>
-                      <div className="text-amber-500 text-xs">★★★★★</div>
-                    </div>
-                    <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
-                      &ldquo;Everything was done on time and with great finishing. Special thanks to
-                      Anwar Khan and Famtima Traders for making our space look so elegant.&rdquo;
-                    </p>
-                  </div>
-
-                  {/* Review 2 */}
-                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-emerald-300 shadow-2xs transition-colors">
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center border border-emerald-200">
-                          SK
-                        </div>
-                        <span className="text-xs sm:text-sm font-bold text-slate-900">
-                          Shradhal Kumavat
-                        </span>
-                      </div>
-                      <div className="text-amber-500 text-xs">★★★★★</div>
-                    </div>
-                    <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
-                      &ldquo;Famtima Traders is great! Their prices are very reasonable, and we
-                      saved money. The service was quick, and they finished our ceiling and paneling
-                      fast.&rdquo;
-                    </p>
-                  </div>
-
-                  {/* Review 3 */}
-                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 sm:p-4 space-y-2 hover:border-emerald-300 shadow-2xs transition-colors">
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2">
-                        <div className="size-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center border border-emerald-200">
-                          A
-                        </div>
-                        <span className="text-xs sm:text-sm font-bold text-slate-900">Ahmed</span>
-                      </div>
-                      <div className="text-amber-500 text-xs">★★★★★</div>
-                    </div>
-                    <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
-                      &ldquo;I had a great experience with Famtima Traders... They responded very
-                      quickly to my request, which I really liked. Excellent quality work!&rdquo;
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Footer action: Crisp White & Royal Blue Accent */}
-            <div className="border-t border-slate-200 bg-white px-5 py-3.5 flex items-center justify-between gap-3 text-xs">
-              <span className="text-slate-600">Want to book a free site inspection?</span>
-              <a
-                href="#quote"
-                onClick={() => setIsRatingModalOpen(false)}
-                className="font-bold text-emerald-700 hover:text-emerald-800 transition-colors"
-              >
-                Get Free Estimate →
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
