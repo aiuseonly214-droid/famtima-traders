@@ -555,28 +555,28 @@ function PublicLandingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 antialiased selection:bg-emerald-700 selection:text-white pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:pb-0">
+    <div className="min-h-screen bg-white text-slate-900 antialiased selection:bg-blue-900 selection:text-white pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:pb-0">
       {/* Top Banner - Royal Navy Blue */}
       <aside
         aria-label="Announcement"
-        className="border-b border-emerald-800 bg-emerald-900 px-3 py-1.5 sm:py-2 text-xs text-emerald-100 shadow-xs"
+        className="border-b border-b border-slate-800 bg-[#0B1E36] px-3 py-1.5 sm:py-2 text-xs text-slate-200 shadow-xs"
       >
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0 flex-1">
-            <span className="flex size-2 shrink-0 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="flex size-2 shrink-0 rounded-full bg-amber-400 animate-pulse shadow-xs shadow-amber-400/50" />
             <span className="font-medium text-[11px] sm:text-xs leading-tight">{t.topBanner}</span>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Language Switcher Buttons (Hindi / English) */}
-            <div className="flex items-center rounded-lg bg-emerald-950/90 p-0.5 border border-emerald-700/80 shadow-xs">
+            <div className="flex items-center rounded-lg bg-slate-900/90 p-0.5 border border-slate-700/80 shadow-xs">
               <button
                 type="button"
                 onClick={() => setLang("en")}
                 className={`px-2 py-0.5 rounded text-[11px] font-bold transition-all ${
                   lang === "en"
-                    ? "bg-emerald-700 text-white shadow-xs"
-                    : "text-emerald-200 hover:text-white"
+                    ? "bg-blue-900 text-white shadow-xs"
+                    : "text-slate-300 hover:text-white"
                 }`}
                 title="Switch to English"
               >
@@ -587,8 +587,8 @@ function PublicLandingPage() {
                 onClick={() => setLang("hi")}
                 className={`px-2 py-0.5 rounded text-[11px] font-bold transition-all ${
                   lang === "hi"
-                    ? "bg-emerald-700 text-white shadow-xs"
-                    : "text-emerald-200 hover:text-white"
+                    ? "bg-blue-900 text-white shadow-xs"
+                    : "text-slate-300 hover:text-white"
                 }`}
                 title="हिंदी में पढ़ें"
               >
@@ -597,7 +597,7 @@ function PublicLandingPage() {
             </div>
 
             {/* Social Media Account Links */}
-            <div className="hidden sm:flex items-center gap-2.5 pr-2 border-r border-emerald-700/60">
+            <div className="hidden sm:flex items-center gap-2.5 pr-2 border-r border-slate-700/60">
               {landingConfig.social?.instagram && (
                 <a
                   href={landingConfig.social.instagram}
@@ -625,7 +625,7 @@ function PublicLandingPage() {
                   href={landingConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-emerald-200 hover:text-white transition-colors p-1"
+                  className="text-slate-300 hover:text-white transition-colors p-1"
                   title="Follow us on Facebook"
                 >
                   <Facebook className="size-3.5" />
@@ -635,15 +635,15 @@ function PublicLandingPage() {
 
             <a
               href={`tel:+91${phonePrimary}`}
-              className="hidden md:inline-flex items-center gap-1.5 font-semibold text-white hover:text-emerald-200 transition-colors"
+              className="hidden md:inline-flex items-center gap-1.5 font-semibold text-white hover:text-amber-300 transition-colors"
             >
-              <Phone className="size-3.5 text-emerald-300" />
+              <Phone className="size-3.5 text-amber-400" />
               +91 {phonePrimary}
             </a>
-            <span className="text-emerald-700 hidden lg:inline">|</span>
+            <span className="text-slate-600 hidden lg:inline">|</span>
             <Link
               to="/auth"
-              className="hidden sm:inline-flex items-center gap-1 text-emerald-200 hover:text-white transition-colors text-[11px]"
+              className="hidden sm:inline-flex items-center gap-1 text-slate-300 hover:text-white transition-colors text-[11px]"
             >
               <ShieldCheck className="size-3.5" />
               {t.staffLogin}
@@ -659,13 +659,13 @@ function PublicLandingPage() {
             <img
               src={companyLogoUrl}
               alt="Famtima Traders Logo"
-              className="size-8 sm:size-10 lg:size-11 rounded-full bg-white object-contain p-0.5 border-2 border-emerald-700 shadow-md shadow-emerald-700/10 shrink-0"
+              className="size-8 sm:size-10 lg:size-11 rounded-full bg-white object-contain p-0.5 border-2 border-blue-900 shadow-md shadow-blue-950/10 shrink-0"
             />
             <div className="min-w-0">
               <span className="block font-display text-[13px] xs:text-sm sm:text-base lg:text-xl font-bold tracking-tight text-slate-950 leading-tight whitespace-normal sm:whitespace-nowrap">
                 Famtima Traders
               </span>
-              <span className="block text-[8.5px] xs:text-[9.5px] sm:text-[11px] font-semibold tracking-wider text-emerald-800 uppercase leading-none mt-0.5 whitespace-normal sm:whitespace-nowrap">
+              <span className="block text-[8.5px] xs:text-[9.5px] sm:text-[11px] font-semibold tracking-wider text-blue-950 uppercase leading-none mt-0.5 whitespace-normal sm:whitespace-nowrap">
                 {t.tagline}
               </span>
             </div>
@@ -676,28 +676,28 @@ function PublicLandingPage() {
             aria-label="Main Navigation"
             className="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600"
           >
-            <a href="#services" className="hover:text-emerald-700 transition-colors">
+            <a href="#services" className="hover:text-blue-900 transition-colors">
               {t.navServices}
             </a>
-            <a href="#pop" className="hover:text-emerald-700 transition-colors">
+            <a href="#pop" className="hover:text-blue-900 transition-colors">
               {t.navPop}
             </a>
-            <a href="#pvc" className="hover:text-emerald-700 transition-colors">
+            <a href="#pvc" className="hover:text-blue-900 transition-colors">
               {t.navPvc}
             </a>
-            <a href="#founder" className="hover:text-emerald-700 transition-colors">
+            <a href="#founder" className="hover:text-blue-900 transition-colors">
               {t.navFounder}
             </a>
-            <a href="#gallery" className="hover:text-emerald-700 transition-colors">
+            <a href="#gallery" className="hover:text-blue-900 transition-colors">
               {t.navGallery}
             </a>
-            <a href="#areas" className="hover:text-emerald-700 transition-colors">
+            <a href="#areas" className="hover:text-blue-900 transition-colors">
               {t.navAreas}
             </a>
-            <a href="#quote" className="hover:text-emerald-700 transition-colors">
+            <a href="#quote" className="hover:text-blue-900 transition-colors">
               {t.navQuote}
             </a>
-            <a href="#faqs" className="hover:text-emerald-700 transition-colors">
+            <a href="#faqs" className="hover:text-blue-900 transition-colors">
               {t.navFaqs}
             </a>
           </nav>
@@ -736,7 +736,7 @@ function PublicLandingPage() {
                     href={landingConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1.5 rounded-full hover:bg-slate-100 text-slate-500 hover:text-emerald-700 transition-colors"
+                    className="p-1.5 rounded-full hover:bg-slate-100 text-slate-500 hover:text-blue-900 transition-colors"
                     title="Facebook"
                   >
                     <Facebook className="size-4" />
@@ -751,7 +751,7 @@ function PublicLandingPage() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-700 px-2 xs:px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-white shadow-md shadow-emerald-700/20 hover:bg-emerald-800 transition-all shrink-0"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 px-2 xs:px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-white shadow-md shadow-emerald-600/20 hover:bg-emerald-700 transition-all shrink-0"
               title="Chat on WhatsApp"
             >
               <MessageSquare className="size-3.5 sm:size-4 shrink-0" />
@@ -760,7 +760,7 @@ function PublicLandingPage() {
 
             <a
               href={`tel:+91${phonePrimary}`}
-              className="inline-flex items-center gap-1 sm:gap-1.5 rounded-lg border border-emerald-200 bg-emerald-50 px-2 xs:px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all shadow-xs shrink-0"
+              className="inline-flex items-center gap-1 sm:gap-1.5 rounded-lg border border-blue-200 bg-blue-50/80 px-2 xs:px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold text-blue-900 hover:bg-blue-900 hover:text-white transition-all shadow-xs shrink-0"
               title={`Call +91 ${phonePrimary}`}
             >
               <Phone className="size-3.5 sm:size-4 shrink-0" />
@@ -769,7 +769,7 @@ function PublicLandingPage() {
 
             <Link
               to="/auth"
-              className="hidden md:inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:text-emerald-700 hover:border-emerald-300 transition-all shrink-0"
+              className="hidden md:inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:text-blue-900 hover:border-blue-300 transition-all shrink-0"
               title="Employee & Admin CRM Portal"
             >
               <span>Portal</span>
@@ -779,7 +779,7 @@ function PublicLandingPage() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-emerald-700 transition-colors shrink-0"
+              className="lg:hidden p-1.5 rounded-lg border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-blue-900 transition-colors shrink-0"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -794,63 +794,63 @@ function PublicLandingPage() {
               <a
                 href="#services"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navServices}
               </a>
               <a
                 href="#pop"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navPop}
               </a>
               <a
                 href="#pvc"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navPvc}
               </a>
               <a
                 href="#founder"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navFounder}
               </a>
               <a
                 href="#gallery"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navGallery}
               </a>
               <a
                 href="#areas"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navAreas}
               </a>
               <a
                 href="#quote"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navQuote}
               </a>
               <a
                 href="#faqs"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 {t.navFaqs}
               </a>
               <Link
                 to="/auth"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg hover:bg-blue-50 hover:text-blue-900 transition-colors"
               >
                 CRM Portal
               </Link>
@@ -859,7 +859,7 @@ function PublicLandingPage() {
             {/* Mobile Language Switcher inside Drawer */}
             <div className="flex items-center justify-between pt-1">
               <span className="text-xs font-semibold text-slate-600 flex items-center gap-1.5">
-                <Languages className="size-4 text-emerald-700" />
+                <Languages className="size-4 text-blue-900" />
                 Language / भाषा:
               </span>
               <div className="flex items-center rounded-lg bg-slate-100 p-0.5 border border-slate-200">
@@ -868,7 +868,7 @@ function PublicLandingPage() {
                   onClick={() => setLang("en")}
                   className={`px-3 py-1 rounded text-xs font-bold transition-all ${
                     lang === "en"
-                      ? "bg-emerald-700 text-white shadow-xs"
+                      ? "bg-blue-900 text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
@@ -879,7 +879,7 @@ function PublicLandingPage() {
                   onClick={() => setLang("hi")}
                   className={`px-3 py-1 rounded text-xs font-bold transition-all ${
                     lang === "hi"
-                      ? "bg-emerald-700 text-white shadow-xs"
+                      ? "bg-blue-900 text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
@@ -920,7 +920,7 @@ function PublicLandingPage() {
                     href={landingConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-slate-100 hover:text-emerald-700 text-emerald-700"
+                    className="p-2 rounded-full bg-slate-100 hover:text-blue-900 text-blue-900"
                     title="Facebook"
                   >
                     <Facebook className="size-4" />
@@ -942,14 +942,14 @@ function PublicLandingPage() {
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-12 lg:items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-5 sm:space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50/70 px-3 py-1.5 text-xs font-semibold text-emerald-800 shadow-xs max-w-full">
-                <Sparkles className="size-3.5 text-emerald-700 shrink-0" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50/70 px-3 py-1.5 text-xs font-semibold text-blue-950 shadow-xs max-w-full">
+                <Sparkles className="size-3.5 text-blue-900 shrink-0" />
                 <span className="truncate">{t.badge}</span>
               </div>
 
               <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.2] break-words">
-                {t.heroTitle1} <span className="text-emerald-700">{t.heroTitlePop}</span>{" "}
-                {t.heroTitleAnd} <span className="text-emerald-900">{t.heroTitlePvc}</span>{" "}
+                {t.heroTitle1} <span className="text-blue-900">{t.heroTitlePop}</span>{" "}
+                {t.heroTitleAnd} <span className="text-slate-900">{t.heroTitlePvc}</span>{" "}
                 {t.heroTitleCity}
               </h1>
 
@@ -960,7 +960,7 @@ function PublicLandingPage() {
               {/* Trust Badges - Responsive Grid (2 cols on mobile, 4 on desktop) */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 xs:gap-2.5 sm:gap-3 pt-1">
                 <div className="rounded-xl border border-slate-200 bg-white p-2.5 xs:p-3 text-center shadow-xs min-w-0">
-                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-950">
                     {t.statExp}
                   </div>
                   <div className="text-[10px] xs:text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5 leading-tight">
@@ -968,7 +968,7 @@ function PublicLandingPage() {
                   </div>
                 </div>
                 <div className="rounded-xl border border-slate-200 bg-white p-2.5 xs:p-3 text-center shadow-xs min-w-0">
-                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-950">
                     {t.statProj}
                   </div>
                   <div className="text-[10px] xs:text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5 leading-tight">
@@ -976,18 +976,18 @@ function PublicLandingPage() {
                   </div>
                 </div>
                 <div className="rounded-xl border border-slate-200 bg-white p-2.5 xs:p-3 text-center shadow-xs min-w-0">
-                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-950">
                     {t.statWaterproof}
                   </div>
                   <div className="text-[10px] xs:text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5 leading-tight">
                     {t.statWaterproofSub}
                   </div>
                 </div>
-                <div className="rounded-xl border border-emerald-200 bg-emerald-50/70 p-2.5 xs:p-3 text-center shadow-xs min-w-0">
-                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-emerald-700">
+                <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-2.5 xs:p-3 text-center shadow-xs min-w-0">
+                  <div className="text-base xs:text-lg sm:text-xl lg:text-2xl font-extrabold text-blue-950">
                     {t.statRating}
                   </div>
-                  <div className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-emerald-700 mt-0.5 leading-tight">
+                  <div className="text-[10px] xs:text-[11px] sm:text-xs font-semibold text-amber-800 mt-0.5 leading-tight">
                     {t.statRatingSub}
                   </div>
                 </div>
@@ -997,7 +997,7 @@ function PublicLandingPage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-2">
                 <a
                   href="#quote"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-4 xs:px-5 sm:px-6 py-3 xs:py-3.5 text-xs xs:text-sm font-bold text-white shadow-lg shadow-emerald-600/25 hover:bg-emerald-700 transition-all text-center min-w-0"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-4 xs:px-5 sm:px-6 py-3 xs:py-3.5 text-xs xs:text-sm font-bold text-white shadow-lg shadow-blue-950/20 hover:bg-emerald-700 transition-all text-center min-w-0"
                 >
                   <span className="truncate">{t.btnFreeEstimate}</span>
                   <ArrowRight className="size-4 shrink-0" />
@@ -1006,7 +1006,7 @@ function PublicLandingPage() {
                   href={`tel:+91${phonePrimary}`}
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 xs:px-5 sm:px-6 py-3 xs:py-3.5 text-xs xs:text-sm font-semibold text-slate-800 shadow-xs hover:bg-slate-50 hover:border-slate-400 transition-all text-center min-w-0"
                 >
-                  <Phone className="size-4 text-emerald-700 shrink-0" />
+                  <Phone className="size-4 text-blue-900 shrink-0" />
                   <span className="truncate">
                     {t.btnCall} +91 {phonePrimary}
                   </span>
@@ -1014,14 +1014,14 @@ function PublicLandingPage() {
               </div>
 
               <div className="flex items-start gap-2 text-xs font-medium text-slate-600 pt-1">
-                <CheckCircle2 className="size-4 text-emerald-700 shrink-0 mt-0.5" />
+                <CheckCircle2 className="size-4 text-blue-900 shrink-0 mt-0.5" />
                 <span className="leading-snug">{t.trustLine}</span>
               </div>
             </div>
 
             {/* Right Hero Image Card */}
             <div className="lg:col-span-5 relative mt-4 lg:mt-0">
-              <div className="relative overflow-hidden rounded-2xl border-2 sm:border-4 border-white bg-white shadow-xl shadow-emerald-900/10">
+              <div className="relative overflow-hidden rounded-2xl border-2 sm:border-4 border-white bg-white shadow-xl shadow-blue-950/10">
                 <div className="relative overflow-hidden bg-slate-900 aspect-square w-full">
                   <img
                     src="/images/pop-ceiling-nashik.webp"
@@ -1036,10 +1036,10 @@ function PublicLandingPage() {
                     decoding="async"
                   />
                   <div className="absolute top-2.5 sm:top-3 inset-x-2.5 sm:inset-x-3 flex items-center justify-between gap-1.5 pointer-events-none">
-                    <span className="rounded-full bg-emerald-900/90 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white shadow-md border border-emerald-400/30 truncate max-w-[62%] sm:max-w-none">
+                    <span className="rounded-full bg-slate-950/90 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-white shadow-md border border-slate-700 truncate max-w-[62%] sm:max-w-none">
                       {t.featuredBadge}
                     </span>
-                    <span className="rounded-full bg-emerald-700/95 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold text-white shadow-md border border-emerald-400/30 shrink-0">
+                    <span className="rounded-full bg-amber-600/95 backdrop-blur-md px-2 xs:px-2.5 py-0.5 sm:py-1 text-[9px] xs:text-[10px] sm:text-[11px] font-bold text-white shadow-md border border-amber-300/40 shrink-0">
                       ✓ {t.featuredCompleted}
                     </span>
                   </div>
@@ -1052,13 +1052,13 @@ function PublicLandingPage() {
                       Modern Living Room POP Ceiling
                     </p>
                     <p className="text-[11px] xs:text-xs text-slate-500 flex items-center gap-1 mt-0.5 truncate">
-                      <MapPin className="size-3 xs:size-3.5 text-emerald-700 shrink-0" />
+                      <MapPin className="size-3 xs:size-3.5 text-blue-900 shrink-0" />
                       Krishna Vihar, Bemetara
                     </p>
                   </div>
                   <a
                     href="#gallery"
-                    className="shrink-0 text-[11px] xs:text-xs font-semibold text-emerald-700 hover:text-emerald-800 bg-emerald-50 px-2 xs:px-2.5 py-1.5 rounded-lg border border-emerald-100 transition-colors"
+                    className="shrink-0 text-[11px] xs:text-xs font-semibold text-blue-900 hover:text-blue-950 bg-blue-50 px-2 xs:px-2.5 py-1.5 rounded-lg border border-blue-100 transition-colors"
                   >
                     View All →
                   </a>
@@ -1073,7 +1073,7 @@ function PublicLandingPage() {
       <section id="services" className="border-t border-slate-200/80 bg-slate-50/70 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2.5 sm:space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-900">
               {t.servicesSub}
             </span>
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
@@ -1087,7 +1087,7 @@ function PublicLandingPage() {
               <div
                 key={svc.id}
                 id={svc.id}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-600/10 flex flex-col justify-between"
+                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-sm transition-all duration-300 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-950/10 flex flex-col justify-between"
               >
                 <div className="grid gap-4 sm:gap-6 sm:grid-cols-12 sm:items-center">
                   <div className="sm:col-span-5 overflow-hidden rounded-xl border border-slate-100 bg-slate-50">
@@ -1102,10 +1102,10 @@ function PublicLandingPage() {
                     />
                   </div>
                   <div className="sm:col-span-7 space-y-2.5 sm:space-y-3">
-                    <span className="inline-block rounded-md bg-emerald-50 px-2.5 py-0.5 text-[11px] sm:text-xs font-semibold text-emerald-700 border border-emerald-200/60">
+                    <span className="inline-block rounded-md bg-blue-50 px-2.5 py-0.5 text-[11px] sm:text-xs font-semibold text-blue-900 border border-blue-200/60">
                       {svc.badge}
                     </span>
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-900 transition-colors">
                       {svc.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -1114,18 +1114,18 @@ function PublicLandingPage() {
                     <ul className="space-y-1.5 pt-1 text-xs text-slate-600">
                       {svc.features.map((f, i) => (
                         <li key={i} className="flex items-center gap-2">
-                          <Check className="size-3.5 text-emerald-700 shrink-0" />
+                          <Check className="size-3.5 text-blue-900 shrink-0" />
                           <span>{f}</span>
                         </li>
                       ))}
                     </ul>
                     <div className="flex items-center justify-between pt-2 border-t border-slate-100">
-                      <span className="text-xs sm:text-sm font-bold text-emerald-700">
+                      <span className="text-xs sm:text-sm font-bold text-blue-900">
                         {svc.priceHint}
                       </span>
                       <a
                         href="#quote"
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 hover:text-emerald-800"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-blue-900 hover:text-blue-950"
                       >
                         <span>{t.btnBookVisit}</span>
                         <ChevronRight className="size-3" />
@@ -1143,7 +1143,7 @@ function PublicLandingPage() {
       {/* Founder & Global Experience Section */}
       <section id="founder" className="py-16 sm:py-20 border-t border-slate-200/80 bg-gradient-to-b from-white via-emerald-50/25 to-white relative overflow-hidden">
         {/* Subtle decorative glow */}
-        <div className="pointer-events-none absolute top-1/2 left-0 -translate-y-1/2 size-96 rounded-full bg-emerald-200/20 blur-3xl -z-10" />
+        <div className="pointer-events-none absolute top-1/2 left-0 -translate-y-1/2 size-96 rounded-full bg-blue-200/20 blur-3xl -z-10" />
         <div className="pointer-events-none absolute top-1/3 right-0 size-96 rounded-full bg-amber-200/20 blur-3xl -z-10" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -1163,8 +1163,8 @@ function PublicLandingPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Left Card: Founder Profile & Direct Message (5 cols) */}
-            <div className="lg:col-span-5 rounded-2xl border border-emerald-100 bg-white p-6 sm:p-8 shadow-sm space-y-6 relative overflow-hidden">
-              <div className="absolute top-0 right-0 h-2 w-full bg-gradient-to-r from-emerald-600 via-amber-500 to-emerald-700" />
+            <div className="lg:col-span-5 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm space-y-6 relative overflow-hidden">
+              <div className="absolute top-0 right-0 h-2 w-full bg-gradient-to-r from-blue-900 via-amber-500 to-blue-950" />
 
               {/* Founder Header */}
               <div className="flex items-center gap-4">
@@ -1172,7 +1172,7 @@ function PublicLandingPage() {
                   <img
                     src="/anwar-khan.png"
                     alt="Anwar Khan - Founder Famtima Traders"
-                    className="size-20 sm:size-24 rounded-full object-cover border-2 border-emerald-600 shadow-md ring-4 ring-emerald-100"
+                    className="size-20 sm:size-24 rounded-full object-cover border-2 border-blue-800 shadow-md ring-4 ring-blue-100"
                     loading="lazy"
                   />
                   <div
@@ -1186,11 +1186,11 @@ function PublicLandingPage() {
                   <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">
                     Anwar Khan
                   </h3>
-                  <p className="text-xs sm:text-sm font-semibold text-emerald-800">
+                  <p className="text-xs sm:text-sm font-semibold text-blue-950">
                     {t.founderRole}
                   </p>
                   <div className="mt-1 flex items-center gap-1.5 text-[11px] text-slate-500">
-                    <MapPin className="size-3 text-emerald-600 shrink-0" />
+                    <MapPin className="size-3 text-blue-800 shrink-0" />
                     <span>Bemetara, Chhattisgarh</span>
                   </div>
                 </div>
@@ -1207,7 +1207,7 @@ function PublicLandingPage() {
                   <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statCountries}</span>
                 </div>
                 <div className="space-y-0.5">
-                  <span className="block text-lg font-extrabold text-emerald-700">100%</span>
+                  <span className="block text-lg font-extrabold text-blue-950">100%</span>
                   <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statSupervision}</span>
                 </div>
               </div>
@@ -1218,19 +1218,19 @@ function PublicLandingPage() {
                   {t.internationalFootprint}
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-xs">
-                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
                     <span className="text-sm">🇸🇦</span>
                     <span className="truncate">Saudi Arabia (SACODECO)</span>
                   </div>
-                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
                     <span className="text-sm">🇦🇪</span>
                     <span className="truncate">Dubai (UAE)</span>
                   </div>
-                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
                     <span className="text-sm">🇶🇦</span>
                     <span className="truncate">Qatar</span>
                   </div>
-                  <div className="flex items-center gap-2 rounded-lg bg-emerald-50/70 border border-emerald-100/80 px-2.5 py-1.5 font-medium text-emerald-950">
+                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
                     <span className="text-sm">🇮🇳</span>
                     <span className="truncate">India (Chhattisgarh)</span>
                   </div>
@@ -1259,9 +1259,9 @@ function PublicLandingPage() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-700 bg-white hover:bg-emerald-50 text-emerald-800 font-semibold text-xs sm:text-sm py-2.5 px-4 shadow-xs transition-all"
+                  className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border border-blue-900 bg-white hover:bg-blue-50 text-blue-950 font-semibold text-xs sm:text-sm py-2.5 px-4 shadow-xs transition-all"
                 >
-                  <MessageSquare className="size-4 text-emerald-700" />
+                  <MessageSquare className="size-4 text-blue-900" />
                   <span>{t.founderChatBtn}</span>
                 </a>
               </div>
@@ -1279,7 +1279,7 @@ function PublicLandingPage() {
                     loading="lazy"
                   />
                   <div className="mt-2.5 flex flex-wrap items-center justify-between gap-2 px-1 text-[11px] sm:text-xs text-slate-500">
-                    <div className="flex items-center gap-1.5 font-medium text-emerald-900">
+                    <div className="flex items-center gap-1.5 font-medium text-slate-900">
                       <Award className="size-3.5 text-amber-600" />
                       <span>{t.certVerified}</span>
                     </div>
@@ -1290,15 +1290,15 @@ function PublicLandingPage() {
 
               {/* 4 Pillars of Gulf-Standard Workmanship */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
-                  <div className="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-blue-300 transition-colors">
+                  <div className="size-8 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center">
                     <ShieldCheck className="size-4" />
                   </div>
                   <h4 className="text-xs sm:text-sm font-bold text-slate-900">{t.pillar1Title}</h4>
                   <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar1Desc}</p>
                 </div>
 
-                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-blue-300 transition-colors">
                   <div className="size-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
                     <Sparkles className="size-4" />
                   </div>
@@ -1306,15 +1306,15 @@ function PublicLandingPage() {
                   <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar2Desc}</p>
                 </div>
 
-                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
-                  <div className="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-blue-300 transition-colors">
+                  <div className="size-8 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center">
                     <Clock className="size-4" />
                   </div>
                   <h4 className="text-xs sm:text-sm font-bold text-slate-900">{t.pillar3Title}</h4>
                   <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">{t.pillar3Desc}</p>
                 </div>
 
-                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-emerald-300 transition-colors">
+                <div className="rounded-xl border border-slate-200/90 bg-white p-4 space-y-2 shadow-2xs hover:border-blue-300 transition-colors">
                   <div className="size-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center">
                     <Layers className="size-4" />
                   </div>
@@ -1331,7 +1331,7 @@ function PublicLandingPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 sm:mb-12">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+              <p className="text-xs font-bold uppercase tracking-widest text-blue-900">
                 {t.gallerySub}
               </p>
               <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
@@ -1344,7 +1344,7 @@ function PublicLandingPage() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-blue-900 hover:text-blue-950"
             >
               <span>{t.galleryBtn}</span>
               <ArrowRight className="size-4 shrink-0" />
@@ -1368,7 +1368,7 @@ function PublicLandingPage() {
                       loading="lazy"
                       decoding="async"
                     />
-                    <span className="absolute top-2 left-2 rounded-full bg-emerald-900/80 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white shadow-xs">
+                    <span className="absolute top-2 left-2 rounded-full bg-slate-900/85 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white shadow-xs">
                       {item.category}
                     </span>
                     {item.videoUrl && (
@@ -1384,11 +1384,11 @@ function PublicLandingPage() {
                     )}
                   </div>
                   <div className="p-3.5 sm:p-4 space-y-1.5">
-                    <h3 className="text-sm font-bold text-slate-900 group-hover:text-emerald-700 transition-colors line-clamp-1">
+                    <h3 className="text-sm font-bold text-slate-900 group-hover:text-blue-900 transition-colors line-clamp-1">
                       {item.title}
                     </h3>
                     <p className="text-xs text-slate-500 flex items-center gap-1">
-                      <MapPin className="size-3 text-emerald-700 shrink-0" />
+                      <MapPin className="size-3 text-blue-900 shrink-0" />
                       {item.location}
                     </p>
                     {item.description && (
@@ -1406,7 +1406,7 @@ function PublicLandingPage() {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-emerald-200 bg-emerald-50/70 py-2.5 text-xs font-semibold text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all text-center"
+                    className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-amber-200 bg-amber-50/70 py-2.5 text-xs font-semibold text-blue-900 hover:bg-emerald-700 hover:text-white transition-all text-center"
                   >
                     <MessageSquare className="size-3.5" />
                     <span>{t.btnSimilarQuote}</span>
@@ -1427,7 +1427,7 @@ function PublicLandingPage() {
           <div className="grid gap-8 sm:gap-12 lg:grid-cols-12 lg:items-center">
             {/* Left Info */}
             <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-              <span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">
+              <span className="inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-950">
                 {t.quoteSub}
               </span>
               <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
@@ -1439,7 +1439,7 @@ function PublicLandingPage() {
 
               <div className="space-y-3.5 sm:space-y-4 pt-1 sm:pt-2">
                 <div className="flex items-start gap-3">
-                  <div className="rounded-lg bg-emerald-100 p-2 text-emerald-700 shrink-0">
+                  <div className="rounded-lg bg-blue-100 p-2 text-blue-900 shrink-0">
                     <CheckCircle2 className="size-5" />
                   </div>
                   <div>
@@ -1449,7 +1449,7 @@ function PublicLandingPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="rounded-lg bg-emerald-100 p-2 text-emerald-700 shrink-0">
+                  <div className="rounded-lg bg-blue-100 p-2 text-blue-900 shrink-0">
                     <ShieldCheck className="size-5" />
                   </div>
                   <div>
@@ -1459,15 +1459,15 @@ function PublicLandingPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="rounded-lg bg-emerald-100 p-2 text-emerald-700 shrink-0">
+                  <div className="rounded-lg bg-blue-100 p-2 text-blue-900 shrink-0">
                     <Phone className="size-5" />
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">{t.quoteF3Title}</h3>
                     <p className="text-xs text-slate-600">
                       Call directly at{" "}
-                      <strong className="text-emerald-900 font-semibold">+91 {phonePrimary}</strong> or{" "}
-                      <strong className="text-emerald-900 font-semibold">+91 {phoneSecondary}</strong>.
+                      <strong className="text-slate-900 font-semibold">+91 {phonePrimary}</strong> or{" "}
+                      <strong className="text-slate-900 font-semibold">+91 {phoneSecondary}</strong>.
                     </p>
                   </div>
                 </div>
@@ -1480,7 +1480,7 @@ function PublicLandingPage() {
                 <CardContent className="p-4 xs:p-6 sm:p-8">
                   <form onSubmit={handleWhatsAppSubmit} className="space-y-4">
                     <div className="border-b border-slate-100 pb-3">
-                      <h3 className="text-lg font-bold text-emerald-950">{t.quoteFormTitle}</h3>
+                      <h3 className="text-lg font-bold text-slate-950">{t.quoteFormTitle}</h3>
                       <p className="text-xs text-slate-500">{t.quoteFormSub}</p>
                     </div>
 
@@ -1496,7 +1496,7 @@ function PublicLandingPage() {
                           id="service-select"
                           value={quoteService}
                           onChange={(e) => setQuoteService(e.target.value)}
-                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-emerald-700 focus:outline-hidden"
+                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-blue-900 focus:outline-hidden"
                         >
                           <option value="Home Decoration & Styling">Home Decoration & Styling</option>
                           <option value="POP False Ceiling Work">POP False Ceiling Work</option>
@@ -1518,7 +1518,7 @@ function PublicLandingPage() {
                           id="property-select"
                           value={propertyType}
                           onChange={(e) => setPropertyType(e.target.value)}
-                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-emerald-700 focus:outline-hidden"
+                          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-blue-900 focus:outline-hidden"
                         >
                           <option value="1BHK Flat">1BHK Flat</option>
                           <option value="2BHK Flat">2BHK Flat</option>
@@ -1539,7 +1539,7 @@ function PublicLandingPage() {
                         placeholder="Your full name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-emerald-700"
+                        className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-blue-900"
                         required
                       />
                     </div>
@@ -1558,7 +1558,7 @@ function PublicLandingPage() {
                           placeholder="10-digit mobile number"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-emerald-700"
+                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-blue-900"
                           required
                         />
                       </div>
@@ -1573,7 +1573,7 @@ function PublicLandingPage() {
                           placeholder="e.g. Bemetara / Durg"
                           value={area}
                           onChange={(e) => setArea(e.target.value)}
-                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-emerald-700"
+                          className="border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:border-blue-900"
                         />
                       </div>
                     </div>
@@ -1599,7 +1599,7 @@ function PublicLandingPage() {
       <section className="py-16 sm:py-20 border-t border-slate-200/80 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2.5 sm:space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-900">
               {t.whySub}
             </span>
             <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
@@ -1609,7 +1609,7 @@ function PublicLandingPage() {
 
           <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6 space-y-2.5 sm:space-y-3 shadow-xs">
-              <div className="size-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+              <div className="size-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-900 shrink-0">
                 <Award className="size-5" />
               </div>
               <h3 className="text-base font-bold text-slate-900">{t.why1Title}</h3>
@@ -1617,7 +1617,7 @@ function PublicLandingPage() {
             </div>
 
             <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6 space-y-2.5 sm:space-y-3 shadow-xs">
-              <div className="size-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+              <div className="size-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-800 shrink-0">
                 <ShieldCheck className="size-5" />
               </div>
               <h3 className="text-base font-bold text-slate-900">{t.why2Title}</h3>
@@ -1625,7 +1625,7 @@ function PublicLandingPage() {
             </div>
 
             <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6 space-y-2.5 sm:space-y-3 shadow-xs">
-              <div className="size-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+              <div className="size-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-900 shrink-0">
                 <Clock className="size-5" />
               </div>
               <h3 className="text-base font-bold text-slate-900">{t.why3Title}</h3>
@@ -1647,7 +1647,7 @@ function PublicLandingPage() {
       <section id="areas" className="py-14 sm:py-16 border-t border-slate-200/80 bg-slate-50/70">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 text-center space-y-5 sm:space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-900">
               {t.areasSub}
             </span>
             <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">
@@ -1660,9 +1660,9 @@ function PublicLandingPage() {
             {nashikAreas.map((areaName, i) => (
               <span
                 key={i}
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:border-emerald-400 hover:text-emerald-700 transition-all shadow-xs"
+                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:border-blue-400 hover:text-blue-900 transition-all shadow-xs"
               >
-                <MapPin className="size-3 text-emerald-700" />
+                <MapPin className="size-3 text-blue-900" />
                 <span>{areaName}</span>
               </span>
             ))}
@@ -1674,7 +1674,7 @@ function PublicLandingPage() {
       <section id="faqs" className="py-16 sm:py-20 border-t border-slate-200/80 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <span className="text-xs font-bold uppercase tracking-widest text-blue-900">
               {t.faqSub}
             </span>
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
@@ -1692,12 +1692,12 @@ function PublicLandingPage() {
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
-                    className="flex w-full items-center justify-between p-4 sm:p-5 text-left text-xs sm:text-sm md:text-base font-semibold text-slate-900 hover:text-emerald-700 transition-colors"
+                    className="flex w-full items-center justify-between p-4 sm:p-5 text-left text-xs sm:text-sm md:text-base font-semibold text-slate-900 hover:text-blue-900 transition-colors"
                   >
                     <span>{faq.q}</span>
                     <ChevronDown
                       className={`size-4 text-slate-400 shrink-0 ml-2 transition-transform duration-300 ${
-                        isOpen ? "rotate-180 text-emerald-700" : ""
+                        isOpen ? "rotate-180 text-blue-900" : ""
                       }`}
                     />
                   </button>
@@ -1714,7 +1714,7 @@ function PublicLandingPage() {
       </section>
 
       {/* CTA Strip - Royal Blue Accent */}
-      <section className="border-t border-emerald-900 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-950 py-12 sm:py-16 text-white pb-24 md:pb-16">
+      <section className="border-t border-slate-900 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-950 py-12 sm:py-16 text-white pb-24 md:pb-16">
         <div className="mx-auto max-w-5xl px-4 text-center space-y-5 sm:space-y-6">
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             {t.ctaTitle}
@@ -1729,16 +1729,16 @@ function PublicLandingPage() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-lg shadow-emerald-700/30 hover:bg-emerald-800 transition-all text-center"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-lg shadow-blue-950/25 hover:bg-emerald-800 transition-all text-center"
             >
               <MessageSquare className="size-4 shrink-0" />
               <span>{t.ctaChatBtn}</span>
             </a>
             <a
               href={`tel:+91${phonePrimary}`}
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white px-6 py-3.5 text-xs sm:text-sm font-bold text-emerald-950 shadow-md hover:bg-emerald-50 transition-all text-center"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white px-6 py-3.5 text-xs sm:text-sm font-bold text-slate-950 shadow-md hover:bg-blue-50 transition-all text-center"
             >
-              <Phone className="size-4 text-emerald-700 shrink-0" />
+              <Phone className="size-4 text-blue-900 shrink-0" />
               <span>
                 {t.btnCall} +91 {phonePrimary}
               </span>
@@ -1774,7 +1774,7 @@ function PublicLandingPage() {
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-slate-100 p-2.5 text-slate-700 hover:bg-slate-200 shrink-0"
           title="Estimate"
         >
-          <Send className="size-4 text-emerald-700" />
+          <Send className="size-4 text-blue-900" />
         </a>
       </div>
 
@@ -1798,7 +1798,7 @@ function PublicLandingPage() {
                 Bemetara's trusted specialists in home decoration, designer POP false ceilings,
                 100% waterproof PVC wall panels, and renovation.
               </p>
-              <p className="text-emerald-400 font-medium">
+              <p className="text-amber-400 font-medium">
                 Shop No. 08, Krishna Vihar, Bemetara, CG
               </p>
 
@@ -1833,10 +1833,10 @@ function PublicLandingPage() {
                     href={landingConfig.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 rounded-md border border-slate-700 bg-slate-800/80 px-2.5 py-1 text-slate-300 hover:text-white hover:border-emerald-600 transition-colors"
+                    className="flex items-center gap-1.5 rounded-md border border-slate-700 bg-slate-800/80 px-2.5 py-1 text-slate-300 hover:text-white hover:border-blue-800 transition-colors"
                     title="Facebook"
                   >
-                    <Facebook className="size-3.5 text-emerald-600" />
+                    <Facebook className="size-3.5 text-blue-800" />
                     <span className="text-[11px]">Facebook</span>
                   </a>
                 )}
@@ -1888,9 +1888,9 @@ function PublicLandingPage() {
               <div className="space-y-2">
                 <Link
                   to="/auth"
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:border-emerald-600 transition-colors w-full justify-center"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white hover:border-blue-800 transition-colors w-full justify-center"
                 >
-                  <ShieldCheck className="size-3.5 text-emerald-400" />
+                  <ShieldCheck className="size-3.5 text-amber-400" />
                   <span>Admin &amp; Employee Portal</span>
                 </Link>
                 <p className="text-[11px] text-slate-300 text-center">

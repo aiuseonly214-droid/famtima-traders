@@ -334,7 +334,7 @@ function SettingsPage() {
         <div className="flex items-center justify-between border-b pb-3">
           <div>
             <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
-              <Sparkles className="size-5 text-emerald-700" />
+              <Sparkles className="size-5 text-primary" />
               Public Landing Page Showcase &amp; Customization
             </h2>
             <p className="text-xs text-slate-500">
@@ -346,10 +346,10 @@ function SettingsPage() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Section 1: Service Starting Rates */}
-          <Card className="border-emerald-100 shadow-sm">
-            <CardHeader className="bg-emerald-50/50 pb-3">
-              <CardTitle className="text-base flex items-center gap-2 text-emerald-950">
-                <Tag className="size-4 text-emerald-700" />
+          <Card className="border-border shadow-sm">
+            <CardHeader className="bg-muted/40 pb-3">
+              <CardTitle className="text-base flex items-center gap-2 text-foreground">
+                <Tag className="size-4 text-primary" />
                 Service Starting Rates (Admin Fix / Customize)
               </CardTitle>
               <CardDescription className="text-xs">
@@ -486,10 +486,10 @@ function SettingsPage() {
         </div>
 
         {/* Section 3: Genuine Recent Projects Showcase Manager */}
-        <Card className="border-emerald-100 shadow-sm">
-          <CardHeader className="bg-emerald-50/50 pb-3">
-            <CardTitle className="text-base flex items-center gap-2 text-emerald-950">
-              <Sparkles className="size-4 text-emerald-700" />
+        <Card className="border-border shadow-sm">
+          <CardHeader className="bg-muted/40 pb-3">
+            <CardTitle className="text-base flex items-center gap-2 text-foreground">
+              <Sparkles className="size-4 text-primary" />
               Recent Genuine Projects (Upload Photos &amp; Video Clips)
             </CardTitle>
             <CardDescription className="text-xs">
@@ -501,7 +501,7 @@ function SettingsPage() {
             {/* Add Project Form */}
             <div className="rounded-lg border border-slate-200 bg-slate-50/70 p-4">
               <h3 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-1.5">
-                <Plus className="size-4 text-emerald-700" /> Add New Genuine Project
+                <Plus className="size-4 text-primary" /> Add New Genuine Project
               </h3>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 <div>
@@ -588,7 +588,7 @@ function SettingsPage() {
                       />
                     </label>
                     {newProject.imageUrl && (
-                      <span className="text-xs text-emerald-600 font-semibold flex items-center gap-1">
+                      <span className="text-xs text-primary font-semibold flex items-center gap-1">
                         <Check className="size-4" /> Photo attached
                       </span>
                     )}
@@ -636,7 +636,7 @@ function SettingsPage() {
                           alt={item.title}
                           className="size-full object-cover"
                         />
-                        <span className="absolute top-2 left-2 rounded-full bg-emerald-900/80 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white">
+                        <span className="absolute top-2 left-2 rounded-full bg-slate-900/85 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-semibold text-white">
                           {item.category}
                         </span>
                         {item.videoUrl && (
@@ -653,7 +653,7 @@ function SettingsPage() {
                           {item.title}
                         </h4>
                         <p className="text-[11px] text-slate-500 flex items-center gap-1">
-                          <MapPin className="size-3 text-emerald-700 shrink-0" />
+                          <MapPin className="size-3 text-primary shrink-0" />
                           {item.location}
                         </p>
                         {item.description && (
@@ -666,7 +666,7 @@ function SettingsPage() {
                             href={item.videoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-[11px] text-emerald-700 hover:underline pt-1"
+                            className="inline-flex items-center gap-1 text-[11px] text-primary hover:underline pt-1"
                           >
                             <Video className="size-3 text-red-600" /> Watch Clip / Reel
                           </a>
@@ -696,7 +696,7 @@ function SettingsPage() {
         <Button
           onClick={save}
           disabled={saving || !isAdmin}
-          className="bg-emerald-700 hover:bg-emerald-800 text-white px-6"
+          className="bg-primary hover:bg-primary/90 text-primary-foreground px-6"
         >
           {saving ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />}
           Save all changes (Live on Website)

@@ -21,7 +21,7 @@ export function DocHeader({ company }: { company: CompanyProfile }) {
 
         <div className="min-w-0 flex-1">
           <h1 className="font-display text-[29px] leading-tight tracking-wide">{company.name}</h1>
-          <p style={{ color: "#BFE4E3" }} className="text-[13px] italic">
+          <p style={{ color: "#E2E8F0" }} className="text-[13px] italic">
             {company.tagline}
           </p>
         </div>

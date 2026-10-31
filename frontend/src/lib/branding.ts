@@ -6,15 +6,15 @@ export const DEFAULT_SIGNATURE_URL = "/famtima-signature.png";
 
 /**
  * Print palette for A4 documents (Quotations, Invoices, Receipts).
- * Famtima Traders Dark Forest Green + Gold identity.
+ * Professional Executive Navy Blue + Royal Gold identity.
  */
 export const DOC = {
-  primary: "#1A4731",
+  primary: "#0B2545",
   primaryText: "#FFFFFF",
-  accent: "#C4902A",
-  tint: "#F0F7F2",
-  tintAlt: "#FDFBF7",
-  border: "#C8D7CE",
-  text: "#14241B",
-  muted: "#55685C",
+  accent: "#C59B27",
+  tint: "#F8FAFC",
+  tintAlt: "#F1F5F9",
+  border: "#CBD5E1",
+  text: "#0F172A",
+  muted: "#475569",
 } as const;

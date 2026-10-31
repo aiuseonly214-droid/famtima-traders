@@ -80,7 +80,7 @@ export function AppShell() {
             <img
               src={logoUrl}
               alt="Famtima Traders Logo"
-              className="size-9 rounded-full bg-white object-contain p-0.5 border border-emerald-500/40 shadow-xs shrink-0"
+              className="size-9 rounded-full bg-white object-contain p-0.5 border border-amber-400/50 shadow-xs shrink-0"
             />
             <div className="min-w-0">
               <p className="font-display text-base leading-tight text-sidebar-primary truncate">
