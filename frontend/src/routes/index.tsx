@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Famtima Traders | Home Decoration, POP False Ceiling & PVC Wall Panelling | Bemetara, Chhattisgarh",
+          "Fatima Traders | Home Decoration, POP False Ceiling & PVC Wall Panelling | Bemetara, Chhattisgarh",
       },
       {
         name: "description",
@@ -50,13 +50,13 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "famtima traders, famtima traders bemetara, pop work bemetara, pop false ceiling bemetara, pvc wall panelling bemetara, home decoration bemetara, false ceiling chhattisgarh, pop contractor bemetara, pvc ceiling contractor chhattisgarh, interior designer bemetara, pop design bemetara, pvc wall panel shop bemetara, gypsum false ceiling durg bhilai, home interior raipur chhattisgarh, false ceiling contractor raipur, pop ceiling rate per sq ft chhattisgarh, wall panelling kawardha, turnkey renovation bemetara, krishna vihar bemetara, anwar khan pop contractor, bemetara me pop ka kaam, false ceiling design 2026, fluted pvc louver panels bemetara, living room pop design chhattisgarh",
+          "fatima traders, fatima traders bemetara, pop work bemetara, pop false ceiling bemetara, pvc wall panelling bemetara, home decoration bemetara, false ceiling chhattisgarh, pop contractor bemetara, pvc ceiling contractor chhattisgarh, interior designer bemetara, pop design bemetara, pvc wall panel shop bemetara, gypsum false ceiling durg bhilai, home interior raipur chhattisgarh, false ceiling contractor raipur, pop ceiling rate per sq ft chhattisgarh, wall panelling kawardha, turnkey renovation bemetara, krishna vihar bemetara, anwar khan pop contractor, bemetara me pop ka kaam, false ceiling design 2026, fluted pvc louver panels bemetara, living room pop design chhattisgarh",
       },
-      { property: "og:site_name", content: "Famtima Traders" },
+      { property: "og:site_name", content: "Fatima Traders" },
       {
         property: "og:title",
         content:
-          "Famtima Traders | POP False Ceiling, PVC Wall Panelling & Home Decoration in Bemetara, CG",
+          "Fatima Traders | POP False Ceiling, PVC Wall Panelling & Home Decoration in Bemetara, CG",
       },
       {
         property: "og:description",
@@ -65,18 +65,18 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://famtima-traders.vercel.app/" },
-      { property: "og:image", content: "/famtima-logo.png" },
+      { property: "og:image", content: "/fatima-logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Famtima Traders | Home Decoration & False Ceiling Bemetara CG",
+        content: "Fatima Traders | Home Decoration & False Ceiling Bemetara CG",
       },
       {
         name: "twitter:description",
         content:
           "Premier home decoration, POP false ceiling & PVC wall panelling in Bemetara & Chhattisgarh. Call +91 7860854662.",
       },
-      { name: "twitter:image", content: "/famtima-logo.png" },
+      { name: "twitter:image", content: "/fatima-logo.png" },
     ],
     scripts: [
       {
@@ -85,15 +85,15 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "ProfessionalService"],
           "@id": "https://famtima-traders.vercel.app/#business",
-          name: "Famtima Traders",
+          name: "Fatima Traders",
           alternateName: [
-            "Famtima Traders Bemetara",
-            "Famtima Home Decoration",
+            "Fatima Traders Bemetara",
+            "Fatima Home Decoration",
             "Bemetara POP Work & PVC Panelling",
           ],
           url: "https://famtima-traders.vercel.app/",
-          logo: "https://famtima-traders.vercel.app/famtima-logo.png",
-          image: "https://famtima-traders.vercel.app/famtima-logo.png",
+          logo: "https://famtima-traders.vercel.app/fatima-logo.png",
+          image: "https://famtima-traders.vercel.app/fatima-logo.png",
           description:
             "Premier home decoration, POP false ceiling, PVC wall panelling, and renovation contractor based in Bemetara, Chhattisgarh. Offering customized home decoration and turnkey renovation solutions.",
           telephone: "+91-7860854662",
@@ -256,7 +256,7 @@ function PublicLandingPage() {
     founderQuote:
       lang === "hi"
         ? "“सऊदी अरब और गल्फ के कड़े मानकों पर वर्षों काम करने के बाद, मैंने बेमेतरा में फातिमा ट्रेडर्स की स्थापना की ताकि हमारे परिवारों को बिना किसी बिचौलिए के वही अंतरराष्ट्रीय स्तर की फिनिशिंग, टिकाऊ सामग्री और सही दाम मिलें।”"
-        : "“Having executed high-precision architectural carpentry & interior projects in Saudi Arabia and the Gulf, I founded Famtima Traders to bring that exact international standard, honesty, and lasting durability directly to homes across Bemetara at fair local rates.”",
+        : "“Having executed high-precision architectural carpentry & interior projects in Saudi Arabia and the Gulf, I founded Fatima Traders to bring that exact international standard, honesty, and lasting durability directly to homes across Bemetara at fair local rates.”",
     founderChatBtn: lang === "hi" ? "व्हाट्सएप पर बात करें" : "Chat on WhatsApp",
     certVerified:
       lang === "hi"
@@ -332,7 +332,7 @@ function PublicLandingPage() {
       lang === "hi"
         ? "सीधे कारीगर • पारदर्शी दरें • समय पर डिलीवरी"
         : "Direct Craftsmen • Transparent Pricing • On-Time Handover",
-    featuredBadge: lang === "hi" ? "फातिमा ट्रेडर्स" : "Famtima Project",
+    featuredBadge: lang === "hi" ? "फातिमा ट्रेडर्स" : "Fatima Project",
     featuredCompleted: lang === "hi" ? "पूर्ण" : "Completed",
     servicesSub:
       lang === "hi"
@@ -397,7 +397,7 @@ function PublicLandingPage() {
     whyTitle:
       lang === "hi"
         ? "फातिमा ट्रेडर्स ही क्यों?"
-        : "Why Choose Famtima Traders?",
+        : "Why Choose Fatima Traders?",
     why1Title: lang === "hi" ? "सीधे कारीगर" : "Direct Craftsmen",
     why1Desc:
       lang === "hi"
@@ -439,7 +439,7 @@ function PublicLandingPage() {
     ctaDesc:
       lang === "hi"
         ? "मुफ्त साइट विज़िट और तुरंत कोटेशन के लिए आज ही संपर्क करें।"
-        : "Contact Famtima Traders today for a free site visit and estimate.",
+        : "Contact Fatima Traders today for a free site visit and estimate.",
     ctaChatBtn:
       lang === "hi"
         ? `व्हाट्सएप पर चैट करें`
@@ -453,7 +453,7 @@ function PublicLandingPage() {
     const cleanArea = area.trim() || "Bemetara";
 
     const message = encodeURIComponent(
-      `Hello Famtima Traders!\n\nI would like to get a free estimate and design consultation for:\n• Service: ${quoteService}\n• Property Type: ${propertyType}\n• Name: ${cleanName}\n• Contact: ${cleanPhone}\n• Location: ${cleanArea}\n• Preferred Language: ${lang === "hi" ? "Hindi" : "English"}\n\nPlease contact me with quotation details.`,
+      `Hello Fatima Traders!\n\nI would like to get a free estimate and design consultation for:\n• Service: ${quoteService}\n• Property Type: ${propertyType}\n• Name: ${cleanName}\n• Contact: ${cleanPhone}\n• Location: ${cleanArea}\n• Preferred Language: ${lang === "hi" ? "Hindi" : "English"}\n\nPlease contact me with quotation details.`,
     );
     window.open(`https://wa.me/91${phonePrimary}?text=${message}`, "_blank");
   }
@@ -537,7 +537,7 @@ function PublicLandingPage() {
 
   const faqs = [
     {
-      q: "What services does Famtima Traders provide?",
+      q: "What services does Fatima Traders provide?",
       a: "We specialize in home decoration, designer POP false ceilings, 100% waterproof PVC wall panelling, decorative louvers, and complete room and shop renovation.",
     },
     {
@@ -658,12 +658,12 @@ function PublicLandingPage() {
           <Link to="/" className="flex items-center gap-1.5 xs:gap-2 sm:gap-3 shrink min-w-0">
             <img
               src={companyLogoUrl}
-              alt="Famtima Traders Logo"
+              alt="Fatima Traders Logo"
               className="size-8 sm:size-10 lg:size-11 rounded-full bg-white object-contain p-0.5 border-2 border-blue-900 shadow-md shadow-blue-950/10 shrink-0"
             />
             <div className="min-w-0">
               <span className="block font-display text-[13px] xs:text-sm sm:text-base lg:text-xl font-bold tracking-tight text-slate-950 leading-tight whitespace-normal sm:whitespace-nowrap">
-                Famtima Traders
+                Fatima Traders
               </span>
               <span className="block text-[8.5px] xs:text-[9.5px] sm:text-[11px] font-semibold tracking-wider text-blue-950 uppercase leading-none mt-0.5 whitespace-normal sm:whitespace-nowrap">
                 {t.tagline}
@@ -747,7 +747,7 @@ function PublicLandingPage() {
 
             <a
               href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                "Hello Famtima Traders, I found your website and would like to inquire about home decoration, false ceiling, and PVC work in Bemetara.",
+                "Hello Fatima Traders, I found your website and would like to inquire about home decoration, false ceiling, and PVC work in Bemetara.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -1029,7 +1029,7 @@ function PublicLandingPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 480px"
                     width={600}
                     height={600}
-                    alt="Home decoration, false ceiling, and interior work by Famtima Traders Bemetara"
+                    alt="Home decoration, false ceiling, and interior work by Fatima Traders Bemetara"
                     className="size-full object-cover transition-transform duration-500 hover:scale-105"
                     loading="eager"
                     fetchPriority="high"
@@ -1093,7 +1093,7 @@ function PublicLandingPage() {
                   <div className="sm:col-span-5 overflow-hidden rounded-xl border border-slate-100 bg-slate-50">
                     <img
                       src={svc.image}
-                      alt={`${svc.title} by Famtima Traders Bemetara`}
+                      alt={`${svc.title} by Fatima Traders Bemetara`}
                       width={600}
                       height={450}
                       className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -1171,7 +1171,7 @@ function PublicLandingPage() {
                 <div className="relative shrink-0">
                   <img
                     src="/anwar-khan.png"
-                    alt="Anwar Khan - Founder Famtima Traders"
+                    alt="Anwar Khan - Founder Fatima Traders"
                     className="size-20 sm:size-24 rounded-full object-cover border-2 border-blue-800 shadow-md ring-4 ring-blue-100"
                     loading="lazy"
                   />
@@ -1255,7 +1255,7 @@ function PublicLandingPage() {
                 </a>
                 <a
                   href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                    "Hello Anwar Khan ji, I visited the Famtima Traders website and would like to discuss interior/false ceiling work for my property."
+                    "Hello Anwar Khan ji, I visited the Fatima Traders website and would like to discuss interior/false ceiling work for my property."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1340,7 +1340,7 @@ function PublicLandingPage() {
             </div>
             <a
               href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                "Hello Famtima Traders, please share your latest home decoration and false ceiling design photo catalogue.",
+                "Hello Fatima Traders, please share your latest home decoration and false ceiling design photo catalogue.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -1402,7 +1402,7 @@ function PublicLandingPage() {
                 <div className="p-3.5 sm:p-4 pt-0">
                   <a
                     href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                      `Hello Famtima Traders! I liked your project "${item.title}" in ${item.location}. Can you provide an estimate for a similar design?`,
+                      `Hello Fatima Traders! I liked your project "${item.title}" in ${item.location}. Can you provide an estimate for a similar design?`,
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -1595,7 +1595,7 @@ function PublicLandingPage() {
         </div>
       </section>
 
-      {/* Why Choose Famtima Traders */}
+      {/* Why Choose Fatima Traders */}
       <section className="py-16 sm:py-20 border-t border-slate-200/80 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2.5 sm:space-y-3">
@@ -1725,7 +1725,7 @@ function PublicLandingPage() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto">
             <a
               href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-                "Hello Famtima Traders, I would like to schedule a site visit for POP / PVC / Home Decoration work in Bemetara.",
+                "Hello Fatima Traders, I would like to schedule a site visit for POP / PVC / Home Decoration work in Bemetara.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -1751,7 +1751,7 @@ function PublicLandingPage() {
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom,0px))] flex items-center gap-2 shadow-2xl">
         <a
           href={`https://wa.me/91${phonePrimary}?text=${encodeURIComponent(
-            "Hello Famtima Traders, I would like to get a quote for POP / PVC / Home Decoration work in Bemetara.",
+            "Hello Fatima Traders, I would like to get a quote for POP / PVC / Home Decoration work in Bemetara.",
           )}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -1787,11 +1787,11 @@ function PublicLandingPage() {
               <div className="flex items-center gap-2.5">
                 <img
                   src={companyLogoUrl}
-                  alt={company?.name || "Famtima Traders"}
+                  alt={company?.name || "Fatima Traders"}
                   className="size-8 rounded-full bg-white p-0.5 object-contain"
                 />
                 <span className="font-display text-base font-bold text-white">
-                  {company?.name || "Famtima Traders"}
+                  {company?.name || "Fatima Traders"}
                 </span>
               </div>
               <p className="text-slate-300 leading-relaxed text-xs">
@@ -1902,13 +1902,13 @@ function PublicLandingPage() {
 
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-300">
             <p>
-              © {new Date().getFullYear()} {company?.name || "Famtima Traders"}. All rights
+              © {new Date().getFullYear()} {company?.name || "Fatima Traders"}. All rights
               reserved. Bemetara, Chhattisgarh.
             </p>
             <p className="text-slate-300">
               Keywords:{" "}
               <span className="text-slate-200">
-                famtima traders • bemetara pop • pvc bemetara • home decoration chhattisgarh
+                fatima traders • bemetara pop • pvc bemetara • home decoration chhattisgarh
               </span>
             </p>
           </div>

@@ -73,3 +73,4 @@ INSERT INTO public.company_profile (
 
 -- 2. Verify restored profile
 SELECT id, name, address, mobile1, email, logo_url FROM public.company_profile;
+

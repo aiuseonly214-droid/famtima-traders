@@ -42,7 +42,7 @@ import {
 export const Route = createFileRoute("/_authenticated/payroll")({
   head: () => ({
     meta: [
-      { title: "Staff & Payroll · Famtima Traders CRM" },
+      { title: "Staff & Payroll · Fatima Traders CRM" },
       { name: "description", content: "Manage team directory and monthly salary payouts." },
     ],
   }),

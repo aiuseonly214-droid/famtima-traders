@@ -18,12 +18,12 @@ import { formatDate, formatINR } from "@/lib/format";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard · Famtima Traders CRM" },
+      { title: "Dashboard · Fatima Traders CRM" },
       {
         name: "description",
         content: "Overview of customers, quotations, invoices and outstanding payments.",
       },
-      { property: "og:title", content: "Dashboard · Famtima Traders CRM" },
+      { property: "og:title", content: "Dashboard · Fatima Traders CRM" },
       { property: "og:description", content: "Quotation, invoice and receipt overview." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -48,12 +48,12 @@ import {
 export const Route = createFileRoute("/_authenticated/inquiries")({
   head: () => ({
     meta: [
-      { title: "Inquiries · Famtima Traders CRM" },
+      { title: "Inquiries · Fatima Traders CRM" },
       {
         name: "description",
         content: "Record every enquiry and track how many convert into real business.",
       },
-      { property: "og:title", content: "Inquiries · Famtima Traders CRM" },
+      { property: "og:title", content: "Inquiries · Fatima Traders CRM" },
       { property: "og:description", content: "Lead capture with conversion rate tracking." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

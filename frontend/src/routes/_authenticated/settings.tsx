@@ -54,12 +54,12 @@ import {
 export const Route = createFileRoute("/_authenticated/settings")({
   head: () => ({
     meta: [
-      { title: "Settings · Famtima Traders CRM" },
+      { title: "Settings · Fatima Traders CRM" },
       {
         name: "description",
         content: "Company profile, branding, website showcase manager and user permissions.",
       },
-      { property: "og:title", content: "Settings · Famtima Traders CRM" },
+      { property: "og:title", content: "Settings · Fatima Traders CRM" },
       {
         property: "og:description",
         content: "Update company profile, pricing rates, and showcase gallery.",

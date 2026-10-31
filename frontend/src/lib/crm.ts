@@ -262,14 +262,14 @@ async function currentUserId(): Promise<string | null> {
 
 export const DEFAULT_COMPANY_PROFILE: CompanyProfile = {
   id: "00000000-0000-0000-0000-000000000001",
-  name: "Famtima Traders",
+  name: "Fatima Traders",
   tagline: "Home Decoration, POP False Ceiling & PVC Wall Panelling Experts",
   address: "Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh - 491335",
   mobile1: "7860854662",
   mobile2: "9265012186",
   email: "anwaarrza850@gmail.com",
   website: "https://famtima-traders.vercel.app",
-  logo_url: "/famtima-logo.webp",
+  logo_url: "/fatima-logo.webp",
   stamp_url: null,
   signature_url: null,
   currency: "INR",

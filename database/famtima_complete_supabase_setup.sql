@@ -1,5 +1,5 @@
 -- =============================================================================
--- FAMTIMA TRADERS — COMPLETE ALL-IN-ONE SUPABASE DATABASE SETUP (IDEMPOTENT / RE-RUNNABLE)
+-- FATIMA TRADERS — COMPLETE ALL-IN-ONE SUPABASE DATABASE SETUP (IDEMPOTENT / RE-RUNNABLE)
 -- =============================================================================
 -- Location: Bemetara, Chhattisgarh
 -- Owner: Anwar Khan
@@ -100,7 +100,7 @@ BEGIN NEW.updated_at = now(); RETURN NEW; END; $$;
 
 CREATE TABLE IF NOT EXISTS public.company_profile (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  name text NOT NULL DEFAULT 'Famtima Traders',
+  name text NOT NULL DEFAULT 'Fatima Traders',
   tagline text NOT NULL DEFAULT 'Home Decoration, POP False Ceiling & PVC Wall Panelling Experts',
   address text NOT NULL DEFAULT 'Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh - 491335',
   mobile1 text NOT NULL DEFAULT '7860854662',
@@ -148,14 +148,14 @@ INSERT INTO public.company_profile (
   default_terms
 ) VALUES (
   '00000000-0000-0000-0000-000000000001',
-  'Famtima Traders',
+  'Fatima Traders',
   'Home Decoration, POP False Ceiling & PVC Wall Panelling Experts',
   'Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh - 491335',
   '7860854662',
   '9265012186',
   'anwaarrza850@gmail.com',
   'https://famtima-traders.vercel.app',
-  '/famtima-logo.webp',
+  '/fatima-logo.webp',
   'INR',
   '1. 50% advance payment required to initiate site execution.
 2. Balance payment due upon stage completion and final handover.

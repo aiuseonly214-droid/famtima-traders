@@ -11,12 +11,12 @@ export const Route = createFileRoute("/reset-password")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Reset password · Famtima Traders CRM" },
+      { title: "Reset password · Fatima Traders CRM" },
       {
         name: "description",
-        content: "Set a new password for your Famtima Traders CRM account.",
+        content: "Set a new password for your Fatima Traders CRM account.",
       },
-      { property: "og:title", content: "Reset password · Famtima Traders CRM" },
+      { property: "og:title", content: "Reset password · Fatima Traders CRM" },
       { property: "og:description", content: "Set a new password for your CRM account." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

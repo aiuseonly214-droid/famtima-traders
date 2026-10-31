@@ -79,12 +79,12 @@ export function AppShell() {
           <div className="flex items-center gap-3 min-w-0">
             <img
               src={logoUrl}
-              alt="Famtima Traders Logo"
+              alt="Fatima Traders Logo"
               className="size-9 rounded-full bg-white object-contain p-0.5 border border-amber-400/50 shadow-xs shrink-0"
             />
             <div className="min-w-0">
               <p className="font-display text-base leading-tight text-sidebar-primary truncate">
-                {company?.name || "Famtima Traders"}
+                {company?.name || "Fatima Traders"}
               </p>
               <p className="text-[10px] uppercase tracking-[0.18em] text-sidebar-foreground/70 truncate">
                 Home Decoration & Renovation
@@ -149,7 +149,7 @@ export function AppShell() {
           <button onClick={() => setOpen(true)} aria-label="Open menu">
             <Menu className="size-5" />
           </button>
-          <span className="font-display text-base">Famtima Traders</span>
+          <span className="font-display text-base">Fatima Traders</span>
         </header>
 
         <main className="min-w-0 flex-1 print-area">

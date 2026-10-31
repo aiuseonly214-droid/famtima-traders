@@ -12,7 +12,7 @@ export const Route = createFileRoute("/auth")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Select Portal · Famtima Traders CRM" },
+      { title: "Select Portal · Fatima Traders CRM" },
       { name: "description", content: "Choose login portal" },
     ],
   }),
@@ -55,10 +55,10 @@ function AuthChooserPage() {
         <div className="mb-6 flex flex-col items-center text-center">
           <img
             src={logoUrl}
-            alt="Famtima Traders logo"
+            alt="Fatima Traders logo"
             className="mb-3 size-24 rounded-full bg-white object-contain p-1 border-2 border-emerald-500/20 shadow-md"
           />
-          <h1 className="font-display text-2xl text-sidebar-primary">Famtima Traders</h1>
+          <h1 className="font-display text-2xl text-sidebar-primary">Fatima Traders</h1>
           <p className="text-xs uppercase tracking-[0.22em] text-sidebar-foreground/70">
             Quotation &amp; Billing CRM
           </p>

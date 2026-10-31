@@ -1,5 +1,5 @@
-/** Famtima Traders brand logo served from public/. */
-export const DEFAULT_LOGO_URL = "/famtima-logo.webp";
+/** Fatima Traders brand logo served from public/. */
+export const DEFAULT_LOGO_URL = "/fatima-logo.webp";
 
 /** Signature image served from public/ (or customized via company profile settings). */
 export const DEFAULT_SIGNATURE_URL = "/famtima-signature.png";

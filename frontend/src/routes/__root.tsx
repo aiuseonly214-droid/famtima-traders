@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         title:
-          "Famtima Traders | Home Decoration, POP False Ceiling & PVC Wall Panelling | Bemetara, Chhattisgarh",
+          "Fatima Traders | Home Decoration, POP False Ceiling & PVC Wall Panelling | Bemetara, Chhattisgarh",
       },
       {
         name: "description",
@@ -84,17 +84,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "keywords",
         content:
-          "famtima traders, famtima traders bemetara, pop work bemetara, pop false ceiling bemetara, pvc wall panelling bemetara, home decoration bemetara, false ceiling chhattisgarh, pop contractor bemetara, pvc ceiling contractor chhattisgarh, interior designer bemetara, pop design bemetara, pvc wall panel shop bemetara, gypsum false ceiling durg bhilai, home interior raipur chhattisgarh, false ceiling contractor raipur, pop ceiling rate per sq ft chhattisgarh, wall panelling kawardha, turnkey renovation bemetara, krishna vihar bemetara, anwar khan pop contractor, bemetara me pop ka kaam, false ceiling design 2026",
+          "fatima traders, fatima traders bemetara, pop work bemetara, pop false ceiling bemetara, pvc wall panelling bemetara, home decoration bemetara, false ceiling chhattisgarh, pop contractor bemetara, pvc ceiling contractor chhattisgarh, interior designer bemetara, pop design bemetara, pvc wall panel shop bemetara, gypsum false ceiling durg bhilai, home interior raipur chhattisgarh, false ceiling contractor raipur, pop ceiling rate per sq ft chhattisgarh, wall panelling kawardha, turnkey renovation bemetara, krishna vihar bemetara, anwar khan pop contractor, bemetara me pop ka kaam, false ceiling design 2026",
       },
-      { name: "author", content: "Famtima Traders" },
+      { name: "author", content: "Fatima Traders" },
       {
         name: "robots",
         content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       },
-      { property: "og:site_name", content: "Famtima Traders" },
+      { property: "og:site_name", content: "Fatima Traders" },
       {
         property: "og:title",
-        content: "Famtima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara",
+        content: "Fatima Traders | Home Decoration, POP Work & PVC Wall Panelling | Bemetara",
       },
       {
         property: "og:description",
@@ -103,18 +103,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
-      { property: "og:image", content: "/famtima-logo.png" },
+      { property: "og:image", content: "/fatima-logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
-        content: "Famtima Traders | Home Decoration & Renovation in Bemetara",
+        content: "Fatima Traders | Home Decoration & Renovation in Bemetara",
       },
       {
         name: "twitter:description",
         content:
           "Bemetara's trusted home decoration, POP work, PVC wall panelling & renovation. Call +91 7860854662.",
       },
-      { name: "twitter:image", content: "/famtima-logo.png" },
+      { name: "twitter:image", content: "/fatima-logo.png" },
       { name: "google-site-verification", content: "ekcA6wQzHfHys-ze-aV36IEQ5JAnOHGA5OSsSbrkkOo" },
     ],
     links: [

@@ -45,7 +45,7 @@ const FAQ_KNOWLEDGE_BASE = [
     ],
     category: "Pricing & Quotation",
     answer:
-      "💰 **Rates & Pricing (Famtima Traders):**\n\n• **POP Work / False Ceiling:** Contact for best customized pricing\n• **PVC Wall Panelling:** 100% waterproof louvers & panels at direct rates\n• **Home Decoration & Renovation:** Complete turnkey quotes\n\n✨ Hum site inspection aur measurements ke baad transparent itemized estimate provide karte hain!",
+      "💰 **Rates & Pricing (Fatima Traders):**\n\n• **POP Work / False Ceiling:** Contact for best customized pricing\n• **PVC Wall Panelling:** 100% waterproof louvers & panels at direct rates\n• **Home Decoration & Renovation:** Complete turnkey quotes\n\n✨ Hum site inspection aur measurements ke baad transparent itemized estimate provide karte hain!",
     quickReplies: [
       "Free Site Visit Kaise Book Kare?",
       "POP vs PVC difference kya hai?",
@@ -91,11 +91,11 @@ const FAQ_KNOWLEDGE_BASE = [
     ],
     category: "Site Visit & Quotation",
     answer:
-      "📐 **Site Visit & Measurement in Bemetara & Chhattisgarh:**\n\nFamtima Traders Bemetara aur surrounding areas me prompt Site Visit & Measurement provide karta hai.\n\nHum actual material designs ke sath aapki site par aakar exact measurement aur estimate dete hain.",
+      "📐 **Site Visit & Measurement in Bemetara & Chhattisgarh:**\n\nFatima Traders Bemetara aur surrounding areas me prompt Site Visit & Measurement provide karta hai.\n\nHum actual material designs ke sath aapki site par aakar exact measurement aur estimate dete hain.",
     quickReplies: ["WhatsApp par quote lein", "Call karke book karein"],
     actionLink: {
       label: "📲 WhatsApp par Contact Karein",
-      href: "https://wa.me/917860854662?text=Hi%20Famtima%20Traders,%20mujhe%20site%20visit%20aur%20quotation%20chahiye",
+      href: "https://wa.me/917860854662?text=Hi%20Fatima%20Traders,%20mujhe%20site%20visit%20aur%20quotation%20chahiye",
       isExternal: true,
     },
   },
@@ -122,7 +122,7 @@ const FAQ_KNOWLEDGE_BASE = [
     keywords: ["contact", "phone", "mobile", "number", "call", "whatsapp", "address", "office"],
     category: "Contact Info",
     answer:
-      "📞 **Famtima Traders Contact Details:**\n\n• **Proprietor:** Anwar Khan\n• **Primary Phone / WhatsApp:** [+91 7860854662](tel:+917860854662)\n• **Alternate Phone:** [+91 9265012186](tel:+919265012186)\n• **Email:** anwaarrza850@gmail.com\n• **Address:** Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh, PIN 491335, India\n• **Hours:** 9:00 AM – 8:00 PM (Monday to Sunday)",
+      "📞 **Fatima Traders Contact Details:**\n\n• **Proprietor:** Anwar Khan\n• **Primary Phone / WhatsApp:** [+91 7860854662](tel:+917860854662)\n• **Alternate Phone:** [+91 9265012186](tel:+919265012186)\n• **Email:** anwaarrza850@gmail.com\n• **Address:** Shop No. 08, Krishna Vihar, Bemetara, Chhattisgarh, PIN 491335, India\n• **Hours:** 9:00 AM – 8:00 PM (Monday to Sunday)",
     quickReplies: ["WhatsApp Message Karein", "Get a Quote", "Book Site Visit"],
     actionLink: {
       label: "📞 Call +91 7860854662",
@@ -133,7 +133,7 @@ const FAQ_KNOWLEDGE_BASE = [
     keywords: ["bill", "invoice", "receipt", "fake", "original", "pukka", "rate"],
     category: "Official Billing & Invoices",
     answer:
-      "🛡️ **Official Billing & Transparency:**\n\nFamtima Traders ke official quotations, bills aur receipts transparent itemized format mein provide kiye jaate hain jisme material specifications aur crystal-clear pricing hoti hai.",
+      "🛡️ **Official Billing & Transparency:**\n\nFatima Traders ke official quotations, bills aur receipts transparent itemized format mein provide kiye jaate hain jisme material specifications aur crystal-clear pricing hoti hai.",
     quickReplies: ["Contact details", "Free site visit"],
   },
 ];
@@ -153,7 +153,7 @@ export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProp
     {
       id: "welcome-1",
       sender: "bot",
-      text: "👋 Namaste! Welcome to **Famtima Traders, Bemetara**.\n\nMain aapka virtual assistant hoon. Home Decoration, POP False Ceiling, PVC Wall Panelling, ya Chhattisgarh me Site Visit ke baare me koi bhi sawal ho, aap yahan puch sakte hain!",
+      text: "👋 Namaste! Welcome to **Fatima Traders, Bemetara**.\n\nMain aapka virtual assistant hoon. Home Decoration, POP False Ceiling, PVC Wall Panelling, ya Chhattisgarh me Site Visit ke baare me koi bhi sawal ho, aap yahan puch sakte hain!",
       time: getCurrentTime(),
       quickReplies: INITIAL_QUICK_REPLIES,
     },
@@ -200,7 +200,7 @@ export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProp
     if (/^(hi|hello|hey|namaste|salaam|assalam|pranam|ram ram)/i.test(query)) {
       return {
         answer:
-          "Hello! Kaise hain aap? Famtima Traders me aapka swagat hai. POP False Ceiling, PVC wall panelling, ya site inspection ke baare me aap kya janna chahte hain?",
+          "Hello! Kaise hain aap? Fatima Traders me aapka swagat hai. POP False Ceiling, PVC wall panelling, ya site inspection ke baare me aap kya janna chahte hain?",
         quickReplies: INITIAL_QUICK_REPLIES,
       };
     }
@@ -210,7 +210,7 @@ export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProp
       return {
         answer:
           "Aapka swagat hai! Agar koi aur sawal ho ya site visit book karni ho, toh batayein. Have a great day! 😊",
-        quickReplies: ["Free Site Visit Book Karein", "Call Famtima Traders"],
+        quickReplies: ["Free Site Visit Book Karein", "Call Fatima Traders"],
       };
     }
 
@@ -250,7 +250,7 @@ export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProp
       ],
       actionLink: {
         label: `📲 WhatsApp (+91 ${companyPhone})`,
-        href: `https://wa.me/91${companyPhone}?text=Hi%20Famtima%20Traders,%20mujhe%20ek%20inquiry%20karni%20hai:%20${encodeURIComponent(userQuery)}`,
+        href: `https://wa.me/91${companyPhone}?text=Hi%20Fatima%20Traders,%20mujhe%20ek%20inquiry%20karni%20hai:%20${encodeURIComponent(userQuery)}`,
         isExternal: true,
       },
     };
@@ -347,7 +347,7 @@ export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProp
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <h3 className="font-bold text-sm tracking-tight">Famtima Traders AI</h3>
+                  <h3 className="font-bold text-sm tracking-tight">Fatima Traders AI</h3>
                   <span className="rounded-full bg-amber-400/20 px-1.5 py-0.2 text-[10px] font-bold text-amber-300">
                     Bemetara
                   </span>
@@ -463,7 +463,7 @@ export function ChatbotWidget({ companyPhone = "7860854662" }: ChatbotWidgetProp
             {isTyping && (
               <div className="flex items-center gap-2 text-slate-400 text-xs pl-2">
                 <Bot className="size-4 text-emerald-600 animate-spin" />
-                <span className="animate-pulse">Famtima AI soch raha hai...</span>
+                <span className="animate-pulse">Fatima AI soch raha hai...</span>
               </div>
             )}
 

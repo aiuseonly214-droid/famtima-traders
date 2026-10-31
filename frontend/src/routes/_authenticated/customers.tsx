@@ -32,9 +32,9 @@ import { deleteCustomer, fetchCustomers, saveCustomer, type Customer } from "@/l
 export const Route = createFileRoute("/_authenticated/customers")({
   head: () => ({
     meta: [
-      { title: "Customers · Famtima Traders CRM" },
+      { title: "Customers · Fatima Traders CRM" },
       { name: "description", content: "Add, search and manage customer directory." },
-      { property: "og:title", content: "Customers · Famtima Traders CRM" },
+      { property: "og:title", content: "Customers · Fatima Traders CRM" },
       { property: "og:description", content: "Customer directory for quotations and invoices." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -31,7 +31,7 @@ import { fetchExpenses, saveExpense, deleteExpense, fetchCashflow, type Expense 
 export const Route = createFileRoute("/_authenticated/expenses")({
   head: () => ({
     meta: [
-      { title: "Expenses & Cashflow · Famtima Traders CRM" },
+      { title: "Expenses & Cashflow · Fatima Traders CRM" },
       { name: "description", content: "Track company expenses and overall cashflow." },
     ],
   }),
