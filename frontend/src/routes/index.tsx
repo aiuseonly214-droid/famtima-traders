@@ -232,27 +232,30 @@ function PublicLandingPage() {
     navFounder: lang === "hi" ? "संस्थापक अनुभव" : "Founder Experience",
     founderBadge:
       lang === "hi"
-        ? "15+ वर्ष अंतरराष्ट्रीय अनुभव — सऊदी अरब, दुबई, कतर व भारत"
-        : "15+ Years International Experience — Saudi Arabia, Dubai, Qatar & India",
+        ? "15+ वर्ष अंतरराष्ट्रीय व राष्ट्रीय अनुभव — सऊदी अरब, दुबई, कतर व भारत के प्रमुख राज्य एवं मेट्रो शहर"
+        : "15+ Years Experience — Saudi Arabia, Dubai, Qatar & India's Top States & Metros",
     founderTitle:
       lang === "hi"
         ? "संस्थापक और मुख्य शिल्पकार: अनवर खान"
         : "Meet the Founder: Anwar Khan",
     founderDesc:
       lang === "hi"
-        ? "सऊदी अरब (SACODECO), कतर और दुबई के बड़े प्रोजेक्ट्स में 15+ वर्षों के व्यावहारिक अनुभव के साथ — अब विश्वस्तरीय फिनिशिंग और ईमानदारी आपके अपने बेमेतरा में।"
-        : "With 15+ years of verified craftsmanship across Saudi Arabia, Qatar, Dubai (UAE) and India, Anwar Khan delivers high-precision POP false ceiling, PVC panelling and turnkey decoration directly to your doorstep.",
+        ? "सऊदी अरब (SACODECO), कतर, दुबई और भारत के प्रमुख राज्यों व मेट्रो शहरों (मुंबई, दिल्ली, रायपुर, पुणे आदि) में 15+ वर्षों के व्यावहारिक अनुभव के साथ — अब विश्वस्तरीय फिनिशिंग और ईमानदारी आपके अपने बेमेतरा में।"
+        : "With 15+ years of verified craftsmanship across Saudi Arabia, Qatar, Dubai (UAE) and India's top states and metro cities (Mumbai, Delhi NCR, Raipur, Pune, etc.), Anwar Khan delivers high-precision POP false ceiling, PVC panelling and turnkey decoration directly to your doorstep.",
     founderRole:
       lang === "hi"
         ? "संस्थापक एवं मुख्य इंटीरियर शिल्पकार"
         : "Founder & Lead Interior Specialist",
     statYears: lang === "hi" ? "वर्ष अनुभव" : "Years Exp",
-    statCountries: lang === "hi" ? "देशों का कार्य" : "Countries",
+    statCountries: lang === "hi" ? "राज्य व देश" : "Regions & States",
     statSupervision: lang === "hi" ? "सीधा पर्यवेक्षण" : "On-Site Check",
     internationalFootprint:
       lang === "hi"
-        ? "वैश्विक कार्य अनुभव (GCC & भारत)"
-        : "International Project Footprint",
+        ? "वैश्विक व अखिल भारतीय कार्य अनुभव (GCC & India)"
+        : "Global & Pan-India Project Footprint",
+    footprintIntl: lang === "hi" ? "अंतरराष्ट्रीय प्रोजेक्ट्स (GCC)" : "International Footprint (GCC)",
+    footprintStates: lang === "hi" ? "भारत के प्रमुख राज्य" : "Popular Indian States",
+    footprintMetros: lang === "hi" ? "प्रमुख मेट्रो शहर" : "Major Metro Cities",
     founderQuote:
       lang === "hi"
         ? "“सऊदी अरब और गल्फ के कड़े मानकों पर वर्षों काम करने के बाद, मैंने बेमेतरा में फातिमा ट्रेडर्स की स्थापना की ताकि हमारे परिवारों को बिना किसी बिचौलिए के वही अंतरराष्ट्रीय स्तर की फिनिशिंग, टिकाऊ सामग्री और सही दाम मिलें।”"
@@ -418,15 +421,19 @@ function PublicLandingPage() {
       lang === "hi"
         ? "मजबूत जिप्सम, ग्रेड-1 POP और 100% वाटरप्रूफ PVC पैनल्स।"
         : "High-grade POP, heavy-gauge waterproof PVC, and branded hardware.",
-    areasSub: lang === "hi" ? "सेवा क्षेत्र" : "Service Areas",
+    areasSub: lang === "hi" ? "सेवा क्षेत्र व कवरेज" : "Service Areas & Reach",
     areasTitle:
       lang === "hi"
-        ? "बेमेतरा और आसपास के क्षेत्र"
-        : "Areas We Serve in Chhattisgarh",
+        ? "लोकल छत्तीसगढ़ सेवा, भारत के प्रमुख राज्य व मेट्रो शहर नेटवर्क"
+        : "Local Chhattisgarh Execution, Pan-India States & Metro Cities Network",
     areasDesc:
       lang === "hi"
-        ? "बेमेतरा, दुर्ग, रायपुर और आसपास के शहरों में ऑन-साइट इंस्टॉलेशन उपलब्ध है।"
-        : "On-site measurement and execution across Bemetara, Durg, Raipur & nearby hubs.",
+        ? "बेमेतरा, दुर्ग, रायपुर और पूरे छत्तीसगढ़ में ऑन-साइट इंस्टॉलेशन के साथ-साथ भारत के प्रमुख राज्यों और मेट्रो शहरों में प्रोजेक्ट्स व परामर्श अनुभव।"
+        : "On-site execution across Bemetara, Durg, Raipur & Chhattisgarh, backed by project footprint across India's premier states and metro cities.",
+    areasLocalTab: lang === "hi" ? "छत्तीसगढ़ ऑन-साइट सेवा" : "Chhattisgarh On-Site Service",
+    areasStatesTab: lang === "hi" ? "भारत के प्रमुख राज्य" : "Popular Indian States",
+    areasMetrosTab: lang === "hi" ? "प्रमुख मेट्रो शहर" : "Major Metro Cities",
+    areasIntlTab: lang === "hi" ? "अंतरराष्ट्रीय (GCC)" : "International (GCC)",
     faqSub: lang === "hi" ? "सवाल-जवाब" : "FAQs",
     faqTitle:
       lang === "hi"
@@ -531,9 +538,49 @@ function PublicLandingPage() {
     "Berla",
     "Nawagarh",
     "Saja",
+    "Simga",
     "Across Chhattisgarh",
   ];
   const nashikAreas = bemetaraAreas;
+
+  const popularIndianStates = [
+    { name: "Chhattisgarh", note: "Home Base & Primary Operations" },
+    { name: "Maharashtra", note: "Mumbai, Pune, Nagpur, Nashik" },
+    { name: "Delhi NCR", note: "New Delhi, Noida, Gurugram" },
+    { name: "Gujarat", note: "Ahmedabad, Surat, Vadodara" },
+    { name: "Madhya Pradesh", note: "Indore, Bhopal, Jabalpur" },
+    { name: "Uttar Pradesh", note: "Lucknow, Kanpur, Noida" },
+    { name: "Karnataka", note: "Bengaluru" },
+    { name: "Telangana", note: "Hyderabad" },
+    { name: "Rajasthan", note: "Jaipur, Udaipur" },
+    { name: "West Bengal", note: "Kolkata" },
+    { name: "Tamil Nadu", note: "Chennai" },
+  ];
+
+  const popularMetroCities = [
+    "Mumbai",
+    "Delhi NCR",
+    "Bengaluru",
+    "Hyderabad",
+    "Ahmedabad",
+    "Pune",
+    "Kolkata",
+    "Chennai",
+    "Raipur",
+    "Indore",
+    "Surat",
+    "Jaipur",
+    "Lucknow",
+    "Nagpur",
+    "Bhopal",
+    "Kanpur",
+  ];
+
+  const internationalRegions = [
+    { country: "Saudi Arabia (SACODECO)", flag: "🇸🇦" },
+    { country: "Dubai (UAE)", flag: "🇦🇪" },
+    { country: "Qatar", flag: "🇶🇦" },
+  ];
 
   const faqs = [
     {
@@ -1203,7 +1250,7 @@ function PublicLandingPage() {
                   <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statYears}</span>
                 </div>
                 <div className="space-y-0.5 border-x border-slate-100">
-                  <span className="block text-lg font-extrabold text-amber-600">4</span>
+                  <span className="block text-lg font-extrabold text-amber-600">12+</span>
                   <span className="block text-[10px] font-medium text-slate-500 uppercase tracking-wider">{t.statCountries}</span>
                 </div>
                 <div className="space-y-0.5">
@@ -1213,26 +1260,103 @@ function PublicLandingPage() {
               </div>
 
               {/* Geographic Experience Badges */}
-              <div className="space-y-2">
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  {t.internationalFootprint}
-                </p>
-                <div className="grid grid-cols-2 gap-2 text-xs">
-                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
-                    <span className="text-sm">🇸🇦</span>
-                    <span className="truncate">Saudi Arabia (SACODECO)</span>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    {t.internationalFootprint}
+                  </p>
+                  <span className="text-[10px] font-bold text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/80">
+                    {lang === "hi" ? "GCC + भारत" : "GCC + India"}
+                  </span>
+                </div>
+
+                {/* 1. International Projects (GCC) */}
+                <div className="space-y-1.5">
+                  <span className="text-[11px] font-bold text-blue-950 flex items-center gap-1">
+                    <Globe className="size-3 text-blue-800" />
+                    <span>{t.footprintIntl}</span>
+                  </span>
+                  <div className="grid grid-cols-3 gap-1.5 text-xs">
+                    <div className="flex items-center gap-1.5 rounded-lg bg-blue-50/80 border border-slate-200/90 px-2 py-1.5 font-medium text-slate-950 shadow-2xs">
+                      <span className="text-sm shrink-0">🇸🇦</span>
+                      <span className="truncate text-[11px]">Saudi Arabia</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 rounded-lg bg-blue-50/80 border border-slate-200/90 px-2 py-1.5 font-medium text-slate-950 shadow-2xs">
+                      <span className="text-sm shrink-0">🇦🇪</span>
+                      <span className="truncate text-[11px]">Dubai (UAE)</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 rounded-lg bg-blue-50/80 border border-slate-200/90 px-2 py-1.5 font-medium text-slate-950 shadow-2xs">
+                      <span className="text-sm shrink-0">🇶🇦</span>
+                      <span className="truncate text-[11px]">Qatar</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
-                    <span className="text-sm">🇦🇪</span>
-                    <span className="truncate">Dubai (UAE)</span>
+                </div>
+
+                {/* 2. India's Popular States */}
+                <div className="space-y-1.5 pt-1">
+                  <span className="text-[11px] font-bold text-blue-950 flex items-center gap-1">
+                    <MapPin className="size-3 text-blue-800" />
+                    <span>{t.footprintStates}</span>
+                  </span>
+                  <div className="flex flex-wrap gap-1.5 text-[11px]">
+                    {[
+                      { name: "Chhattisgarh (HQ)", primary: true },
+                      { name: "Maharashtra" },
+                      { name: "Delhi NCR" },
+                      { name: "Gujarat" },
+                      { name: "Madhya Pradesh" },
+                      { name: "Uttar Pradesh" },
+                      { name: "Karnataka" },
+                      { name: "Telangana" },
+                      { name: "Rajasthan" },
+                      { name: "West Bengal" },
+                    ].map((st, idx) => (
+                      <span
+                        key={idx}
+                        className={
+                          st.primary
+                            ? "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs font-bold border shadow-2xs bg-blue-900 text-white border-blue-950"
+                            : "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs font-medium border shadow-2xs bg-slate-50 text-slate-800 border-slate-200/90"
+                        }
+                      >
+                        <span className="text-[10px]">🇮🇳</span>
+                        <span>{st.name}</span>
+                      </span>
+                    ))}
                   </div>
-                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
-                    <span className="text-sm">🇶🇦</span>
-                    <span className="truncate">Qatar</span>
-                  </div>
-                  <div className="flex items-center gap-2 rounded-lg bg-blue-50/70 border border-slate-200/80 px-2.5 py-1.5 font-medium text-slate-950">
-                    <span className="text-sm">🇮🇳</span>
-                    <span className="truncate">India (Chhattisgarh)</span>
+                </div>
+
+                {/* 3. Popular Metro Cities */}
+                <div className="space-y-1.5 pt-1">
+                  <span className="text-[11px] font-bold text-blue-950 flex items-center gap-1">
+                    <Building className="size-3 text-amber-700" />
+                    <span>{t.footprintMetros}</span>
+                  </span>
+                  <div className="flex flex-wrap gap-1.5 text-[11px]">
+                    {[
+                      "Mumbai",
+                      "Delhi NCR",
+                      "Bengaluru",
+                      "Hyderabad",
+                      "Ahmedabad",
+                      "Pune",
+                      "Kolkata",
+                      "Chennai",
+                      "Raipur",
+                      "Indore",
+                      "Surat",
+                      "Jaipur",
+                      "Lucknow",
+                      "Nagpur",
+                    ].map((metro, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center gap-1 rounded-md bg-amber-50/80 border border-amber-200/80 px-2 py-0.5 text-slate-800 text-xs font-medium shadow-2xs"
+                      >
+                        <span className="size-1.5 rounded-full bg-amber-600" />
+                        <span>{metro}</span>
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -1643,9 +1767,9 @@ function PublicLandingPage() {
         </div>
       </section>
 
-      {/* Service Areas Across Bemetara & Chhattisgarh */}
+      {/* Service Areas Across Bemetara & Chhattisgarh / Pan-India Footprint */}
       <section id="areas" className="py-14 sm:py-16 border-t border-slate-200/80 bg-slate-50/70">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 text-center space-y-5 sm:space-y-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 text-center space-y-6 sm:space-y-8">
           <div className="space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-blue-900">
               {t.areasSub}
@@ -1653,19 +1777,94 @@ function PublicLandingPage() {
             <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900">
               {t.areasTitle}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto">{t.areasDesc}</p>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-3xl mx-auto">{t.areasDesc}</p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-            {nashikAreas.map((areaName, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-700 hover:border-blue-400 hover:text-blue-900 transition-all shadow-xs"
-              >
-                <MapPin className="size-3 text-blue-900" />
-                <span>{areaName}</span>
-              </span>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
+            {/* 1. Chhattisgarh Local On-Site Execution */}
+            <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-xs space-y-3">
+              <div className="flex items-center gap-2 text-blue-900 font-bold text-sm">
+                <MapPin className="size-4 text-blue-900 shrink-0" />
+                <span>{t.areasLocalTab}</span>
+              </div>
+              <p className="text-xs text-slate-500">
+                {lang === "hi"
+                  ? "घर और दुकान के लिए तुरंत ऑन-साइट विज़िट और माप:"
+                  : "Immediate on-site site measurement & execution:"}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {bemetaraAreas.map((areaName, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-700 shadow-2xs"
+                  >
+                    <span className="size-1.5 rounded-full bg-emerald-600" />
+                    <span>{areaName}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* 2. Popular Indian States */}
+            <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-xs space-y-3">
+              <div className="flex items-center gap-2 text-blue-900 font-bold text-sm">
+                <Globe className="size-4 text-amber-700 shrink-0" />
+                <span>{t.areasStatesTab}</span>
+              </div>
+              <p className="text-xs text-slate-500">
+                {lang === "hi"
+                  ? "सत्यापित कार्य अनुभव एवं सामग्री परामर्श नेटवर्क:"
+                  : "Verified work experience & materials consulting network:"}
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {popularIndianStates.map((st, i) => (
+                  <span
+                    key={i}
+                    className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-700 shadow-2xs"
+                  >
+                    <span>🇮🇳</span>
+                    <span>{st.name}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* 3. Major Metro Cities & GCC Footprint */}
+            <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-xs space-y-3">
+              <div className="flex items-center gap-2 text-blue-900 font-bold text-sm">
+                <Building className="size-4 text-blue-900 shrink-0" />
+                <span>{t.areasMetrosTab} & {t.areasIntlTab}</span>
+              </div>
+              <p className="text-xs text-slate-500">
+                {lang === "hi"
+                  ? "मेट्रो शहर व अंतरराष्ट्रीय गल्फ प्रोजेक्ट अनुभव:"
+                  : "Tier-1 Metro cities & international Gulf footprint:"}
+              </p>
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-1.5">
+                  {popularMetroCities.map((metro, i) => (
+                    <span
+                      key={i}
+                      className="inline-flex items-center gap-1 rounded-full border border-amber-200/80 bg-amber-50/70 px-2.5 py-1 text-xs font-medium text-slate-800 shadow-2xs"
+                    >
+                      <span className="size-1 rounded-full bg-amber-600" />
+                      <span>{metro}</span>
+                    </span>
+                  ))}
+                </div>
+                <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-1.5">
+                  {internationalRegions.map((intl, i) => (
+                    <span
+                      key={i}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-blue-50/80 px-2.5 py-1 text-xs font-bold text-blue-950 shadow-2xs"
+                    >
+                      <span>{intl.flag}</span>
+                      <span>{intl.country}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
