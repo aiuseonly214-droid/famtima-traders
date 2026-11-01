@@ -65,7 +65,14 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://fatima-traders-official.vercel.app/" },
-      { property: "og:image", content: "/fatima-logo.png" },
+      { property: "og:locale", content: "hi_IN" },
+      { property: "og:locale:alternate", content: "en_IN" },
+      { property: "og:image", content: "https://fatima-traders-official.vercel.app/fatima-logo.png" },
+      { property: "og:image:secure_url", content: "https://fatima-traders-official.vercel.app/fatima-logo.png" },
+      { property: "og:image:type", content: "image/png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Fatima Traders - Home Decoration & POP False Ceiling Bemetara" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
@@ -76,7 +83,8 @@ export const Route = createFileRoute("/")({
         content:
           "Premier home decoration, POP false ceiling & PVC wall panelling in Bemetara & Chhattisgarh. Call +91 7860854662.",
       },
-      { name: "twitter:image", content: "/fatima-logo.png" },
+      { name: "twitter:image", content: "https://fatima-traders-official.vercel.app/fatima-logo.png" },
+      { name: "twitter:image:alt", content: "Fatima Traders Logo" },
     ],
     scripts: [
       {
