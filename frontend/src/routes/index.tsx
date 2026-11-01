@@ -64,7 +64,7 @@ export const Route = createFileRoute("/")({
           "Bemetara's #1 POP false ceiling, PVC wall panelling & home decoration contractor. Serving Bemetara, Durg, Bhilai, Raipur & across Chhattisgarh. Call Anwar Khan at +91 7860854662.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://famtima-traders.vercel.app/" },
+      { property: "og:url", content: "https://fatima-traders-official.vercel.app/" },
       { property: "og:image", content: "/fatima-logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
       {
@@ -84,16 +84,16 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "ProfessionalService"],
-          "@id": "https://famtima-traders.vercel.app/#business",
+          "@id": "https://fatima-traders-official.vercel.app/#business",
           name: "Fatima Traders",
           alternateName: [
             "Fatima Traders Bemetara",
             "Fatima Home Decoration",
             "Bemetara POP Work & PVC Panelling",
           ],
-          url: "https://famtima-traders.vercel.app/",
-          logo: "https://famtima-traders.vercel.app/fatima-logo.png",
-          image: "https://famtima-traders.vercel.app/fatima-logo.png",
+          url: "https://fatima-traders-official.vercel.app/",
+          logo: "https://fatima-traders-official.vercel.app/fatima-logo.png",
+          image: "https://fatima-traders-official.vercel.app/fatima-logo.png",
           description:
             "Premier home decoration, POP false ceiling, PVC wall panelling, and renovation contractor based in Bemetara, Chhattisgarh. Offering customized home decoration and turnkey renovation solutions.",
           telephone: "+91-7860854662",

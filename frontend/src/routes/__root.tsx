@@ -116,6 +116,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "twitter:image", content: "/fatima-logo.png" },
       { name: "google-site-verification", content: "ekcA6wQzHfHys-ze-aV36IEQ5JAnOHGA5OSsSbrkkOo" },
+      { name: "msvalidate.01", content: "29EC7A85901CDA734F4795E79C1DE619" },
     ],
     links: [
       {

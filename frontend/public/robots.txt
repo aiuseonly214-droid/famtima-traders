@@ -34,4 +34,4 @@ Disallow: /expenses
 Disallow: /payroll
 Disallow: /settings
 
-Sitemap: https://famtima-traders.vercel.app/sitemap.xml
+Sitemap: https://fatima-traders-official.vercel.app/sitemap.xml

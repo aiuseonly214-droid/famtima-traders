@@ -268,7 +268,7 @@ export const DEFAULT_COMPANY_PROFILE: CompanyProfile = {
   mobile1: "7860854662",
   mobile2: "9265012186",
   email: "anwaarrza850@gmail.com",
-  website: "https://famtima-traders.vercel.app",
+  website: "https://fatima-traders-official.vercel.app",
   logo_url: "/fatima-logo.webp",
   stamp_url: null,
   signature_url: null,
